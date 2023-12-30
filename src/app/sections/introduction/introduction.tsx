@@ -8,7 +8,7 @@ function Introduction() {
         {/* Introduction text */}
         <div className="w-full lg:w-2/3 items-center lg:items-start text-center lg:text-start space-y-3">
           <p className="text-2xl text-cutty-sark">Hi, I&apos;m Max 👋</p>
-          <p className="text-4xl text-cutty-sark font-semibold">I love finding solutions</p>
+          <p className="text-3xl text-cutty-sark font-semibold">I love finding solutions</p>
           <p className="text-2xl text-cutty-sark">
             I am an experienced Software Engineer and Android Developer, currently working at
             <span className="text-orange-roughy font-medium"> Vipps</span> creating simplicity in peoples&apos; financial lives.
