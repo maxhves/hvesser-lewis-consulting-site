@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <div className="w-full p-5 flex justify-center">
+    <div className="w-full p-5 flex justify-center sticky top-0 backdrop-blur-sm bg-old-lace bg-opacity-75">
       <div className="flex justify-between w-full lg:w-10/12">
         {/* Logo */}
         <div>
