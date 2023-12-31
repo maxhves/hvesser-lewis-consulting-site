@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionWrapper from '@/app/components/sectionwrapper/SectionWrapper';
+import SectionWrapper from '@/app/components/section_wrapper/section_wrapper';
 
 function Introduction() {
   return (

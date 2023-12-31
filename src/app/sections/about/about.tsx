@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionWrapper from '@/app/components/sectionwrapper/SectionWrapper';
+import SectionWrapper from '@/app/components/section_wrapper/section_wrapper';
 
 function About() {
   return(
@@ -11,7 +11,7 @@ function About() {
         <p className="font-medium text-cutty-sark text-2xl"><span className="text-jungle-green">01.</span> About me</p>
 
         {/* Main text */}
-        <p className="text-cutty-sark text-md lg:text-lg">
+        <p className="text-cutty-sark text-md lg:text-md">
           I have been working as a Software Engineer full time for 7 years, and throughout that time I have amassed a
           diverse set of knowledge along with some very keen problem solving skills. Predominantly my experience has
           been with developing native mobile applications, more specifically, Android applications, however I
