@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionWrapper from '@/app/components/section_wrapper/section_wrapper';
+import SectionHeader from '@/app/components/section_header/section_header';
 
 function About() {
   return(
@@ -8,7 +9,10 @@ function About() {
     >
       <div className="space-y-4">
         {/* Heading */}
-        <p className="font-medium text-cutty-sark text-lg"><span className="text-jungle-green">01.</span> About me</p>
+        <SectionHeader
+          number={1}
+          heading="About me"
+        />
 
         {/* Main text */}
         <p className="text-cutty-sark font-light">

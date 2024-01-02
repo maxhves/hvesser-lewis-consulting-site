@@ -1,15 +1,17 @@
 import React from 'react';
 import SectionWrapper from '@/app/components/section_wrapper/section_wrapper';
 import PastEmploymentCard from '@/app/sections/experience/components/past_employment_card/past_employment_card';
+import SectionHeader from '@/app/components/section_header/section_header';
 
 function Experience() {
   return (
     <SectionWrapper>
       <div>
         {/* Heading */}
-        <p className="font-medium text-cutty-sark text-2xl">
-          <span className="text-jungle-green">02.</span> Experience
-        </p>
+        <SectionHeader
+          number={2}
+          heading="Experience"
+        />
 
         {/* Past work experience */}
         <ul className="divide-y divide-solid divide-aths-special">
@@ -20,7 +22,7 @@ function Experience() {
               company="Vipps"
               startYear="2021"
               endYear="Present"
-              location="Oslo, Norway - Vancouver, Canada"
+              location="Norway • Vancouver, Canada"
               body={""}
             />
           </li>
