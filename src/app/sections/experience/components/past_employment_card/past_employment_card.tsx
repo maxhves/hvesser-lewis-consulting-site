@@ -1,4 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
+
+//region Properties
 
 interface PastEmploymentCardProps {
   jobTitle: string,
@@ -6,8 +9,13 @@ interface PastEmploymentCardProps {
   startYear: string,
   endYear: string,
   location: string,
-  body: string,
+  imageSource: string,
+  body: string[],
 }
+
+//endregion
+
+//region Implementation
 
 function PastEmploymentCard(
   props: PastEmploymentCardProps,
@@ -17,7 +25,14 @@ function PastEmploymentCard(
       {/* Company logo */}
       <div>
         <div className="border-daintree border-opacity-10 border-2 rounded-full w-fit">
-          <div className="h-10 w-10 rounded-full bg-aths-special"/>
+          <div className="h-10 w-10 rounded-full bg-aths-special">
+            <Image
+              src={props.imageSource}
+              height={40}
+              width={40}
+              alt="Company logo"
+            />
+          </div>
         </div>
       </div>
 
@@ -35,13 +50,11 @@ function PastEmploymentCard(
 
           {/* Body */}
           <div>
-            <p className="text-cutty-sark text-sm font-light">
-              This is where the body text will go, but at the moment there is no body text to be seen, so what I&apos;ll
-              do is
-              write a generic and long body text that can be seen on the site but actually needs to be provided by all
-              the
-              consumers of this component.
-            </p>
+            <ul className="list-disc text-cutty-sark text-sm font-light ms-4 space-y-4">
+              {props.body.map((actionPoint, index) => (
+                <li key={index}>{actionPoint}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
@@ -50,3 +63,5 @@ function PastEmploymentCard(
 }
 
 export default PastEmploymentCard;
+
+//endregion
