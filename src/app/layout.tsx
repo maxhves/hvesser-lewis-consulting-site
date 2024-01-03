@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={ibmPlexMono.className}>
+    <html lang="en" className="scroll-smooth">
+      <body id="body" className={ibmPlexMono.className}>
         <Navbar/>
        {children}
       </body>

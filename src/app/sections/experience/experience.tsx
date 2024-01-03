@@ -5,7 +5,7 @@ import SectionHeader from '@/app/components/section_header/section_header';
 
 function Experience() {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="section-experience">
       <div>
         {/* Heading */}
         <SectionHeader

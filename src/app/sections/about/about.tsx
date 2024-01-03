@@ -4,9 +4,7 @@ import SectionHeader from '@/app/components/section_header/section_header';
 
 function About() {
   return(
-    <SectionWrapper
-      type="secondary"
-    >
+    <SectionWrapper id="section-about" type="secondary">
       <div className="space-y-4">
         {/* Heading */}
         <SectionHeader
