@@ -14,8 +14,8 @@ function Navbar() {
         <div className="hidden lg:block space-x-8 text-tiber text-sm">
           <Link href="#section-about" className="hover:text-jungle-green"><span className="text-jungle-green">01.</span> About</Link>
           <Link href="#section-experience" className="hover:text-jungle-green"><span className="text-jungle-green">02.</span> Experience</Link>
-          <Link href="/" className="hover:text-jungle-green"><span className="text-jungle-green">03.</span> Projects</Link>
-          <Link href="/" className="hover:text-jungle-green"><span className="text-jungle-green">04.</span> Contact</Link>
+          <Link href="#section-projects" className="hover:text-jungle-green"><span className="text-jungle-green">03.</span> Projects</Link>
+          <Link href="#section-contact" className="hover:text-jungle-green"><span className="text-jungle-green">04.</span> Contact</Link>
         </div>
       </div>
     </div>

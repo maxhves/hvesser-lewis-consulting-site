@@ -1,0 +1,55 @@
+import React from 'react';
+import SectionWrapper from '@/app/components/section_wrapper/section_wrapper';
+import SectionHeader from '@/app/components/section_header/section_header';
+
+function Contact() {
+  return (
+    <SectionWrapper
+      id="section-contact"
+      type="secondary"
+    >
+      <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-12 space-y-8 lg:space-y-0">
+        <div className="w-full lg:w-1/2">
+          <SectionHeader
+            number={4}
+            heading="Contact me"
+          />
+          <p className="text-cutty-sark font-light mt-4">
+            I am always on the lookout to connect, and take part in interesting projects, so feel free to fill out
+            the contact form.
+          </p>
+          <p className="text-cutty-sark font-medium mt-8">
+            Email me directly
+          </p>
+          <p className="text-curious-blue font-light underline mt-4">
+            max@hvesserlewis.com
+          </p>
+        </div>
+        <div className="w-full lg:w-1/2 space-y-2 text-cutty-sark">
+          <input
+            className="w-full h-16 bg-old-lace border-daintree border-opacity-10 border-2 rounded-xl p-4 focus:outline-none"
+            placeholder="Your name"
+          />
+          <input
+            className="w-full h-16 bg-old-lace border-daintree border-opacity-10 border-2 rounded-xl p-4 focus:outline-none"
+            placeholder="Your email address"
+          />
+          <textarea
+            className="w-full h-48 bg-old-lace border-daintree border-opacity-10 border-2 rounded-xl p-4 focus:outline-none"
+            placeholder="Your message"
+          />
+          <div className="flex justify-end">
+            <button
+              type="button"
+              className="bg-jungle-green py-4 px-6 rounded-xl text-old-lace active:bg-tiber w-full lg:w-fit border-daintree border-opacity-10 border-2"
+            >
+              Get in touch
+            </button>
+          </div>
+        </div>
+      </div>
+    </SectionWrapper>
+  );
+}
+
+export default Contact;
