@@ -6,7 +6,7 @@ function Navbar() {
     <div className="w-full p-5 flex justify-center sticky top-0 backdrop-blur-sm bg-old-lace bg-opacity-75">
       <div className="flex justify-between w-full lg:w-10/12">
         {/* Logo */}
-        <Link href="#body">
+        <Link href="#home">
           <p className="text-tiber font-bold text-lg">MHL</p>
         </Link>
 
