@@ -5,7 +5,7 @@ import SectionWrapper from '@/app/components/section_wrapper/section_wrapper';
 function ResumeAd() {
   return (
     <SectionWrapper>
-      <div className="bg-aths-special p-8 w-full flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 space-x-0 lg:space-x-8 rounded-3xl border-daintree border-2 border-opacity-5">
+      <div className="bg-aths-special p-6 w-full flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 space-x-0 lg:space-x-8 rounded-3xl border-daintree border-2 border-opacity-5">
         <Image
           className="h-20 w-20"
           src="ad_images/waving_hand.svg"
