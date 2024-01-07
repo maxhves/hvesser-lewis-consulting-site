@@ -18,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body id="home" className={`${ibmPlexMono.className} [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']`}>
-        <Navbar/>
        {children}
       </body>
     </html>

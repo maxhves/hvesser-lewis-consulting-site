@@ -8,7 +8,7 @@ function SectionWrapper(
   let background: string = type === 'primary' ? "bg-old-lace" : "bg-aths-special"
 
   return (
-    <div id={id} className={`flex justify-center ${background}`}>
+    <div id={id} className={`flex justify-center ${background} scroll-mt-16`}>
       <div className="w-full lg:w-8/12 max-w-5xl py-10 lg:py-20 px-5 lg:px-0">
         {children}
       </div>
