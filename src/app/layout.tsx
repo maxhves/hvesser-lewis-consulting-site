@@ -1,4 +1,5 @@
 import type {Metadata} from 'next'
+import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import {IBM_Plex_Mono} from "next/font/google";
 import './globals.css'
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body id="home" className={`${ibmPlexMono.className} [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']`}>
         {children}
         <SpeedInsights/>
+        <Analytics/>
       </body>
     </html>
   )
