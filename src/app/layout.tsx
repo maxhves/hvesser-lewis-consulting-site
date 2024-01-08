@@ -1,4 +1,5 @@
 import type {Metadata} from 'next'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import {IBM_Plex_Mono} from "next/font/google";
 import './globals.css'
 import Navbar from '@/app/components/navbar/navbar';
@@ -18,7 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body id="home" className={`${ibmPlexMono.className} [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']`}>
-       {children}
+        {children}
+        <SpeedInsights/>
       </body>
     </html>
   )
