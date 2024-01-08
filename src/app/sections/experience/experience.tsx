@@ -53,14 +53,13 @@ function Experience() {
           {/* DTT */}
           <li className="pt-12">
             <PastEmploymentCard
-              jobTitle="Android Lead"
+              jobTitle="Senior Android Developer"
               company="DTT"
               startYear="2017"
               endYear="2019"
               location="Amsterdam, The Netherlands"
               imageSource="/experience_images/logo_dtt.png"
               body={[
-                "I gained valuable experience in team management and honed my skills in overseeing the development of high-quality and cost-effective Android applications from inception to delivery. This leadership role allowed me to guide and mentor a team of developers, fostering collaboration and ensuring the successful execution of projects.",
                 "I developed a much deeper understanding of Android application architecture. I delved into the intricacies of proper modularization, effectively dividing projects into distinct layers: UI, Domain, and Data. Additionally, I mastered the art of managing project dependencies, optimizing code organization, and improving the overall maintainability and scalability of our applications.",
                 "I sharpened my client-facing skills by developing the ability to provide clients with precise and effective project quotes. I adopted a meticulous approach, creating comprehensive reports based on app requirements and design. These reports enabled clients to receive accurate estimates regarding project duration and cost.",
               ]}
