@@ -12,7 +12,7 @@ function Navbar() {
   }
 
   return (
-    <div className="sticky top-0 flex flex-col">
+    <div className="sticky top-0 flex flex-col z-10">
       {/* Main navigation bar */}
       <div className="px-5 py-0 flex justify-center bg-old-lace border-b border-cutty-sark border-opacity-10 z-10 h-16">
         <div className="flex flex-row justify-between w-full lg:w-10/12">

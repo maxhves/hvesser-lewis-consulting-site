@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionWrapper from '@/app/components/section_wrapper/section_wrapper';
+import HeroImage from '@/app/components/hero_image/hero_image';
 
 function Introduction() {
   return (
@@ -16,11 +17,7 @@ function Introduction() {
         </div>
 
         {/* Promotion image */}
-        <div className="w-full lg:w-1/3 flex items-center justify-center">
-          <div className="rounded-3xl bg-daintree flex justify-center items-center h-72 w-96">
-            <p className="text-old-lace">Promo image</p>
-          </div>
-        </div>
+        <HeroImage/>
       </div>
     </SectionWrapper>
   );
