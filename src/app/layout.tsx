@@ -3,7 +3,6 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import {IBM_Plex_Mono} from "next/font/google";
 import './globals.css'
-import Navbar from '@/app/components/navbar/navbar';
 
 const ibmPlexMono = IBM_Plex_Mono({weight: ['100', '200', '300', '400', '500', '600', '700'], subsets: ['latin']})
 
