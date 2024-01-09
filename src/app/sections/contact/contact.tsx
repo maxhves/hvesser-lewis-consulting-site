@@ -21,7 +21,7 @@ function Contact() {
           <p className="text-cutty-sark dark:text-aths-special font-medium mt-8">
             Email me directly
           </p>
-          <p className="text-curious-blue dark:text-aths-special font-light underline mt-4">
+          <p className="text-curious-blue font-light underline mt-4">
             max@hvesserlewis.com
           </p>
         </div>
