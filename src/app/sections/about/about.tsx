@@ -13,7 +13,7 @@ function About() {
         />
 
         {/* Main text */}
-        <p className="text-cutty-sark font-light">
+        <p className="text-cutty-sark dark:text-aths-special font-light">
           I have been working as a Software Engineer full time for 7 years, and throughout that time I have amassed a
           diverse set of knowledge along with some very keen problem solving skills. Predominantly my experience has
           been with developing native mobile applications, more specifically, Android applications, however I
@@ -27,8 +27,8 @@ function About() {
         </p>
 
         {/* Technologies list */}
-        <p className="font-medium text-cutty-sark pt-4">Technologies I&apos;m passionate about</p>
-        <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-16 text-cutty-sark font-light">
+        <p className="font-medium text-cutty-sark dark:text-aths-special pt-4">Technologies I&apos;m passionate about</p>
+        <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-16 text-cutty-sark dark:text-aths-special font-light">
           {/* Languages */}
           <div>
             <ul>

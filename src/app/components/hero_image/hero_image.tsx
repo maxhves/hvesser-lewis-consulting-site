@@ -11,7 +11,7 @@ function HeroImage() {
           className="col-start-1 row-start-1 flex justify-center"
           style={{zIndex: 1}}
         >
-          <div className="h-40 w-40 bg-aths-special rounded-full"/>
+          <div className="h-40 w-40 bg-aths-special dark:bg-daintree rounded-full"/>
         </div>
 
         {/* Top-Left shape */}
