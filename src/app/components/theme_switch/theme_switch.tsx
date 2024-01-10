@@ -1,6 +1,5 @@
 "use client";
 import React, {useEffect, useState} from 'react';
-import {Simulate} from "react-dom/test-utils";
 
 //region Props
 
@@ -41,7 +40,7 @@ function ThemeSwitch(props: ThemeSwitchProps) {
           {/* Thumb */}
           <div className="flex h-full w-full items-center justify-end px-1">
             <div
-              className={`h-6 w-6 bg-amethyst rounded-full flex items-center justify-center transform ${checked ? "translate-x-0 bg-amethyst" : "-translate-x-6 bg-cutty-sark"} transition-all`}>
+              className={`h-6 w-6 bg-amethyst rounded-full flex items-center justify-center transform ${checked ? "translate-x-0 bg-amethyst" : "-translate-x-6 bg-cutty-sark"} duration-300 transition-all`}>
               {/* Loading and night icon */}
               {loading ?
                 <div className="">
