@@ -1,29 +1,28 @@
 "use client";
 import React, {useEffect, useState} from 'react';
-
-//region Props
-
-interface ThemeSwitchProps {
-  darkTheme: boolean,
-}
-
-//endregion
+import {useTheme} from 'next-themes'
 
 //region Implementation
 
-function ThemeSwitch(props: ThemeSwitchProps) {
+function ThemeSwitch() {
   const [loading, setLoading] = useState(true)
   const [checked, setChecked] = useState(false)
+  const {theme, setTheme} = useTheme();
+
+  function toggleTheme() {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setChecked((prevState) => !prevState);
+  }
 
   useEffect(() => {
-    setChecked(props.darkTheme);
+    setChecked(theme === 'dark');
     setLoading(false);
-  }, [props.darkTheme]);
+  }, [theme]);
 
   return (
     <div>
       <button
-        onClick={() => setChecked((prevState) => !prevState)}
+        onClick={toggleTheme}
       >
         {/* Track */}
         <div

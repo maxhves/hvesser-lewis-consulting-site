@@ -19,9 +19,7 @@ function Navbar() {
         <div className="flex flex-row justify-between w-full lg:w-10/12">
           {/* Testing switch */}
           <div className="flex items-center">
-            <ThemeSwitch
-              darkTheme={true}
-            />
+            <ThemeSwitch/>
           </div>
 
 

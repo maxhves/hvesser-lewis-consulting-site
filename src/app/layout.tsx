@@ -1,6 +1,7 @@
 import type {Metadata} from 'next'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Providers } from './providers'
 import {IBM_Plex_Mono} from "next/font/google";
 import './globals.css'
 
@@ -17,9 +18,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth dark">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body id="home" className={`${ibmPlexMono.className} [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] bg-old-lace dark:bg-tiber`}>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
         <SpeedInsights/>
         <Analytics/>
       </body>
