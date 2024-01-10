@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import Link from "next/link";
 import { Spiral as Hamburger } from 'hamburger-react';
 import NavbarDrawerLink from '@/app/components/navbar/navbar_drawer_link';
-import ThemeSwitch from '@/app/components/theme_switch/theme_switch';
 
 function Navbar() {
   const [showDrawer, setShowDrawer] = useState(false)
@@ -17,12 +16,6 @@ function Navbar() {
       {/* Main navigation bar */}
       <div className="px-5 py-0 flex justify-center bg-old-lace dark:bg-tiber border-b border-cutty-sark dark:border-aths-special border-opacity-10 dark:border-opacity-10 z-10 h-16">
         <div className="flex flex-row justify-between w-full lg:w-10/12">
-          {/* Testing switch */}
-          <div className="flex items-center">
-            <ThemeSwitch/>
-          </div>
-
-
           {/* Logo */}
           <div className="flex items-center">
             <Link href="#home">
