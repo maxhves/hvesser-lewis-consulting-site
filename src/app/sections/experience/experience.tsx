@@ -14,7 +14,7 @@ function Experience() {
         />
 
         {/* Past work experience */}
-        <ul className="divide-y divide-solid divide-aths-special">
+        <ul className="divide-y divide-solid divide-aths-special dark:divide-daintree">
           {/* Vipps */}
           <li className="py-12">
             <PastEmploymentCard

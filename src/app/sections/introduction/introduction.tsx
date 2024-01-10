@@ -7,7 +7,7 @@ function Introduction() {
     <SectionWrapper>
       <div className="flex flex-col lg:flex-row h-full space-y-12 space-x-0 lg:space-y-0 lg:space-x-24 items-center">
         {/* Introduction text */}
-        <div className="w-full lg:w-2/3 items-center lg:items-start text-center lg:text-start text-cutty-sark space-y-2">
+        <div className="w-full lg:w-2/3 items-center lg:items-start text-center lg:text-start text-cutty-sark dark:text-aths-special space-y-2">
           <p>Hi, I&apos;m Maximilian 👋</p>
           <p className="text-2xl font-semibold">I love finding solutions</p>
           <p>

@@ -22,7 +22,7 @@ function NavbarDrawerLink(props: NavbarDrawerLinkProps) {
         legacyBehavior
       >
         <a onClick={props.onClick}>
-          <p className="py-6 text-tiber text-sm hover:text-jungle-green">
+          <p className="py-6 text-tiber dark:text-old-lace text-sm hover:text-jungle-green">
             <span className="text-jungle-green">0{props.position}.</span> {props.section}
           </p>
         </a>

@@ -24,8 +24,8 @@ function PastEmploymentCard(
     <div className="flex flex-col lg:flex-row lg:space-x-8 space-y-4 lg:space-y-0">
       {/* Company logo */}
       <div>
-        <div className="border-daintree border-opacity-10 border-2 rounded-full w-fit">
-          <div className="h-10 w-10 rounded-full bg-aths-special">
+        <div className="border-daintree dark:border-old-lace border-opacity-10 dark:border-opacity-10 border-2 rounded-full w-fit">
+          <div className="h-10 w-10 rounded-full bg-aths-special dark:bg-tiber">
             <Image
               src={props.imageSource}
               height={40}
@@ -41,8 +41,8 @@ function PastEmploymentCard(
         <div className="space-y-6 lg:space-y-8">
           {/* Header */}
           <div className="space-y-1">
-            <p className="text-cutty-sark font-medium">{`${props.jobTitle} @ ${props.company}`}</p>
-            <div className="flex flex-row justify-between text-cutty-sark text-sm">
+            <p className="text-cutty-sark dark:text-aths-special font-medium">{`${props.jobTitle} @ ${props.company}`}</p>
+            <div className="flex flex-row justify-between text-cutty-sark dark:text-aths-special text-sm">
               <p>{`${props.startYear} - ${props.endYear}`}</p>
               <p>{props.location}</p>
             </div>
@@ -50,7 +50,7 @@ function PastEmploymentCard(
 
           {/* Body */}
           <div>
-            <ul className="list-disc text-cutty-sark text-sm font-light ms-4 space-y-4">
+            <ul className="list-disc text-cutty-sark dark:text-aths-special text-sm font-light ms-4 space-y-4">
               {props.body.map((actionPoint, index) => (
                 <li key={index}>{actionPoint}</li>
               ))}

@@ -5,7 +5,7 @@ import SectionWrapper from '@/app/components/section_wrapper/section_wrapper';
 function ResumeAd() {
   return (
     <SectionWrapper>
-      <div className="bg-aths-special p-6 w-full flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 space-x-0 lg:space-x-8 rounded-3xl border-daintree border-2 border-opacity-5">
+      <div className="bg-aths-special dark:bg-daintree p-6 w-full flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 space-x-0 lg:space-x-8 rounded-3xl border-daintree dark:border-aths-special border-2 border-opacity-5 dark:border-opacity-10">
         <Image
           className="h-20 w-20"
           src="ad_images/waving_hand.svg"
@@ -13,7 +13,7 @@ function ResumeAd() {
           width={0}
           height={0}
         />
-        <div className="flex flex-col text-cutty-sark space-y-2">
+        <div className="flex flex-col text-cutty-sark dark:text-aths-special space-y-2">
           <p className="font-medium">Hey, you! Want to know more?</p>
           <p className="font-light">
             Maybe you’re a prospective collaborator, or just a curious passer-by but if you’re interested in learning
