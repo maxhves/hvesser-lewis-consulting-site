@@ -1,7 +1,7 @@
 ### MHL personal website
 
 > [!NOTE]
-> Note: This site is currrently under development, so some features are slightly lacking as of now.
+> This site is currrently under development, so some features are slightly lacking as of now.
  
 Please feel free to go ahead and take a look at the site hosted at [hvesserlewis.com](https://www.hvesserlewis.com).
 
