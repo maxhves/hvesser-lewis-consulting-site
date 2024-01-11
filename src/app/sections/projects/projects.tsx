@@ -22,10 +22,7 @@ function Projects() {
               A simple currency converter allowing users to convert between the most popular global currencies, that I
               made as a good showcase project.
               <br/><br/>
-              This is an open source, native mobile application, which can be found on <span
-              className="text-curious-blue font-medium">Github</span> for both <span
-              className="text-curious-blue font-medium">iOS</span> and <span
-              className="text-curious-blue font-medium">Android</span> platforms.
+              This is an open source, native mobile application, which can be found on <a href="https://github.com/maxhvesser" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">Github</a> for both <a href="https://github.com/maxhvesser/swapx-android" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">Android</a> and <a href="https://github.com/maxhvesser/swap-ios" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">iOS</a> platforms.
             </>
           }
           tags={["Kotlin", "Android", "Swift", "iOS"]}
