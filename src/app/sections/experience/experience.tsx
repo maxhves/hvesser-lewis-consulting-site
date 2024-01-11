@@ -16,7 +16,7 @@ function Experience() {
         {/* Past work experience */}
         <ul className="divide-y divide-solid divide-aths-special dark:divide-daintree">
           {/* Vipps */}
-          <li className="py-12">
+          <li className="pb-12">
             <PastEmploymentCard
               jobTitle="Senior Android Developer"
               company="Vipps"

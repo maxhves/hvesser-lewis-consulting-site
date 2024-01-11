@@ -14,7 +14,7 @@ function Contact() {
             number={4}
             heading="Contact me"
           />
-          <p className="text-cutty-sark dark:text-aths-special font-light mt-4">
+          <p className="text-cutty-sark dark:text-aths-special font-light">
             I am always on the lookout to connect, and take part in interesting projects, so feel free to fill out
             the contact form.
           </p>

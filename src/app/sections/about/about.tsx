@@ -5,13 +5,13 @@ import SectionHeader from '@/app/components/section_header/section_header';
 function About() {
   return(
     <SectionWrapper id="section-about" type="secondary">
-      <div className="space-y-4">
-        {/* Heading */}
-        <SectionHeader
-          number={1}
-          heading="About me"
-        />
+      {/* Heading */}
+      <SectionHeader
+        number={1}
+        heading="About me"
+      />
 
+      <div className="space-y-6">
         {/* Main text */}
         <p className="text-cutty-sark dark:text-aths-special font-light">
           I have been working as a Software Engineer full time for 7 years, and throughout that time I have amassed a
@@ -27,7 +27,7 @@ function About() {
         </p>
 
         {/* Technologies list */}
-        <p className="font-medium text-cutty-sark dark:text-aths-special pt-4">Technologies I&apos;m passionate about</p>
+        <p className="font-medium text-cutty-sark dark:text-aths-special">Technologies I&apos;m passionate about</p>
         <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-16 text-cutty-sark dark:text-aths-special font-light">
           {/* Languages */}
           <div>
