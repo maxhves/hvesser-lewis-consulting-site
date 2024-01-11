@@ -15,7 +15,21 @@ function Projects() {
           heading="Some things I've built"
         />
 
-        {/* <ProjectFeatureCard/> */}
+        <ProjectFeatureCard
+          name="Swap"
+          description={
+            <>
+              A simple currency converter allowing users to convert between the most popular global currencies, that I
+              made as a good showcase project.
+              <br/><br/>
+              This is an open source, native mobile application, which can be found on <span
+              className="text-curious-blue font-medium">Github</span> for both <span
+              className="text-curious-blue font-medium">iOS</span> and <span
+              className="text-curious-blue font-medium">Android</span> platforms.
+            </>
+          }
+          tags={["Kotlin", "Android", "Swift", "iOS"]}
+        />
       </div>
     </SectionWrapper>
   );

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
+import Badge from '@/app/components/badge/badge';
 
 //region Props
 
@@ -6,7 +7,7 @@ type TechnologyTag = 'Kotlin' | 'Swift' | 'Android' | 'iOS';
 
 interface ProjectFeatureCardProps {
   name: string,
-  description: string,
+  description: ReactNode,
   tags: TechnologyTag[],
 }
 
@@ -14,7 +15,7 @@ interface ProjectFeatureCardProps {
 
 //region Implementation
 
-function ProjectFeatureCard() {
+function ProjectFeatureCard(props: ProjectFeatureCardProps) {
   return (
     <div className="grid w-full">
       {/* Background */}
@@ -26,16 +27,18 @@ function ProjectFeatureCard() {
 
       {/* Info card */}
       <div className="col-start-1 row-start-1 flex">
-        <div className="w-6/12 p-8 rounded-3xl bg-old-lace space-y-6 border-daintree border-2 border-opacity-10">
+        <div className="w-10/12 md:w-7/12 p-8 rounded-3xl bg-old-lace space-y-6 border-daintree border-2 border-opacity-10">
           {/* Texts */}
           <div className="space-y-4 text-cutty-sark">
-            <p className="text-lg">Project name</p>
-            <p className="font-light">Project description, that is inevitably going to be fairly long.</p>
+            <p className="text-lg">{props.name}</p>
+            <p className="font-light">{props.description}</p>
           </div>
 
           {/* Tags */}
-          <div>
-            Tags here please
+          <div className="flex flex-wrap gap-3">
+            {props.tags?.map((tag) => (
+              <Badge key={tag} label={tag}/>
+            ))}
           </div>
         </div>
       </div>
