@@ -27,11 +27,11 @@ function ProjectFeatureCard(props: ProjectFeatureCardProps) {
 
       {/* Info card */}
       <div className="col-start-1 row-start-1 flex">
-        <div className="w-10/12 md:w-7/12 p-8 rounded-3xl bg-old-lace dark:bg-tiber space-y-6 border-daintree dark:border-aths-special border-2 border-opacity-10 dark:border-opacity-10">
+        <div className="w-11/12 md:w-7/12 p-8 rounded-3xl bg-old-lace dark:bg-tiber space-y-6 border-daintree dark:border-aths-special border-2 border-opacity-10 dark:border-opacity-10">
           {/* Texts */}
           <div className="space-y-4 text-cutty-sark dark:text-aths-special">
-            <p className="text-lg">{props.name}</p>
-            <p className="font-light">{props.description}</p>
+            <p className="text-lg font-medium">{props.name}</p>
+            <p className="text-sm">{props.description}</p>
           </div>
 
           {/* Tags */}
