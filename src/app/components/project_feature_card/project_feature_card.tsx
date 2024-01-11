@@ -19,7 +19,7 @@ function ProjectFeatureCard(props: ProjectFeatureCardProps) {
   return (
     <div className="grid w-full">
       {/* Background */}
-      <div className="col-start-1 row-start-1 flex bg-aths-special h-full w-full rounded-3xl border-daintree border-2 border-opacity-10">
+      <div className="col-start-1 row-start-1 flex bg-aths-special dark:bg-daintree h-full w-full rounded-3xl border-daintree dark:border-aths-special border-2 border-opacity-10 dark:border-opacity-10">
         <div className="h-full w-full flex justify-center items-center">
           <p className="bg-amethyst p-8 rounded-2xl text-old-lace">Background</p>
         </div>
@@ -27,9 +27,9 @@ function ProjectFeatureCard(props: ProjectFeatureCardProps) {
 
       {/* Info card */}
       <div className="col-start-1 row-start-1 flex">
-        <div className="w-10/12 md:w-7/12 p-8 rounded-3xl bg-old-lace space-y-6 border-daintree border-2 border-opacity-10">
+        <div className="w-10/12 md:w-7/12 p-8 rounded-3xl bg-old-lace dark:bg-tiber space-y-6 border-daintree dark:border-aths-special border-2 border-opacity-10 dark:border-opacity-10">
           {/* Texts */}
-          <div className="space-y-4 text-cutty-sark">
+          <div className="space-y-4 text-cutty-sark dark:text-aths-special">
             <p className="text-lg">{props.name}</p>
             <p className="font-light">{props.description}</p>
           </div>
