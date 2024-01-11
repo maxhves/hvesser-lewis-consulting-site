@@ -15,7 +15,7 @@ function Projects() {
           heading="Some things I've built"
         />
 
-        <ProjectFeatureCard/>
+        {/* <ProjectFeatureCard/> */}
       </div>
     </SectionWrapper>
   );
