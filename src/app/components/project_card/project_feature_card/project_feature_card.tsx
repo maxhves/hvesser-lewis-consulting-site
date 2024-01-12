@@ -3,8 +3,6 @@ import Badge from '@/app/components/badge/badge';
 
 //region Props
 
-type TechnologyTag = 'Kotlin' | 'Swift' | 'Android' | 'iOS';
-
 interface ProjectFeatureCardProps {
   name: string,
   description: ReactNode,

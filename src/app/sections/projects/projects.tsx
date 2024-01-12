@@ -1,7 +1,8 @@
 import React from 'react';
 import SectionWrapper from '@/app/components/section_wrapper/section_wrapper';
 import SectionHeader from '@/app/components/section_header/section_header';
-import ProjectFeatureCard from '@/app/components/project_feature_card/project_feature_card';
+import ProjectFeatureCard from '@/app/components/project_card/project_feature_card/project_feature_card';
+import ProjectCard from '@/app/components/project_card/project_card';
 
 function Projects() {
   return (
@@ -32,9 +33,34 @@ function Projects() {
         />
 
         {/* Other noteworthy projects */}
-        <p className="text-cutty-sark font-medium mt-16">Other noteworthy projects</p>
-        <div className="flex flex-col lg:flex-row">
-          {/* TODO: Place other project cards here */}
+        <p className="text-cutty-sark dark:text-aths-special font-medium mt-16 mb-10">Other noteworthy projects</p>
+        <div className="flex flex-col md:flex-row space-y-4 space-x-0 md:space-x-4 md:space-y-0">
+          {/* Project one */}
+          <ProjectCard
+            className="w-full md:w-1/3"
+            name="Project one"
+            description="This is a description of project one, it might say something good, or it might say something not so good."
+            url="https://hvesserlewis.com"
+            tags={["Android", "Kotlin"]}
+          />
+
+          {/* Project two */}
+          <ProjectCard
+            className="w-full md:w-1/3"
+            name="Project two"
+            description="This is a description of project two, it might say something good, or it might say something not so good."
+            url="https://hvesserlewis.com"
+            tags={["Android", "Kotlin"]}
+          />
+
+          {/* Project three */}
+          <ProjectCard
+            className="w-full md:w-1/3"
+            name="Project three"
+            description="This is a description of project three, it might say something good, or it might say something not so good."
+            url="https://hvesserlewis.com"
+            tags={["Android", "Kotlin"]}
+          />
         </div>
       </div>
     </SectionWrapper>
