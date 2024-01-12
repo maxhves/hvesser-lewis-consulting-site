@@ -9,12 +9,14 @@ function Projects() {
       id="section-projects"
       type="secondary"
     >
-      <div>
+      <div className="flex flex-col">
+        {/* Heading */}
         <SectionHeader
           number={3}
           heading="Some things I've built"
         />
 
+        {/* Top project feature card */}
         <ProjectFeatureCard
           name="Swap"
           description={
@@ -28,6 +30,12 @@ function Projects() {
           tags={["Kotlin", "Android", "Swift", "iOS"]}
           promoImageUrl="/project_images/promo_swapx.png"
         />
+
+        {/* Other noteworthy projects */}
+        <p className="text-cutty-sark font-medium mt-16">Other noteworthy projects</p>
+        <div className="flex flex-col lg:flex-row">
+          {/* TODO: Place other project cards here */}
+        </div>
       </div>
     </SectionWrapper>
   );
