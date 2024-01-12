@@ -5,9 +5,9 @@ import HeroImage from '@/app/components/hero_image/hero_image';
 function Introduction() {
   return (
     <SectionWrapper>
-      <div className="flex flex-col lg:flex-row h-full space-y-12 space-x-0 lg:space-y-0 lg:space-x-24 items-center">
+      <div className="flex flex-col md:flex-row h-full space-y-12 space-x-0 md:space-y-0 md:space-x-24 items-center">
         {/* Introduction text */}
-        <div className="w-full lg:w-2/3 items-center lg:items-start text-center lg:text-start text-cutty-sark dark:text-aths-special space-y-2">
+        <div className="w-full md:w-2/3 items-center md:items-start text-center md:text-start text-cutty-sark dark:text-aths-special space-y-2">
           <p>Hi, I&apos;m Maximilian 👋</p>
           <p className="text-2xl font-semibold">I love finding solutions</p>
           <p>
