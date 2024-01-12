@@ -2,12 +2,15 @@ import React from 'react';
 
 function Networks() {
   return (
-    <div className="bg-aths-special dark:bg-daintree flex justify-center px-5 lg:px-0">
-      <div className="w-full lg:w-8/12 max-w-5xl pb-10 lg:pb-20 pt-2 lg:pt-4 space-y-6">
-        <div className="flex justify-center lg:justify-start">
+    <div className="bg-aths-special dark:bg-daintree flex justify-center px-5 md:px-0">
+      <div className="w-full md:w-8/12 max-w-5xl pb-10 md:pb-20 pt-2 md:pt-4 space-y-6">
+        {/* Heading */}
+        <div className="flex justify-center md:justify-start">
           <p className="text-cutty-sark dark:text-aths-special font-medium">Take a look at my other networks</p>
         </div>
-        <div className="w-full flex flex-row space-x-6 justify-center lg:justify-start">
+
+        {/* Network links */}
+        <div className="w-full flex flex-row space-x-6 justify-center md:justify-start">
           <a href="https://github.com/maxhvesser" target="_blank" rel="noopener noreferrer">
             <svg className="w-8 h-8 fill-cutty-sark dark:fill-aths-special" viewBox="0 0 40 40">
               <path

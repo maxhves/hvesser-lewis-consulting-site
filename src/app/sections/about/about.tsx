@@ -28,7 +28,7 @@ function About() {
 
         {/* Technologies list */}
         <p className="font-medium text-cutty-sark dark:text-aths-special">Technologies I&apos;m passionate about</p>
-        <div className="flex flex-col lg:flex-row space-x-0 lg:space-x-16 text-cutty-sark dark:text-aths-special font-light">
+        <div className="flex flex-col md:flex-row space-x-0 md:space-x-16 text-cutty-sark dark:text-aths-special font-light">
           {/* Languages */}
           <div>
             <ul>
@@ -42,7 +42,7 @@ function About() {
           <div>
             <ul>
               <li>&gt; Android</li>
-              <li>&gt; React</li>
+              <li>&gt; ReactJS</li>
               <li>&gt; NextJS</li>
             </ul>
           </div>

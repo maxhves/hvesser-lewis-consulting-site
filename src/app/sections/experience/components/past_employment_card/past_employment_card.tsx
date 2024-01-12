@@ -21,7 +21,7 @@ function PastEmploymentCard(
   props: PastEmploymentCardProps,
 ) {
   return (
-    <div className="flex flex-col lg:flex-row lg:space-x-8 space-y-4 lg:space-y-0">
+    <div className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
       {/* Company logo */}
       <div>
         <div className="border-daintree dark:border-old-lace border-opacity-10 dark:border-opacity-10 border-2 rounded-full w-fit">
