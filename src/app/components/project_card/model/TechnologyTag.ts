@@ -1,0 +1,1 @@
+type TechnologyTag = 'Kotlin' | 'Swift' | 'Android' | 'iOS';
