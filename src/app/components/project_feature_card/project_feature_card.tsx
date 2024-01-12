@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
+import Badge from '@/app/components/badge/badge';
 
 //region Props
 
@@ -6,36 +7,37 @@ type TechnologyTag = 'Kotlin' | 'Swift' | 'Android' | 'iOS';
 
 interface ProjectFeatureCardProps {
   name: string,
-  description: string,
+  description: ReactNode,
   tags: TechnologyTag[],
+  promoImageUrl: string,
 }
 
 //endregion
 
 //region Implementation
 
-function ProjectFeatureCard() {
+function ProjectFeatureCard(props: ProjectFeatureCardProps) {
   return (
-    <div className="grid w-full">
-      {/* Background */}
-      <div className="col-start-1 row-start-1 flex bg-aths-special h-full w-full rounded-3xl border-daintree border-2 border-opacity-10">
-        <div className="h-full w-full flex justify-center items-center">
-          <p className="bg-amethyst p-8 rounded-2xl text-old-lace">Background</p>
-        </div>
-      </div>
+    <div className="flex bg-old-lace dark:bg-tiber rounded-3xl">
+      <div
+        className="bg-cover rounded-3xl bg-center"
+        style={{backgroundImage: `url(${props.promoImageUrl})`}}
+      >
+        {/* Info card */}
+        <div className="flex">
+          <div className="w-11/12 sm:w-9/12 md:w-6/12 h-fit p-8 rounded-3xl bg-old-lace dark:bg-tiber space-y-6 border-daintree dark:border-aths-special border-opacity-10 dark:border-opacity-10 border-2">
+            {/* Texts */}
+            <div className="space-y-4 text-cutty-sark dark:text-aths-special">
+              <p className="text-lg font-medium">{props.name}</p>
+              <p className="text-sm">{props.description}</p>
+            </div>
 
-      {/* Info card */}
-      <div className="col-start-1 row-start-1 flex">
-        <div className="w-6/12 p-8 rounded-3xl bg-old-lace space-y-6 border-daintree border-2 border-opacity-10">
-          {/* Texts */}
-          <div className="space-y-4 text-cutty-sark">
-            <p className="text-lg">Project name</p>
-            <p className="font-light">Project description, that is inevitably going to be fairly long.</p>
-          </div>
-
-          {/* Tags */}
-          <div>
-            Tags here please
+            {/* Tags */}
+            <div className="flex flex-wrap gap-3">
+              {props.tags?.map((tag) => (
+                <Badge key={tag} label={tag}/>
+              ))}
+            </div>
           </div>
         </div>
       </div>
