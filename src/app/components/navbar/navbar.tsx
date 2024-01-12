@@ -19,7 +19,7 @@ function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="#home">
-              <p className="text-tiber dark:text-old-lace font-bold text-lg">MHL</p>
+              <p className="text-tiber dark:text-old-lace font-bold">MHL</p>
             </Link>
           </div>
 
