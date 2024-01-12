@@ -26,6 +26,7 @@ function Projects() {
             </>
           }
           tags={["Kotlin", "Android", "Swift", "iOS"]}
+          promoImageUrl="/project_images/promo_swapx.png"
         />
       </div>
     </SectionWrapper>
