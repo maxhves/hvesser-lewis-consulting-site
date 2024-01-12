@@ -15,7 +15,7 @@ function Navbar() {
     <div className="sticky top-0 flex flex-col z-10">
       {/* Main navigation bar */}
       <div className="px-5 py-0 flex justify-center bg-old-lace dark:bg-tiber border-b border-cutty-sark dark:border-aths-special border-opacity-10 dark:border-opacity-10 z-10 h-16">
-        <div className="flex flex-row justify-between w-full lg:w-10/12">
+        <div className="flex flex-row justify-between w-full md:w-10/12">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="#home">
@@ -24,7 +24,7 @@ function Navbar() {
           </div>
 
           {/* Drawer button */}
-          <div className="flex items-center lg:hidden text-tiber dark:text-old-lace">
+          <div className="flex items-center md:hidden text-tiber dark:text-old-lace">
             <Hamburger
               toggled={showDrawer}
               toggle={setShowDrawer}
@@ -34,7 +34,7 @@ function Navbar() {
           </div>
 
           {/* Links */}
-          <div className="hidden lg:flex items-center space-x-8 text-tiber dark:text-old-lace text-sm">
+          <div className="hidden md:flex items-center space-x-8 text-tiber dark:text-old-lace text-sm">
             <Link href="#section-about" className="hover:text-jungle-green"><span className="text-jungle-green">01.</span> About</Link>
             <Link href="#section-experience" className="hover:text-jungle-green"><span className="text-jungle-green">02.</span> Experience</Link>
             <Link href="#section-projects" className="hover:text-jungle-green"><span className="text-jungle-green">03.</span> Projects</Link>
@@ -45,7 +45,7 @@ function Navbar() {
 
       {/* Navigation drawer */}
       <div className={`transform ${ showDrawer ? "translate-y-0 visible" : "-translate-y-96 invisible"} transition-all duration-500 ease-in-out`}>
-        <div className="absolute lg:visible w-full bg-old-lace dark:bg-tiber border-b border-cutty-sark dark:border-aths-special border-opacity-10 dark:border-opacity-10">
+        <div className="absolute md:visible w-full bg-old-lace dark:bg-tiber border-b border-cutty-sark dark:border-aths-special border-opacity-10 dark:border-opacity-10">
           <ul className="space-y-2 p-5">
             <li>
               <NavbarDrawerLink
