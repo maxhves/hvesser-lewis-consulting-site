@@ -1,7 +1,16 @@
 'use client';
 import React, {useState} from 'react';
+import ContactService from '@/app/data/services/contact_service/ContactService';
 
 function ContactForm() {
+  function testSendForm() {
+    ContactService.sendContactForm({
+      name: "",
+      email: "",
+      message: ""
+    })
+  }
+
   return (
     <div className="w-full md:w-1/2 space-y-4 text-cutty-sark dark:text-aths-special">
       {/* Inputs */}
