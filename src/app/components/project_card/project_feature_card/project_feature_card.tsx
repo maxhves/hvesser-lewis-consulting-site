@@ -18,7 +18,7 @@ function ProjectFeatureCard(props: ProjectFeatureCardProps) {
   return (
     <div className="flex bg-old-lace dark:bg-tiber rounded-3xl">
       <div
-        className="bg-cover rounded-3xl bg-center"
+        className="bg-cover rounded-3xl bg-center bg-no-repeat"
         style={{backgroundImage: `url(${props.promoImageUrl})`}}
       >
         {/* Info card */}
