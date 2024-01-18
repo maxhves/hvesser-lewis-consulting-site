@@ -22,8 +22,8 @@ function Projects() {
           name="Swap"
           description={
             <>
-              A simple currency converter allowing users to convert between the most popular global currencies, that I
-              made as a good showcase project.
+              A currency converter allowing users to convert between the most popular global currencies, featuring an
+              intuitive and easy to use UX.
               <br/><br/>
               This is an open source, native mobile application, which can be found on <a href="https://github.com/maxhvesser" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">Github</a> for both <a href="https://github.com/maxhvesser/swapx-android" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">Android</a> and <a href="https://github.com/maxhvesser/swap-ios" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">iOS</a> platforms.
             </>
@@ -37,29 +37,20 @@ function Projects() {
         <div className="flex flex-col md:flex-row space-y-4 space-x-0 md:space-x-4 md:space-y-0">
           {/* Project one */}
           <ProjectCard
-            className="w-full md:w-1/3"
-            name="Project one"
-            description="This is a description of project one, it might say something good, or it might say something not so good."
-            url="https://hvesserlewis.com"
+            className="w-full md:w-1/2"
+            name="Showroom"
+            description="An image gallery library built for Android, featuring a single view component with minimal configuration and setup."
+            url="https://github.com/maxhvesser/showroom"
             tags={["Android", "Kotlin"]}
           />
 
           {/* Project two */}
           <ProjectCard
-            className="w-full md:w-1/3"
-            name="Project two"
-            description="This is a description of project two, it might say something good, or it might say something not so good."
-            url="https://hvesserlewis.com"
-            tags={["Android", "Kotlin"]}
-          />
-
-          {/* Project three */}
-          <ProjectCard
-            className="w-full md:w-1/3"
-            name="Project three"
-            description="This is a description of project three, it might say something good, or it might say something not so good."
-            url="https://hvesserlewis.com"
-            tags={["Android", "Kotlin"]}
+            className="w-full md:w-1/2"
+            name="MHL Site"
+            description="This website, my personal portfolio to give some information about myself and the projects that I have been working on."
+            url="https://github.com/maxhvesser/mhl-site"
+            tags={["ReactJS", "NextJS"]}
           />
         </div>
       </div>

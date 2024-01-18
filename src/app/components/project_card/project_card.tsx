@@ -19,7 +19,7 @@ function ProjectCard(props: ProjectCardProps) {
   return (
     <div className={props.className}>
       <a href={props.url} target="_blank" rel="noopener noreferrer">
-        <div className="bg-old-lace dark:bg-tiber rounded-3xl p-6 hover:scale-105 transition-all duration-200">
+        <div className="bg-old-lace dark:bg-tiber rounded-3xl p-6 hover:shadow-lg transition-all duration-500 h-full">
           {/* Icon */}
           <div className="mb-4">
             <svg className="w-8 h-8 fill-cutty-sark dark:fill-aths-special" viewBox="0 0 40 40">
