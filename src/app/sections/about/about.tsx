@@ -18,9 +18,12 @@ function About() {
           and intuitive solutions that truly cater to the needs of the user.
           <br/><br/>
           I have been working as a Software Engineer in a professional capacity for 8 years, and throughout that time
-          I have amassed a diverse set of technical skills. Predominantly my experience has been in the realm of native
-          mobile applications, more specifically, Android applications, however through my own interest and personal
-          projects, I have gained experience in creating solutions that span the entire full stack.
+          I have amassed a diverse set of technical skills.
+
+          <br/><br/>
+          Predominantly my experience has been in the realm of native mobile applications, more specifically, Android
+          applications, however through my own interest and personal projects, I have gained experience in creating
+          solutions that span the entire full stack.
           <br/><br/>
           Seeing the impact of the work that I do is a great motivator for me, and I thoroughly enjoy receiving feedback
           from customers that help to grow and improve the product. Working with meaningful and impactful projects is
