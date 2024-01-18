@@ -22,7 +22,7 @@ function ResumeAd() {
 
             {/* Button */}
             <a
-              href={'/resume/CV_MHL_1123-min.pdf'}
+              href={'/resume/MHL_CV_170124.pdf'}
               rel="noreferrer"
               target="_blank"
               className="w-full md:w-fit shrink-0"
