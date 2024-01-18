@@ -18,8 +18,7 @@ function Contact() {
 
           {/* Texts */}
           <p className="text-cutty-sark dark:text-aths-special font-light">
-            I am always on the lookout to connect, and take part in interesting projects, so feel free to fill out
-            the contact form.
+            I am always on the lookout to connect, and take part in interesting projects, so please do reach out.
           </p>
           <p className="text-cutty-sark dark:text-aths-special font-medium mt-8">
             Email me directly
