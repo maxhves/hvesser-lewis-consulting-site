@@ -11,8 +11,7 @@ function Introduction() {
           <p className="text-sm">Hi, I&apos;m Maximilian 👋</p>
           <p className="text-4xl font-bold text-daintree dark:text-old-lace">I LOVE TO BUILD THINGS</p>
           <p className="text-sm">
-            I am an experienced Software Engineer and Android Developer, currently working at
-            <span className="text-orange-roughy font-medium"> Vipps MobilePay</span> creating simplicity in peoples&apos; financial lives.
+            I am an experienced Senior Software Engineer, currently working at <span className="text-orange-roughy font-medium">Vipps</span>, specializing in native Android development, creating simplicity in peoples&apos; financial lives.
           </p>
         </div>
 
