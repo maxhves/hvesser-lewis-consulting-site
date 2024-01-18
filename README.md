@@ -1,8 +1,5 @@
 ### MHL personal website
 
-> [!NOTE]
-> This site is currrently under development, so some features are slightly lacking as of now.
- 
 Please feel free to go ahead and take a look at the site hosted at [hvesserlewis.com](https://www.hvesserlewis.com).
 
 The site aims to give a bit of an overview about me and some of the projects that I am and have been working on. You'll
