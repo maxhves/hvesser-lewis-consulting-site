@@ -27,7 +27,7 @@ const config: Config = {
       'pirate-gold': '#B58900',
     },
     fontFamily: {
-      mono: ['IBM Plex Mono', 'mono'],
+      mono: ['Spline Sans Mono', 'mono'],
     },
   },
   plugins: [],

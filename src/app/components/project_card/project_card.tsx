@@ -31,7 +31,7 @@ function ProjectCard(props: ProjectCardProps) {
           {/* Texts */}
           <div className="text-cutty-sark dark:text-aths-special space-y-4 mb-8">
             <p className="text-lg font-medium">{props.name}</p>
-            <p className="text-sm font-light">{props.description}</p>
+            <p className="text-sm">{props.description}</p>
           </div>
 
           {/* Tags */}

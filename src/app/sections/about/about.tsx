@@ -13,7 +13,7 @@ function About() {
 
       <div className="space-y-6">
         {/* Main text */}
-        <p className="text-cutty-sark dark:text-aths-special text-sm font-light">
+        <p className="text-cutty-sark dark:text-aths-special text-sm">
           I love to build solutions to problems and as a very observant person, I am always able to create detailed
           and intuitive solutions that truly cater to the needs of the user.
           <br/><br/>
@@ -35,7 +35,7 @@ function About() {
 
         {/* Technologies list */}
         <p className="font-medium text-cutty-sark dark:text-aths-special">Technologies I&apos;m passionate about</p>
-        <div className="flex flex-col md:flex-row space-x-0 md:space-x-16 text-cutty-sark dark:text-aths-special text-sm font-light">
+        <div className="flex flex-col md:flex-row space-x-0 md:space-x-16 text-cutty-sark dark:text-aths-special text-sm">
           {/* Languages */}
           <div>
             <ul>
