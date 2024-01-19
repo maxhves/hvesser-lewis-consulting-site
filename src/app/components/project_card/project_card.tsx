@@ -29,9 +29,9 @@ function ProjectCard(props: ProjectCardProps) {
           </div>
 
           {/* Texts */}
-          <div className="text-cutty-sark dark:text-aths-special space-y-4 mb-8">
-            <p className="text-lg font-medium">{props.name}</p>
-            <p className="text-sm">{props.description}</p>
+          <div className="space-y-4 mb-8">
+            <p className="text-lg font-medium text-tiber dark:text-old-lace">{props.name}</p>
+            <p className="text-sm text-cutty-sark dark:text-aths-special">{props.description}</p>
           </div>
 
           {/* Tags */}

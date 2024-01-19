@@ -6,7 +6,7 @@ function Networks() {
       <div className="w-full md:w-8/12 max-w-5xl pb-10 md:pb-20 pt-2 md:pt-4 space-y-6">
         {/* Heading */}
         <div className="flex justify-center md:justify-start">
-          <p className="text-cutty-sark dark:text-aths-special font-medium">Take a look at my other networks</p>
+          <p className="text-tiber dark:text-old-lace font-medium">Take a look at my other networks</p>
         </div>
 
         {/* Network links */}

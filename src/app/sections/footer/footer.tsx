@@ -6,7 +6,7 @@ function Footer() {
     <div className="flex justify-center bg-old-lace dark:bg-tiber">
       <div className="w-full md:w-8/12 p-5 flex justify-center items-center space-x-8">
         {/* Copyright text */}
-        <p className="text-cutty-sark dark:text-aths-special text-xs">
+        <p className="text-tiber dark:text-old-lace text-xs">
           Created with ❤️️ by MHL
         </p>
 
