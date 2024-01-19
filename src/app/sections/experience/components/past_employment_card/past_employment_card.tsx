@@ -42,7 +42,7 @@ function PastEmploymentCard(
           {/* Header */}
           <div className="space-y-1">
             <p className="text-cutty-sark dark:text-aths-special font-medium">{`${props.jobTitle} @ ${props.company}`}</p>
-            <div className="flex flex-row justify-between text-cutty-sark dark:text-aths-special text-sm">
+            <div className="flex flex-row justify-between text-cutty-sark/75 dark:text-aths-special/75 text-sm">
               <p>{`${props.startYear} - ${props.endYear}`}</p>
               <p>{props.location}</p>
             </div>
@@ -50,7 +50,7 @@ function PastEmploymentCard(
 
           {/* Body */}
           <div>
-            <ul className="list-disc text-cutty-sark dark:text-aths-special text-sm font-light ms-4 space-y-4">
+            <ul className="list-disc text-cutty-sark dark:text-aths-special text-sm ms-4 space-y-4">
               {props.body.map((actionPoint, index) => (
                 <li key={index}>{actionPoint}</li>
               ))}

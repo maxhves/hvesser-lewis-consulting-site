@@ -22,7 +22,7 @@ function Experience() {
               company="Vipps"
               startYear="2021"
               endYear="Present"
-              location="Oslo, Norway • Vancouver, Canada"
+              location="Oslo, NO • Vancouver, CA"
               imageSource="/experience_images/logo_vipps.png"
               body={[
                 "Lead the development of an entirely new credit financial product for Android users, leading to increased company revenue.",
@@ -39,7 +39,7 @@ function Experience() {
               company="FINN.no"
               startYear="2019"
               endYear="2021"
-              location="Oslo, Norway"
+              location="Oslo, NO"
               imageSource="/experience_images/logo_finn.png"
               body={[
                 "Developed an open-source image gallery that increased the companies’ developer presence in the community as well providing users with a new immersive image-experience.",
@@ -55,7 +55,7 @@ function Experience() {
               company="DTT"
               startYear="2017"
               endYear="2019"
-              location="Amsterdam, The Netherlands"
+              location="Amsterdam, NL"
               imageSource="/experience_images/logo_dtt.png"
               body={[
                 "Managed the development of high-quality and cost-effective native Android applications, successfully converting prospective customers into sales.",
