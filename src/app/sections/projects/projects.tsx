@@ -33,7 +33,7 @@ function Projects() {
         />
 
         {/* Other noteworthy projects */}
-        <p className="text-cutty-sark dark:text-aths-special font-medium mt-16 mb-10">Other noteworthy projects</p>
+        <p className="text-tiber dark:text-old-lace font-medium mt-16 mb-10">Other noteworthy projects</p>
         <div className="flex flex-col md:flex-row space-y-4 space-x-0 md:space-x-4 md:space-y-0">
           {/* Project one */}
           <ProjectCard

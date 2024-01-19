@@ -25,9 +25,9 @@ function ProjectFeatureCard(props: ProjectFeatureCardProps) {
         <div className="flex">
           <div className="w-11/12 sm:w-9/12 md:w-6/12 h-fit p-8 rounded-3xl bg-old-lace dark:bg-tiber space-y-6 border-daintree dark:border-aths-special border-opacity-10 dark:border-opacity-10 border-2">
             {/* Texts */}
-            <div className="space-y-4 text-cutty-sark dark:text-aths-special">
-              <p className="text-lg font-medium">{props.name}</p>
-              <p className="text-sm">{props.description}</p>
+            <div className="space-y-4">
+              <p className="text-lg font-medium text-tiber dark:text-old-lace">{props.name}</p>
+              <p className="text-sm text-cutty-sark dark:text-aths-special">{props.description}</p>
             </div>
 
             {/* Tags */}

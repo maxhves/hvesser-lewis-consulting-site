@@ -41,8 +41,8 @@ function PastEmploymentCard(
         <div className="space-y-6 lg:space-y-8">
           {/* Header */}
           <div className="space-y-1">
-            <p className="text-cutty-sark dark:text-aths-special font-medium">{`${props.jobTitle} @ ${props.company}`}</p>
-            <div className="flex flex-row justify-between text-cutty-sark/75 dark:text-aths-special/75 text-sm">
+            <p className="text-tiber dark:text-old-lace font-medium">{`${props.jobTitle} @ ${props.company}`}</p>
+            <div className="flex flex-row justify-between text-cutty-sark/80 dark:text-aths-special/90 text-sm">
               <p>{`${props.startYear} - ${props.endYear}`}</p>
               <p>{props.location}</p>
             </div>

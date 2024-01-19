@@ -9,7 +9,7 @@ function Introduction() {
         {/* Introduction text */}
         <div className="w-9/12 md:w-2/3 items-center md:items-start text-center md:text-start text-cutty-sark dark:text-aths-special space-y-1">
           <p className="text-sm">Hi, I&apos;m Maximilian 👋</p>
-          <p className="text-4xl font-bold text-daintree dark:text-old-lace">I LOVE TO BUILD THINGS</p>
+          <p className="text-4xl font-bold text-tiber dark:text-old-lace">I LOVE TO BUILD THINGS</p>
           <p className="text-sm">
             I am an experienced Senior Software Engineer, currently working at <span className="text-orange-roughy font-medium">Vipps</span>, specializing in native Android development, creating simplicity in peoples&apos; financial lives.
           </p>

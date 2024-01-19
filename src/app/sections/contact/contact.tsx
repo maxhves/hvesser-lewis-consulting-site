@@ -20,7 +20,7 @@ function Contact() {
           <p className="text-cutty-sark dark:text-aths-special">
             I am always on the lookout to connect, and take part in interesting projects, so please do reach out.
           </p>
-          <p className="text-cutty-sark dark:text-aths-special font-medium mt-8">
+          <p className="text-tiber dark:text-old-lace font-medium mt-8">
             Email me directly
           </p>
           <p className="text-curious-blue underline mt-4">

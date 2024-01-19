@@ -14,7 +14,7 @@ interface SectionHeaderProps {
 function SectionHeader(props: SectionHeaderProps) {
   return (
     <div>
-      <p className="text-cutty-sark dark:text-aths-special font-medium text-lg pb-12">
+      <p className="text-tiber dark:text-old-lace font-medium text-lg pb-12">
         <span className="text-jungle-green">0{props.number}.</span> {props.heading}
       </p>
     </div>

@@ -16,7 +16,7 @@ function ResumeAd() {
               {/* Text */}
               <div className="flex flex-col space-y-1">
                 <p className="text-old-lace font-medium text-2xl">CHECKOUT MY RESUME</p>
-                <p className="text-aths-special">To see all of my past work and education, take a look at my resume</p>
+                <p className="text-old-lace">To see all of my past work and education, take a look at my resume</p>
               </div>
             </div>
 
