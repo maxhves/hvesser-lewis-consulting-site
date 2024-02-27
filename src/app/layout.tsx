@@ -1,7 +1,7 @@
 import type {Metadata} from 'next'
-import { Analytics } from '@vercel/analytics/react';
-import { Providers } from './providers'
-import { Spline_Sans_Mono } from "next/font/google";
+import {Analytics} from '@vercel/analytics/react';
+import {Providers} from './providers'
+import {Spline_Sans_Mono} from "next/font/google";
 import './globals.css'
 
 const splineSansMono = Spline_Sans_Mono({weight: ['300', '400', '500', '600', '700'], subsets: ['latin']})

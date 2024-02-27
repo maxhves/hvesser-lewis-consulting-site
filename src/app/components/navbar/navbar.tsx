@@ -1,7 +1,7 @@
 "use client";
 import React, {useState} from 'react';
 import Link from "next/link";
-import { Spiral as Hamburger } from 'hamburger-react';
+import {Spiral as Hamburger} from 'hamburger-react';
 import NavbarDrawerLink from '@/app/components/navbar/navbar_drawer_link';
 
 function Navbar() {
