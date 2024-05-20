@@ -4,7 +4,7 @@ import SectionWrapper from '@/app/components/section_wrapper/section_wrapper';
 function ResumeAd() {
   return (
     <SectionWrapper>
-      <div className="w-full rounded-3xl bg-[url('/ad_images/image_cv_on_desk.webp')] bg-cover bg-center bg-no-repeat ">
+      <div className="w-full rounded-3xl bg-[url('/ad_images/image_cv_on_desk.webp')] bg-cover bg-center bg-no-repeat">
         {/* Gradient background overlay */}
         <div className="bg-gradient-to-r from-daintree rounded-3xl p-16">
           <div className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
