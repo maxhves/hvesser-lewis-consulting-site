@@ -15,7 +15,7 @@ function Networks() {
 
         {/* Network links */}
         <div className="w-full flex flex-row space-x-6 justify-center md:justify-start">
-          <a href="https://github.com/maxhvesser" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/maxhves" target="_blank" rel="noopener noreferrer">
             <GithubIcon className="fill-cutty-sark dark:fill-aths-special" />
           </a>
           <a href="https://leetcode.com/hvesser" target="_blank" rel="noopener noreferrer">
@@ -24,7 +24,7 @@ function Networks() {
           <a href="https://linkedin.com/in/maaximilian" target="_blank" rel="noopener noreferrer">
             <LinkedinIcon className="fill-cutty-sark dark:fill-aths-special" />
           </a>
-          <a href="https://twitter.com/maxhvesser" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/maxhves" target="_blank" rel="noopener noreferrer">
             <XIcon className="fill-cutty-sark dark:fill-aths-special" />
           </a>
         </div>

@@ -18,7 +18,9 @@ export default function Home() {
       <Projects/>
       <ResumeAd/>
       <Contact/>
+      {/* TODO: Update with currently available networks */}
       <Networks/>
+      {/* TODO: Update with currently available networks */}
       <Footer/>
     </main>
   )

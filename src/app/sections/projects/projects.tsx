@@ -25,7 +25,7 @@ function Projects() {
               A currency converter allowing users to convert between the most popular global currencies, featuring an
               intuitive and easy to use UX.
               <br/><br/>
-              This is an open source, native mobile application, which can be found on <a href="https://github.com/maxhvesser" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">Github</a> for both <a href="https://github.com/maxhvesser/swapx-android" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">Android</a> and <a href="https://github.com/maxhvesser/swap-ios" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">iOS</a> platforms.
+              This is an open source, native mobile application, which can be found on <a href="https://github.com/maxhves" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">Github</a> for both <a href="https://github.com/maxhves/swapx-android" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">Android</a> and <a href="https://github.com/maxhves/swap-ios" target="_blank" rel="noopener noreferrer" className="text-curious-blue font-medium underline">iOS</a> platforms.
             </>
           }
           tags={["Kotlin", "Android", "Swift", "iOS"]}
@@ -40,7 +40,7 @@ function Projects() {
             className="w-full md:w-1/2"
             name="Showroom"
             description="An image gallery library built for Android, featuring a single view component with minimal configuration and setup."
-            url="https://github.com/maxhvesser/showroom"
+            url="https://github.com/maxhves/showroom"
             tags={["Android", "Kotlin"]}
           />
 
@@ -49,7 +49,7 @@ function Projects() {
             className="w-full md:w-1/2"
             name="MHL Site"
             description="This website, my personal portfolio to give some information about myself and the projects that I have been working on."
-            url="https://github.com/maxhvesser/mhl-site"
+            url="https://github.com/maxhves/mhl-site"
             tags={["ReactJS", "NextJS"]}
           />
         </div>
