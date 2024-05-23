@@ -1,12 +1,12 @@
 import React from 'react';
 import type {Metadata} from 'next'
 import {Analytics} from '@vercel/analytics/react';
-import {Spline_Sans_Mono} from "next/font/google";
+import {JetBrains_Mono} from "next/font/google";
 import './globals.css'
 
 //region Font
 
-const splineSansMono = Spline_Sans_Mono({weight: ['300', '400', '500', '600', '700'], subsets: ['latin']})
+const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
 //endregion
 
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark scroll-smooth">
-      <body id="home" className={`${splineSansMono.className} [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] bg-old-lace dark:bg-tiber`}>
+    <html lang="en" className="dark scroll-smoot">
+      <body id="home" className={`${jetBrainsMono.className} antialiasedh [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] bg-old-lace dark:bg-tiber`}>
         {/* Content */}
         {children}
 

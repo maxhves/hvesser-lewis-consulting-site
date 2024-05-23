@@ -41,9 +41,6 @@ const config: Config = {
       'alto': '#D4D4D4',
       'silver-chalice': '#A3A3A3',
     },
-    fontFamily: {
-      mono: ['Spline Sans Mono', 'mono'],
-    },
   },
   plugins: [],
 }
