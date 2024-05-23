@@ -7,8 +7,10 @@ export function NavigationBar({children}: { children: React.ReactNode }) {
   return (
     <div>
       <div className="w-full h-16 fixed top-0 border-b border-alabaster/5">
-        <div className="">
-          {children}
+        <div className="h-full flex flex-col mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 justify-center">
+          <div className="flex flex-row items-center justify-between">
+            {children}
+          </div>
         </div>
       </div>
     </div>
