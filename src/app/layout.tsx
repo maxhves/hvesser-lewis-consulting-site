@@ -25,8 +25,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark scroll-smoot">
-      <body id="home" className={`${jetBrainsMono.className} antialiased [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none'] dark:bg-cinder`}>
+    <html lang="en" className="dark scroll-smooth no-scrollbar">
+      <body id="home" className={`${jetBrainsMono.className} antialiased dark:bg-cinder`}>
         {/* Content */}
         {children}
 
