@@ -3,6 +3,7 @@ import type {Metadata} from 'next'
 import {Analytics} from '@vercel/analytics/react';
 import {JetBrains_Mono} from "next/font/google";
 import './globals.css'
+import {clsx} from "clsx";
 
 //region Font
 
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark scroll-smooth no-scrollbar">
-      <body id="home" className={`${jetBrainsMono.className} antialiased dark:bg-cinder`}>
+      <body id="home" className={clsx(jetBrainsMono.className, "antialiased dark:bg-cinder")}>
         {/* Content */}
         {children}
 

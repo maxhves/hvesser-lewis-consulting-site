@@ -11,6 +11,9 @@ dependencies:
   '@vercel/analytics':
     specifier: ^1.2.2
     version: 1.2.2(next@14.2.3)(react@18.3.1)
+  clsx:
+    specifier: ^2.1.1
+    version: 2.1.1
   hamburger-react:
     specifier: ^2.5.1
     version: 2.5.1(react@18.3.1)
@@ -723,6 +726,11 @@ packages:
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
+
+  /clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
     dev: false
 
   /color-convert@2.0.1:
