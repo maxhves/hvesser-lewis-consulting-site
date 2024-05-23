@@ -1,5 +1,4 @@
 import React from 'react';
-import ThemeSwitch from '@/app/components/theme_switch/theme_switch';
 
 function Footer() {
   return (
@@ -12,11 +11,6 @@ function Footer() {
 
         {/* Separator */}
         <div className="h-6 w-[1.5px] bg-aths-special dark:bg-pewter"/>
-
-        {/* Theme Switch */}
-        <div className="flex items-center">
-          <ThemeSwitch/>
-        </div>
       </div>
     </div>
   );
