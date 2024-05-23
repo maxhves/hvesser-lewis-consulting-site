@@ -9,6 +9,7 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      // TODO: Remove legacy colors
       'old-lace': '#FDF6E3',
       'aths-special': '#EEE8D5',
       'pewter': '#93A1A1',
@@ -25,6 +26,20 @@ const config: Config = {
       'punch': '#DC322F',
       'orange-roughy': '#CB4B16',
       'pirate-gold': '#B58900',
+      // TODO: Remove legacy colors
+
+      'cinder': '#14131F',
+      'charade': '#22212B',
+      'gun-powder': '#444256',
+
+      'persian-pink': '#F472B6',
+      'magic-mint': '#86EFAC',
+      'dolly': '#FEF08A',
+      'navajo-white': '#FED7AA',
+
+      'alabaster': '#FAFAFA',
+      'alto': '#D4D4D4',
+      'silver-chalice': '#A3A3A3',
     },
     fontFamily: {
       mono: ['Spline Sans Mono', 'mono'],
