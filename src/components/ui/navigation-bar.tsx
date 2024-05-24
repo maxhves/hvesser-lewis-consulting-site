@@ -8,7 +8,7 @@ import {MenuIcon, XIcon} from "lucide-react";
 
 export function NavigationBar({children}: { children: React.ReactNode }) {
   return (
-    <div className="mb-16">
+    <div className="mb-14">
       {children}
     </div>
   )
@@ -16,7 +16,7 @@ export function NavigationBar({children}: { children: React.ReactNode }) {
 
 export function NavigationBarContent({children}: { children: React.ReactNode }) {
   return (
-    <nav className="w-full h-16 fixed top-0 z-10 bg-lavender-900 border-b border-alabaster/5">
+    <nav className="w-full h-14 fixed top-0 z-10 bg-lavender-900 border-b border-alabaster/5">
       <div className="h-full flex flex-col mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 justify-center">
         <div className="flex flex-row items-center justify-between">
           {children}

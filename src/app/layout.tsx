@@ -5,6 +5,7 @@ import {JetBrains_Mono} from "next/font/google";
 import './globals.css'
 import {clsx} from "clsx";
 import HomeNavigationBar from "@/app/home/components/home-navigation-bar";
+import HomeFooter from "@/app/home/components/home-footer";
 
 //region Font
 
@@ -36,7 +37,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         {children}
 
         {/* Footer */}
-        {/* TODO: Footer component goes here */}
+        <HomeFooter />
 
         {/* Analytics */}
         <Analytics/>

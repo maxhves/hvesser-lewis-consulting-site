@@ -4,7 +4,7 @@ import Experience from '@/app/sections/experience/experience';
 import Projects from '@/app/sections/projects/projects';
 import ResumeAd from '@/app/sections/resume_ad/resume_ad';
 import Contact from '@/app/sections/contact/contact';
-import Footer from '@/app/sections/footer/footer';
+import Networks from "@/app/sections/networks/networks";
 
 //region Entry
 
@@ -19,10 +19,8 @@ export default function Home() {
       <Projects/>
       <ResumeAd/>
       <Contact/>
-      {/* TODO: Update with currently available networks */}
-      {/* <Networks/> */}
-      {/* TODO: Update with currently available networks */}
-      <Footer/>
+      <Networks/>
+      {/*<Footer/>*/}
       {/* TODO: Remove legacy components */}
     </main>
   )
