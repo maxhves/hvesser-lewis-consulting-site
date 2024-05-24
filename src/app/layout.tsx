@@ -4,6 +4,7 @@ import {Analytics} from '@vercel/analytics/react';
 import {JetBrains_Mono} from "next/font/google";
 import './globals.css'
 import {clsx} from "clsx";
+import HomeNavigationBar from "@/app/home/components/home-navigation-bar";
 
 //region Font
 
@@ -26,10 +27,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark scroll-smooth no-scrollbar">
-      <body id="home" className={clsx(jetBrainsMono.className, "antialiased dark:bg-cinder")}>
+    <html lang="en" className="dark">
+      <body id="home" className={clsx(jetBrainsMono.className, "dark:bg-lavender-950 h-dvh flex flex-col antialiased")}>
+        {/* Navigation bar */}
+        <HomeNavigationBar />
+
         {/* Content */}
         {children}
+
+        {/* Footer */}
+        {/* TODO: Footer component goes here */}
 
         {/* Analytics */}
         <Analytics/>

@@ -4,14 +4,15 @@ import Experience from '@/app/sections/experience/experience';
 import Projects from '@/app/sections/projects/projects';
 import ResumeAd from '@/app/sections/resume_ad/resume_ad';
 import Contact from '@/app/sections/contact/contact';
-import Networks from '@/app/sections/networks/networks';
 import Footer from '@/app/sections/footer/footer';
-import Navbar from "@/app/components/navbar/navbar";
+
+//region Entry
 
 export default function Home() {
   return (
-    <main>
-      <Navbar/>
+    <main className="flex-grow">
+      {/* TODO: Remove legacy components */}
+      {/*<Navbar/>*/}
       <Introduction/>
       <About/>
       <Experience/>
@@ -22,6 +23,9 @@ export default function Home() {
       {/* <Networks/> */}
       {/* TODO: Update with currently available networks */}
       <Footer/>
+      {/* TODO: Remove legacy components */}
     </main>
   )
 }
+
+//endregion
