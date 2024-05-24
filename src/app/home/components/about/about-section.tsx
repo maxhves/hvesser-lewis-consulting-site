@@ -1,7 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
 import {SectionHeader, SectionSubheader} from "@/components/ui/header";
-import {Text} from "@/components/ui/text";
 
 //region Model
 

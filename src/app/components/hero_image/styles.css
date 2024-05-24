@@ -8,7 +8,7 @@
   }
 }
 
-.topLeftFloat {
+.longAnimDuration {
   animation-delay: 0s;
   animation-duration: 3s;
   animation-name: float;
@@ -17,7 +17,7 @@
   animation-direction: alternate;
 }
 
-.bottomLeftFloat {
+.shortAnimDuration {
   animation-delay: 0s;
   animation-duration: 1.5s;
   animation-name: float;
@@ -26,7 +26,7 @@
   animation-direction: alternate;
 }
 
-.topRightFloat {
+.mediumAnimDuration {
   animation-delay: 0s;
   animation-duration: 2.5s;
   animation-name: float;
@@ -35,7 +35,7 @@
   animation-direction: alternate;
 }
 
-.bottomRightFloat {
+.regularAnimDuration {
   animation-delay: 0s;
   animation-duration: 2s;
   animation-name: float;

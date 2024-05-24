@@ -1,5 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
+import IntroductionGraphic from "@/app/home/components/introduction/introduction-graphic";
 
 //region Entry
 
@@ -7,14 +8,14 @@ export default function IntroductionSection() {
   return (
     <section className="bg-lavender-900">
       <ContentContainer className="py-16">
-        <div className="flex flex-row">
+        <div className="flex flex-col md:flex-row items-center gap-x-0 md:gap-x-20 gap-y-16 md:gap-y-0">
           <IntroductionText>
             <IntroductionTextHeading>
               Hi, I&apos;m Maximilian.
             </IntroductionTextHeading>
 
             <IntroductionTextTagLine>
-              I love to build things
+              <mark className="bg-lavender-200">I love to build things</mark>
             </IntroductionTextTagLine>
 
             <IntroductionTextDescription>
@@ -24,7 +25,7 @@ export default function IntroductionSection() {
           </IntroductionText>
 
           <IntroductionImage>
-            Hehe
+            <IntroductionGraphic />
           </IntroductionImage>
         </div>
       </ContentContainer>
@@ -54,7 +55,7 @@ function IntroductionTextHeading({children}: { children: React.ReactNode }) {
 
 function IntroductionTextTagLine({children}: { children: React.ReactNode }) {
   return (
-    <div className="w-fit text-3xl text-neutral-50 bg-lavender-300 text-nowrap">
+    <div className="w-fit text-3xl text-neutral-50 sm:text-nowrap">
       {children}
     </div>
   )
@@ -74,7 +75,7 @@ function IntroductionTextDescription({children}: { children: React.ReactNode }) 
 
 function IntroductionImage({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex-1 bg-red-500">
+    <div className="flex-1 h-52">
       {children}
     </div>
   )

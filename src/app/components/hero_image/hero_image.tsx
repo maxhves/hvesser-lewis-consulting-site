@@ -19,7 +19,7 @@ function HeroImage() {
           className="col-start-1 row-start-1 ps-4"
           style={{zIndex: 1}}
         >
-          <div className="bg-pirate-gold rounded-full h-4 w-4 topLeftFloat"/>
+          <div className="bg-pirate-gold rounded-full h-4 w-4 longAnimDuration"/>
         </div>
 
         {/* Bottom-Left shape */}
@@ -27,7 +27,7 @@ function HeroImage() {
           className="col-start-1 row-start-1 flex items-center"
           style={{zIndex: 1}}
         >
-          <div className="bg-jungle-green h-16 w-16 rounded-2xl bottomLeftFloat"/>
+          <div className="bg-jungle-green h-16 w-16 rounded-2xl shortAnimDuration"/>
         </div>
 
         {/* Top-Right shape */}
@@ -35,7 +35,7 @@ function HeroImage() {
           className="col-start-1 row-start-1 flex justify-end"
           style={{zIndex: 1}}
         >
-          <div className="bg-punch h-20 w-20 rounded-2xl topRightFloat"/>
+          <div className="bg-punch h-20 w-20 rounded-2xl mediumAnimDuration"/>
         </div>
 
         {/* Bottom-Right shape */}
@@ -43,7 +43,7 @@ function HeroImage() {
           className="col-start-1 row-start-1 flex items-end justify-end pe-2"
           style={{zIndex: 1}}
         >
-          <div className="bg-amethyst h-12 w-12 rounded-2xl bottomRightFloat"/>
+          <div className="bg-amethyst h-12 w-12 rounded-2xl regularAnimDuration"/>
         </div>
 
         {/* Image */}
