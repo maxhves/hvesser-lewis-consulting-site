@@ -61,7 +61,6 @@ export default function HomeNavigationBar() {
   }
 
   function routeIsActive(prefix: string) {
-    console.log(`routeIsActive - Prefix: ${prefix} Pathname: ${activePathname}`)
     return activePathname.startsWith("/" + prefix)
   }
 
