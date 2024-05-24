@@ -95,7 +95,7 @@ export function NavigationBarDrawerTriggerButton({open, onClick}: { open: boolea
 
 export function NavigationBarDrawer({children, open}: { children: React.ReactNode, open: boolean }) {
   return (
-    <div className="fixed sm:hidden w-full mt-16 z-[5] pointer-events-none">
+    <div className="fixed sm:hidden w-full mt-14 z-[5] pointer-events-none">
       <nav className={clsx(
         open ? "translate-y-0" : "-translate-y-56",
         "flex flex-col transition-transform duration-300 ease-in-out pointer-events-auto bg-lavender-900 border-b border-alabaster/5 py-4 gap-y-2"

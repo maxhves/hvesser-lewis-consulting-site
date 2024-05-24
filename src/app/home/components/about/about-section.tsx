@@ -56,9 +56,9 @@ export default function AboutSection() {
 
 function AboutDescription({children}: { children: React.ReactNode }) {
   return (
-    <Text className="mt-4 text-sm text-neutral-400 whitespace-pre-wrap">
+    <p className="mt-4 text-sm text-neutral-400 whitespace-pre-wrap">
       {children}
-    </Text>
+    </p>
   )
 }
 
@@ -78,7 +78,7 @@ function AboutTechnologiesList({technologies}: { technologies: string[] }) {
   return (
     <ul className="list-disc list-inside flex-1">
       {technologies.map((technology: string) => (
-        <li key={technology} className="text-neutral-400">
+        <li key={technology} className="text-neutral-400 text-sm">
           {technology}
         </li>
       ))}
