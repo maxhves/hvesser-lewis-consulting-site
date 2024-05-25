@@ -1,8 +1,8 @@
 export interface Experience {
   title: string,
   companyName: string,
-  startYear: number,
-  endYear: number,
+  startYear: string,
+  endYear: string,
   location: string,
-  descriptionPoints: string[]
+  descriptionItems: string[]
 }

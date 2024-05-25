@@ -1,4 +1,3 @@
-import Experience from '@/app/sections/experience/experience';
 import Projects from '@/app/sections/projects/projects';
 import ResumeAd from '@/app/sections/resume_ad/resume_ad';
 import Contact from '@/app/sections/contact/contact';
@@ -17,9 +16,8 @@ export default function Home() {
       <ExperienceSection />
 
       {/* TODO: Remove legacy components */}
-      <Experience/>
-      <Projects/>
       <ResumeAd/>
+      <Projects/>
       <Contact/>
       <Networks/>
       {/* TODO: Remove legacy components */}
