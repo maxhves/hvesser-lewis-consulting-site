@@ -28,7 +28,7 @@ export default function DownloadCvBanner() {
 
 function DownloadCvBannerContent({children}: { children: React.ReactNode }) {
   return (
-    <div className="bg-gradient-to-r from-pink-950/75 to-pink-950/75 via-pink-400/50 py-4">
+    <div className="bg-gradient-to-r from-pink-950/75 to-pink-950/75 via-pink-400/50 py-2">
       <ContentContainer>
         <div className="flex items-center justify-between">
           {children}
