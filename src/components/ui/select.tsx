@@ -1,6 +1,6 @@
-import { Select as HeadlessSelect, type SelectProps as HeadlessSelectProps } from '@headlessui/react'
-import { clsx } from 'clsx'
-import { forwardRef } from 'react'
+import {Select as HeadlessSelect, type SelectProps as HeadlessSelectProps} from '@headlessui/react'
+import {clsx} from 'clsx'
+import {forwardRef} from 'react'
 
 export const Select = forwardRef<HTMLSelectElement, HeadlessSelectProps>(function Select(
   { className, multiple, ...props },

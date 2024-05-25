@@ -1,6 +1,6 @@
-import { Textarea as HeadlessTextarea, type TextareaProps as HeadlessTextareaProps } from '@headlessui/react'
-import { clsx } from 'clsx'
-import { forwardRef } from 'react'
+import {Textarea as HeadlessTextarea, type TextareaProps as HeadlessTextareaProps} from '@headlessui/react'
+import {clsx} from 'clsx'
+import {forwardRef} from 'react'
 
 export const Textarea = forwardRef<HTMLTextAreaElement, { resizable?: boolean } & HeadlessTextareaProps>(
   function Textarea({ className, resizable = true, ...props }, ref) {

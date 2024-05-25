@@ -1,10 +1,10 @@
 import {
   Checkbox as HeadlessCheckbox,
-  Field as HeadlessField,
   type CheckboxProps as HeadlessCheckboxProps,
+  Field as HeadlessField,
   type FieldProps as HeadlessFieldProps,
 } from '@headlessui/react'
-import { clsx } from 'clsx'
+import {clsx} from 'clsx'
 import type React from 'react'
 
 export function CheckboxGroup({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {

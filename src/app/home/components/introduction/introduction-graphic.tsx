@@ -4,7 +4,6 @@ import Image from "next/image";
 import './styles.css';
 
 //region Resources
-
 import profileImageSource from '@/../public/images/introduction/mhl_portrait.jpg'
 
 //endregion

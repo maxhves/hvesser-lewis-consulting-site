@@ -2,28 +2,28 @@
 
 import {
   Description as HeadlessDescription,
+  type DescriptionProps as HeadlessDescriptionProps,
   Label as HeadlessLabel,
+  type LabelProps as HeadlessLabelProps,
   Menu as HeadlessMenu,
   MenuButton as HeadlessMenuButton,
   MenuHeading as HeadlessMenuHeading,
-  MenuItem as HeadlessMenuItem,
-  MenuItems as HeadlessMenuItems,
-  MenuSection as HeadlessMenuSection,
-  MenuSeparator as HeadlessMenuSeparator,
-  Transition as HeadlessTransition,
-  type DescriptionProps as HeadlessDescriptionProps,
-  type LabelProps as HeadlessLabelProps,
   type MenuHeadingProps as HeadlessMenuHeadingProps,
+  MenuItem as HeadlessMenuItem,
   type MenuItemProps as HeadlessMenuItemProps,
+  MenuItems as HeadlessMenuItems,
   type MenuItemsProps as HeadlessMenuItemsProps,
   type MenuProps as HeadlessMenuProps,
+  MenuSection as HeadlessMenuSection,
   type MenuSectionProps as HeadlessMenuSectionProps,
+  MenuSeparator as HeadlessMenuSeparator,
   type MenuSeparatorProps as HeadlessMenuSeparatorProps,
+  Transition as HeadlessTransition,
 } from '@headlessui/react'
 import clsx from 'clsx'
 import type React from 'react'
-import { Button } from './button'
-import { Link } from './link'
+import {Button} from './button'
+import {Link} from './link'
 
 export function Dropdown(props: HeadlessMenuProps) {
   return <HeadlessMenu {...props} />

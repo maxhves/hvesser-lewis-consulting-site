@@ -4,14 +4,14 @@ import {
   Listbox as HeadlessListbox,
   ListboxButton as HeadlessListboxButton,
   ListboxOption as HeadlessListboxOption,
+  type ListboxOptionProps as HeadlessListboxOptionProps,
   ListboxOptions as HeadlessListboxOptions,
+  type ListboxProps as HeadlessListboxProps,
   ListboxSelectedOption as HeadlessListboxSelectedOption,
   Transition as HeadlessTransition,
-  type ListboxOptionProps as HeadlessListboxOptionProps,
-  type ListboxProps as HeadlessListboxProps,
 } from '@headlessui/react'
 import clsx from 'clsx'
-import { Fragment } from 'react'
+import {Fragment} from 'react'
 
 export function Listbox<T>({
   className,

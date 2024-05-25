@@ -2,9 +2,14 @@
 import React, {useState} from 'react';
 import {
   NavigationBar,
-  NavigationBarContent, NavigationBarDrawer, NavigationBarDrawerLink, NavigationBarDrawerTriggerButton,
+  NavigationBarContent,
+  NavigationBarDrawer,
+  NavigationBarDrawerLink,
+  NavigationBarDrawerTriggerButton,
   NavigationBarHomeLink,
-  NavigationBarHomeLinkLabel, NavigationBarMenu, NavigationBarMenuLink
+  NavigationBarHomeLinkLabel,
+  NavigationBarMenu,
+  NavigationBarMenuLink
 } from "@/components/ui/navigation-bar";
 import {usePathname} from "next/navigation";
 
