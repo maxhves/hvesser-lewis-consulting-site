@@ -1,4 +1,3 @@
-import Projects from '@/app/sections/projects/projects';
 import Contact from '@/app/sections/contact/contact';
 import Networks from "@/app/sections/networks/networks";
 import AboutSection from "@/app/home/components/about/about-section";
