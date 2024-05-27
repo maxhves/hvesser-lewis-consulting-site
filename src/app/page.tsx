@@ -19,7 +19,6 @@ export default function Home() {
       <ProjectsSection />
 
       {/* TODO: Remove legacy components */}
-      <Projects/>
       <Contact/>
       <Networks/>
       {/* TODO: Remove legacy components */}

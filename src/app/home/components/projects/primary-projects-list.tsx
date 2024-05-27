@@ -1,12 +1,14 @@
 import React from 'react';
+import {clsx} from "clsx";
+import {Button} from "@/components/ui/button";
 
 //region Entry
 
-export function PrimaryProjectsList({children}: { children: React.ReactNode}) {
+export function PrimaryProjectsList({className, children}: { className?: string, children: React.ReactNode}) {
   return (
-    <div>
+    <ul className={clsx(className, "space-y-8")}>
       {children}
-    </div>
+    </ul>
   );
 }
 
@@ -16,7 +18,7 @@ export function PrimaryProjectsList({children}: { children: React.ReactNode}) {
 
 export function PrimaryProjectListItem({children}: { children: React.ReactNode }) {
   return (
-    <div>
+    <div className="space-y-4">
       {children}
     </div>
   )
@@ -28,7 +30,7 @@ export function PrimaryProjectListItem({children}: { children: React.ReactNode }
 
 export function PrimaryProjectFooter({children}: { children: React.ReactNode }) {
   return (
-    <div>
+    <div className="flex justify-between items-center space-x-4">
       {children}
     </div>
   )
@@ -40,7 +42,7 @@ export function PrimaryProjectFooter({children}: { children: React.ReactNode }) 
 
 export function PrimaryProjectTitle({children}: { children: React.ReactNode }) {
   return (
-    <h1>
+    <h1 className="text-neutral-50 text-base/5 font-medium">
       {children}
     </h1>
   )
@@ -48,15 +50,22 @@ export function PrimaryProjectTitle({children}: { children: React.ReactNode }) {
 
 export function PrimaryProjectImage({imageSource}: { imageSource: string }) {
   return (
-    <div>
-      Image goes here...
+    <div className="w-full h-24 bg-lavender-400/10 rounded-lg">
+      {/* TODO: Create project image resources */}
+      {/*<Image*/}
+      {/*  src={imageSource}*/}
+      {/*  alt="Project preview"*/}
+      {/*  width={816}*/}
+      {/*  height={128}*/}
+      {/*/>*/}
+      {/* TODO: Create project image resources */}
     </div>
   )
 }
 
 export function PrimaryProjectDescription({children}: { children: React.ReactNode }) {
   return (
-    <p>
+    <p className="text-sm text-neutral-400">
       {children}
     </p>
   )
@@ -64,7 +73,7 @@ export function PrimaryProjectDescription({children}: { children: React.ReactNod
 
 export function PrimaryProjectTechnologiesList({children}: { children: React.ReactNode }) {
   return (
-    <div>
+    <div className="flex flex-wrap gap-4">
       {children}
     </div>
   )
@@ -72,17 +81,17 @@ export function PrimaryProjectTechnologiesList({children}: { children: React.Rea
 
 export function PrimaryProjectTechnologyListItem({children}: { children: React.ReactNode }) {
   return (
-    <div>
+    <label className="text-neutral-50 text-xs font-medium">
       {children}
-    </div>
+    </label>
   )
 }
 
-export function PrimaryProjectVisitButton({children}: { children: React.ReactNode }) {
+export function PrimaryProjectVisitButton({href, children}: { href: string, children: React.ReactNode }) {
   return (
-    <div>
+    <Button outline={true} href={href} rel="noreferrer" target="_blank">
       {children}
-    </div>
+    </Button>
   )
 }
 
