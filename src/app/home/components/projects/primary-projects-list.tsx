@@ -18,7 +18,7 @@ export function PrimaryProjectsList({className, children}: { className?: string,
 
 export function PrimaryProjectListItem({children}: { children: React.ReactNode }) {
   return (
-    <div className="space-y-4">
+    <div className="bg-lavender-900/25 border border-neutral-50/10 p-8 rounded-lg space-y-4">
       {children}
     </div>
   )

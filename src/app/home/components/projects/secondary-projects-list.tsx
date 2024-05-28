@@ -18,7 +18,7 @@ export function SecondaryProjectsList({className, children}: { className?: strin
 
 export function SecondaryProjectListItem({children}: { children: React.ReactNode }) {
   return (
-    <div className="bg-lavender-800/25 p-8 rounded-lg">
+    <div className="bg-lavender-900 p-8 rounded-lg">
       {children}
     </div>
   )
