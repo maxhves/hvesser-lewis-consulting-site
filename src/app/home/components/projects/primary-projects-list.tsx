@@ -30,7 +30,7 @@ export function PrimaryProjectListItem({children}: { children: React.ReactNode }
 
 export function PrimaryProjectFooter({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+    <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-8 sm:gap-4">
       {children}
     </div>
   )

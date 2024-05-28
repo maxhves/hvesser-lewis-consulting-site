@@ -6,6 +6,14 @@ import {clsx} from "clsx";
 import VippsLogo from "@/components/icon/company-logo/vipps-logo";
 import FinnLogo from "@/components/icon/company-logo/finn-logo";
 import DttLogo from "@/components/icon/company-logo/dtt-logo";
+import {
+  ExperienceItemCompanyNameText, ExperienceItemContent,
+  ExperienceItemDatesText, ExperienceItemDescriptionList, ExperienceItemDescriptionListItem,
+  ExperienceItemHeader, ExperienceItemHeaderImage,
+  ExperienceItemHeaderText, ExperienceItemHeaderTextRow, ExperienceItemLocationText, ExperienceItemTitleText,
+  ExperienceList,
+  ExperienceListItem
+} from "@/app/home/components/experience/experience-list";
 
 //region Model
 
@@ -15,7 +23,7 @@ const pastExperience: Experience[] = [
     companyName: "Vipps",
     startYear: "2021",
     endYear: "Present",
-    location: "Oslo, Norway • Vancouver, Canada",
+    location: "Oslo, Norway : Vancouver, Canada",
     descriptionItems: [
       "I demonstrated initiative by spearheading a pivotal financial service project. This involved. introducing a credit product for Android users, taking ownership of the entire tech stack—encompassing networking, local persistence, business logic, and UI—to ensure a seamless user company-logo.",
       "Proactively leading the transition of the core payment flow UI from XML to Jetpack Compose, I modernized the interface and enhanced performance by aligning related View Models with Jetpack Compose's statefulness.",
@@ -40,7 +48,7 @@ const pastExperience: Experience[] = [
     companyName: "DTT",
     startYear: "2017",
     endYear: "2019",
-    location: "Amsterdam, The Netherlands",
+    location: "Amsterdam, the Netherlands",
     descriptionItems: [
       "I gained valuable experience in team management and honed my skills in overseeing the development of high-quality and cost-effective Android applications from inception to delivery. This leadership role allowed me to guide and mentor a team of developers, fostering collaboration and ensuring the successful execution of projects.",
       "I developed a much deeper understanding of Android application architecture. I delved into the intricacies of proper modularization, effectively dividing projects into distinct layers: UI, Domain, and Data. Additionally, I mastered the art of managing project dependencies, optimizing code organization, and improving the overall maintainability and scalability of our applications.",
@@ -63,158 +71,47 @@ export default function ExperienceSection() {
 
         <ExperienceList className="mt-10">
           {pastExperience.map((experience: Experience) => (
-            <ExperienceCard key={experience.title + experience.companyName}>
-              <ExperienceCardHeader>
-                <ExperienceCardHeaderImage>
-                  <CompanyLogoForCompanyName companyName={experience.companyName} />
-                </ExperienceCardHeaderImage>
-                <ExperienceCardHeaderText>
-                  <ExperienceCardHeaderTextRow>
-                    <ExperienceCardTitleText>
-                      {experience.title}
-                    </ExperienceCardTitleText>
-                    <ExperienceCardDatesText>
-                      {experience.startYear}-{experience.endYear}
-                    </ExperienceCardDatesText>
-                  </ExperienceCardHeaderTextRow>
-                  <ExperienceCardHeaderTextRow>
-                    <ExperienceCardCompanyNameText>
+            <ExperienceListItem key={experience.title + experience.companyName}>
+              <ExperienceItemHeader>
+                <ExperienceItemHeaderText>
+                  <ExperienceItemHeaderTextRow>
+                    <ExperienceItemCompanyNameText>
                       {experience.companyName}
-                    </ExperienceCardCompanyNameText>
-                    <ExperienceCardLocationText>
+                    </ExperienceItemCompanyNameText>
+                    <ExperienceItemTitleText>
+                      {experience.title}
+                    </ExperienceItemTitleText>
+                  </ExperienceItemHeaderTextRow>
+                  <ExperienceItemHeaderTextRow>
+                    <ExperienceItemDatesText>
+                      {experience.startYear}-{experience.endYear}
+                    </ExperienceItemDatesText>
+                    <ExperienceItemLocationText>
                       {experience.location}
-                    </ExperienceCardLocationText>
-                  </ExperienceCardHeaderTextRow>
-                </ExperienceCardHeaderText>
-              </ExperienceCardHeader>
+                    </ExperienceItemLocationText>
+                  </ExperienceItemHeaderTextRow>
+                </ExperienceItemHeaderText>
 
-              <ExperienceCardContent>
-                <ExperienceCardDescriptionList>
+                <ExperienceItemHeaderImage>
+                  <CompanyLogoForCompanyName companyName={experience.companyName} />
+                </ExperienceItemHeaderImage>
+              </ExperienceItemHeader>
+
+              <ExperienceItemContent>
+                <ExperienceItemDescriptionList>
                   {experience.descriptionItems.map((item: string) =>
-                    <ExperienceCardDescriptionListItem key={item}>
+                    <ExperienceItemDescriptionListItem key={item}>
                       {item}
-                    </ExperienceCardDescriptionListItem>
+                    </ExperienceItemDescriptionListItem>
                   )}
-                </ExperienceCardDescriptionList>
-              </ExperienceCardContent>
-            </ExperienceCard>
+                </ExperienceItemDescriptionList>
+              </ExperienceItemContent>
+            </ExperienceListItem>
           ))}
         </ExperienceList>
       </ContentContainer>
     </section>
   );
-}
-
-//endregion
-
-//region Experience list
-
-function ExperienceList({className, children}: { className?: string, children: React.ReactNode }) {
-  return (
-    <ul className={clsx(className, "space-y-4")}>
-      {children}
-    </ul>
-  )
-}
-
-//endregion
-
-//region Experience card
-
-function ExperienceCard({children}: { children: React.ReactNode }) {
-  return (
-    <div className="bg-lavender-950/50 rounded-lg divide-y divide-neutral-50/5">
-      {children}
-    </div>
-  )
-}
-
-function ExperienceCardHeader({children}: { children: React.ReactNode }) {
-  return (
-    <div className="flex p-8 space-x-8 items-center">
-      {children}
-    </div>
-  )
-}
-
-function ExperienceCardHeaderImage({children}: { children: React.ReactNode }) {
-  return (
-    <div>
-      {children}
-    </div>
-  )
-}
-
-function ExperienceCardHeaderText({children}: { children: React.ReactNode }) {
-  return (
-    <div className="flex-grow">
-      {children}
-    </div>
-  )
-}
-
-function ExperienceCardHeaderTextRow({children}: { children: React.ReactNode }) {
-  return (
-    <div className="flex justify-between items-center space-y-1">
-      {children}
-    </div>
-  )
-}
-
-function ExperienceCardTitleText({children}: { children: React.ReactNode }) {
-  return (
-    <div className="text-neutral-50 font-bold text-sm">
-      {children}
-    </div>
-  )
-}
-
-function ExperienceCardCompanyNameText({children}: { children: React.ReactNode }) {
-  return (
-    <div className="text-neutral-50 font-medium text-sm">
-      {children}
-    </div>
-  )
-}
-
-function ExperienceCardDatesText({children}: { children: React.ReactNode }) {
-  return (
-    <div className="text-sm text-neutral-400">
-      {children}
-    </div>
-  )
-}
-
-function ExperienceCardLocationText({children}: { children: React.ReactNode }) {
-  return (
-    <div className="text-sm text-neutral-400">
-      {children}
-    </div>
-  )
-}
-
-function ExperienceCardContent({children}: { children: React.ReactNode }) {
-  return (
-    <div className="p-8">
-      {children}
-    </div>
-  )
-}
-
-function ExperienceCardDescriptionList({children}: { children: React.ReactNode }) {
-  return (
-    <ul className="list-disc ps-4 space-y-5">
-      {children}
-    </ul>
-  )
-}
-
-function ExperienceCardDescriptionListItem({children}: { children: React.ReactNode }) {
-  return (
-    <li className="text-xs/5 text-neutral-200">
-      {children}
-    </li>
-  )
 }
 
 //endregion
