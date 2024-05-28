@@ -82,9 +82,10 @@ export default function ProjectsSection() {
               <PrimaryProjectTitle>
                 {project.title}
               </PrimaryProjectTitle>
-              {project.imageSource && (
-                <PrimaryProjectImage imageSource={project.imageSource} />
-              )}
+              {/* TODO: Setup project image resources */}
+              {/*{project.imageSource && (*/}
+              {/*  <PrimaryProjectImage imageSource={project.imageSource} />*/}
+              {/*)}*/}
               <PrimaryProjectDescription>
                 {project.description}
               </PrimaryProjectDescription>

@@ -6,7 +6,7 @@ import {Link} from "@/components/ui/link";
 
 export function SecondaryProjectsList({className, children}: { className?: string, children: React.ReactNode }) {
   return (
-    <ul className={clsx(className, "flex space-x-4")}>
+    <ul className={clsx(className, "flex flex-col sm:flex-row gap-4")}>
       {children}
     </ul>
   );
