@@ -118,7 +118,7 @@ export default function ProjectsSection() {
                 {project.description}
               </SecondaryProjectDescription>
               <SecondaryProjectLink href={project.href}>
-                See project on Github →
+                See project on Github
               </SecondaryProjectLink>
               <SecondaryProjectTechnologiesList>
                 {project.technologies.map((technology: string) => (

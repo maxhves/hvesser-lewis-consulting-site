@@ -50,7 +50,7 @@ export function PrimaryProjectTitle({children}: { children: React.ReactNode }) {
 
 export function PrimaryProjectImage({imageSource}: { imageSource: string }) {
   return (
-    <div className="w-full h-24 bg-lavender-400/10 rounded-lg">
+    <div className="w-full h-24 bg-lavender-400/5 rounded-lg">
       {/* TODO: Create project image resources */}
       {/*<Image*/}
       {/*  src={imageSource}*/}
