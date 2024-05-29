@@ -1,0 +1,36 @@
+/* Animation translation frames */
+@keyframes float {
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
+}
+
+/* Shared shape animation */
+.shapeAnimation {
+  animation-delay: 0s;
+  animation-name: float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Animation durations */
+.longAnimDuration {
+  animation-duration: 3s;
+}
+
+.mediumAnimDuration {
+  animation-duration: 2.5s;
+}
+
+.regularAnimDuration {
+  animation-duration: 2s;
+}
+
+.shortAnimDuration {
+  animation-duration: 1.5s;
+}
