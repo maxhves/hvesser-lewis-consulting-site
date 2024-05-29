@@ -1,6 +1,6 @@
 "use client";
 import React, {useEffect, useState} from 'react';
-import {Field, FieldGroup, Fieldset} from "@/components/ui/fieldset";
+import {Field, Fieldset} from "@/components/ui/fieldset";
 import {Input} from "@/components/ui/input";
 import {Textarea} from "@/components/ui/textarea";
 import {Button} from "@/components/ui/button";
@@ -36,11 +36,11 @@ export default function ContactForm({className}: { className?: string }) {
   return (
     <form className={clsx(className)}>
       <Fieldset className="max-w-xl flex flex-col gap-y-8">
-        <FieldGroup className="flex flex-col space-y-0 gap-y-4">
+        <div className="flex flex-col gap-y-4">
           <NameField value={name} onValueChanged={setName} />
           <EmailAddressField value={emailAddress} onValueChanged={setEmailAddress} />
           <MessageField value={message} onValueChanged={setMessage} />
-        </FieldGroup>
+        </div>
 
         <Button
           color="dark/white"
