@@ -2,11 +2,11 @@ import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
 import {SectionHeader, SectionSubheader} from "@/components/ui/header";
 import {Link} from "@/components/ui/link";
-import {GithubIcon} from "lucide-react";
 import GithubLogo from "@/components/icon/social-network-logo/github-logo";
 import LinkedinLogo from "@/components/icon/social-network-logo/linkedin-logo";
 import TwitterLogo from "@/components/icon/social-network-logo/twitter-logo";
 import InstagramLogo from "@/components/icon/social-network-logo/instagram-logo";
+import ContactForm from "@/app/home/components/contact/contact-form";
 
 //region Entry
 
@@ -23,8 +23,7 @@ export default function ContactSection() {
           Feel free to reach out via the contact form, or email me directly at <Link href="mailto:max@hvesserlewis.com" className="underline">max@hvesserlewis.com</Link>.
         </ContactDescription>
 
-        {/* Contact form */}
-
+        <ContactForm className="mt-10" />
 
         <ContactSocialNetworks>
           <SectionSubheader>
