@@ -13,7 +13,8 @@ import {
 } from "@/components/ui/navigation-bar";
 import {NavigationSection} from "@/types/navigation/NavigationSection";
 import {
-  ABOUT_NAV_SECTION, CONTACT_NAV_SECTION,
+  ABOUT_NAV_SECTION,
+  CONTACT_NAV_SECTION,
   EXPERIENCE_NAV_SECTION,
   PROJECTS_NAV_SECTION
 } from "@/app/home/data/navigation/home-navigation-section";

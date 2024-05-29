@@ -3,15 +3,22 @@ import ContentContainer from "@/components/ui/content-container";
 import {SectionHeader, SectionSubheader} from "@/components/ui/header";
 import {Project} from "@/types/project/project";
 import {
-  PrimaryProjectDescription, PrimaryProjectFooter, PrimaryProjectImage,
+  PrimaryProjectDescription,
+  PrimaryProjectFooter,
   PrimaryProjectListItem,
-  PrimaryProjectsList, PrimaryProjectTechnologiesList, PrimaryProjectTechnologyListItem,
-  PrimaryProjectTitle, PrimaryProjectVisitButton
+  PrimaryProjectsList,
+  PrimaryProjectTechnologiesList,
+  PrimaryProjectTechnologyListItem,
+  PrimaryProjectTitle,
+  PrimaryProjectVisitButton
 } from "@/app/home/components/projects/primary-projects-list";
 import {
-  SecondaryProjectDescription, SecondaryProjectLink,
+  SecondaryProjectDescription,
+  SecondaryProjectLink,
   SecondaryProjectListItem,
-  SecondaryProjectsList, SecondaryProjectTechnologiesList, SecondaryProjectTechnologyListItem,
+  SecondaryProjectsList,
+  SecondaryProjectTechnologiesList,
+  SecondaryProjectTechnologyListItem,
   SecondaryProjectTitle
 } from "@/app/home/components/projects/secondary-projects-list";
 import {PROJECTS_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-section";

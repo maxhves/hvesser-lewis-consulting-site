@@ -2,15 +2,21 @@ import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
 import {SectionHeader} from "@/components/ui/header";
 import {Experience} from "@/types/experience/experience";
-import {clsx} from "clsx";
 import VippsLogo from "@/components/icon/company-logo/vipps-logo";
 import FinnLogo from "@/components/icon/company-logo/finn-logo";
 import DttLogo from "@/components/icon/company-logo/dtt-logo";
 import {
-  ExperienceItemCompanyNameText, ExperienceItemContent,
-  ExperienceItemDatesText, ExperienceItemDescriptionList, ExperienceItemDescriptionListItem,
-  ExperienceItemHeader, ExperienceItemHeaderImage,
-  ExperienceItemHeaderText, ExperienceItemHeaderTextRow, ExperienceItemLocationText, ExperienceItemTitleText,
+  ExperienceItemCompanyNameText,
+  ExperienceItemContent,
+  ExperienceItemDatesText,
+  ExperienceItemDescriptionList,
+  ExperienceItemDescriptionListItem,
+  ExperienceItemHeader,
+  ExperienceItemHeaderImage,
+  ExperienceItemHeaderText,
+  ExperienceItemHeaderTextRow,
+  ExperienceItemLocationText,
+  ExperienceItemTitleText,
   ExperienceList,
   ExperienceListItem
 } from "@/app/home/components/experience/experience-list";
