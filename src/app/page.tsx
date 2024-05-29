@@ -1,5 +1,3 @@
-import Contact from '@/app/sections/contact/contact';
-import Networks from "@/app/sections/networks/networks";
 import AboutSection from "@/app/home/components/about/about-section";
 import IntroductionSection from "@/app/home/components/introduction/introduction-section";
 import ExperienceSection from "@/app/home/components/experience/experience-section";
@@ -18,11 +16,6 @@ export default function Home() {
       <DownloadCvBanner />
       <ProjectsSection />
       <ContactSection />
-
-      {/* TODO: Remove legacy components */}
-      <Contact/>
-      <Networks/>
-      {/* TODO: Remove legacy components */}
     </main>
   )
 }
