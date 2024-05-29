@@ -57,20 +57,17 @@ export function NavigationBarMenu({children}: { children: React.ReactNode }) {
   )
 }
 
-export function NavigationBarMenuLink({href, active, children}: {
-  href: string,
-  active: boolean,
+export function NavigationBarMenuLink({onClick, children}: {
+  onClick: () => void,
   children: React.ReactNode
 }) {
   return (
-    <Link href={href}>
-      <Button
-        className={clsx(active ? "bg-lavender-950/75" : "bg-lavender-900")}
-        plain={true}
-      >
-        {children}
-      </Button>
-    </Link>
+    <Button
+      plain={true}
+      onClick={onClick}
+    >
+      {children}
+    </Button>
   )
 }
 
@@ -97,7 +94,7 @@ export function NavigationBarDrawer({children, open}: { children: React.ReactNod
   return (
     <div className="fixed sm:hidden w-full mt-14 z-[5] pointer-events-none">
       <nav className={clsx(
-        open ? "translate-y-0" : "-translate-y-56",
+        open ? "translate-y-0" : "-translate-y-60",
         "flex flex-col transition-transform duration-300 ease-in-out pointer-events-auto bg-lavender-900 border-b border-alabaster/5 py-4 gap-y-2"
       )}>
         {children}
@@ -106,19 +103,18 @@ export function NavigationBarDrawer({children, open}: { children: React.ReactNod
   )
 }
 
-export function NavigationBarDrawerLink({href, onClick, active, children}: {
-  href: string,
+export function NavigationBarDrawerLink({onClick, children}: {
   onClick: () => void,
-  active: boolean,
   children: React.ReactNode
 }) {
   return (
-    <Link href={href} onClick={onClick}>
-      <div className={clsx(
-        active ? "bg-lavender-950/75" : "bg-lavender-900",
-        "mx-3 py-2 px-3 rounded-md text-neutral-50 font-medium hover:bg-lavender-950/75"
-      )}>{children}</div>
-    </Link>
+    <Button
+      className="mx-4"
+      plain={true}
+      onClick={onClick}
+    >
+      {children}
+    </Button>
   )
 }
 

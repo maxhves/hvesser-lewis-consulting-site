@@ -1,6 +1,7 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
 import {SectionHeader, SectionSubheader} from "@/components/ui/header";
+import {ABOUT_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-section";
 
 //region Model
 
@@ -14,7 +15,7 @@ const technologiesListThree: string[] = ["Git", "Figma"]
 
 export default function AboutSection() {
   return (
-    <section className="bg-lavender-950">
+    <section id={ABOUT_NAV_SECTION.id} className="bg-lavender-950 scroll-mt-14">
       <ContentContainer className="py-16">
         <SectionHeader>
           About Me

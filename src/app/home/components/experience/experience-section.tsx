@@ -14,6 +14,7 @@ import {
   ExperienceList,
   ExperienceListItem
 } from "@/app/home/components/experience/experience-list";
+import {EXPERIENCE_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-section";
 
 //region Model
 
@@ -63,7 +64,7 @@ const pastExperience: Experience[] = [
 
 export default function ExperienceSection() {
   return (
-    <section className="bg-lavender-900">
+    <section id={EXPERIENCE_NAV_SECTION.id} className="bg-lavender-900 scroll-mt-14">
       <ContentContainer className="py-16">
         <SectionHeader>
           Professional Experience

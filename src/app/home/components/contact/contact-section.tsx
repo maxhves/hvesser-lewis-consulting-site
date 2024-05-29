@@ -7,12 +7,13 @@ import LinkedinLogo from "@/components/icon/social-network-logo/linkedin-logo";
 import TwitterLogo from "@/components/icon/social-network-logo/twitter-logo";
 import InstagramLogo from "@/components/icon/social-network-logo/instagram-logo";
 import ContactForm from "@/app/home/components/contact/contact-form";
+import {CONTACT_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-section";
 
 //region Entry
 
 export default function ContactSection() {
   return (
-    <section className="bg-lavender-900">
+    <section id={CONTACT_NAV_SECTION.id} className="bg-lavender-900 scroll-mt-14">
       <ContentContainer className="py-16">
         <SectionHeader>
           Contact Me

@@ -11,46 +11,24 @@ import {
   NavigationBarMenu,
   NavigationBarMenuLink
 } from "@/components/ui/navigation-bar";
-import {usePathname} from "next/navigation";
+import {NavigationSection} from "@/types/navigation/NavigationSection";
+import {
+  ABOUT_NAV_SECTION, CONTACT_NAV_SECTION,
+  EXPERIENCE_NAV_SECTION,
+  PROJECTS_NAV_SECTION
+} from "@/app/home/data/navigation/home-navigation-section";
 
 //region Model
 
-abstract class NavigationRoute {
-  static label: string
-  protected static href: string
-}
-
-//endregion
-
-//region Routes
-
-abstract class AboutRoute extends NavigationRoute {
-  static label = "About"
-  static href = "about"
-}
-
-abstract class ExperienceRoute extends NavigationRoute {
-  static label = "Experience"
-  static href = "experience"
-}
-
-abstract class ProjectsRoute extends NavigationRoute {
-  static label = "Projects"
-  static href = "projects"
-}
-
-abstract class ContactRoute extends NavigationRoute {
-  static label = "Contact"
-  static href = "contact"
-}
+const navigationSections: NavigationSection[] = [
+  ABOUT_NAV_SECTION, EXPERIENCE_NAV_SECTION, PROJECTS_NAV_SECTION, CONTACT_NAV_SECTION
+]
 
 //endregion
 
 //region Entry
 
 export default function HomeNavigationBar() {
-  const activePathname = usePathname()
-
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   function toggleDrawer() {
@@ -65,8 +43,11 @@ export default function HomeNavigationBar() {
     setDrawerOpen(true)
   }
 
-  function routeIsActive(prefix: string) {
-    return activePathname.startsWith("/" + prefix)
+  function scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId)
+    element?.scrollIntoView({ behavior: "smooth" })
+
+    closeDrawer()
   }
 
   return (
@@ -79,58 +60,28 @@ export default function HomeNavigationBar() {
         </NavigationBarHomeLink>
 
         <NavigationBarMenu>
-          <NavigationBarMenuLink href={AboutRoute.href} active={routeIsActive(AboutRoute.href)}>
-            {AboutRoute.label}
-          </NavigationBarMenuLink>
-
-          <NavigationBarMenuLink href={ExperienceRoute.href} active={routeIsActive(ExperienceRoute.href)}>
-            {ExperienceRoute.label}
-          </NavigationBarMenuLink>
-
-          <NavigationBarMenuLink href={ProjectsRoute.href} active={routeIsActive(ProjectsRoute.href)}>
-            {ProjectsRoute.label}
-          </NavigationBarMenuLink>
-
-          <NavigationBarMenuLink href={ContactRoute.href} active={routeIsActive(ContactRoute.href)}>
-            {ContactRoute.label}
-          </NavigationBarMenuLink>
+          {navigationSections.map((section: NavigationSection) => (
+            <NavigationBarMenuLink
+              key={section.id}
+              onClick={() => scrollToSection(section.id)}
+            >
+              {section.label}
+            </NavigationBarMenuLink>
+          ))}
         </NavigationBarMenu>
 
         <NavigationBarDrawerTriggerButton open={drawerOpen} onClick={toggleDrawer} />
       </NavigationBarContent>
 
       <NavigationBarDrawer open={drawerOpen}>
-        <NavigationBarDrawerLink
-          href={AboutRoute.href}
-          active={routeIsActive(AboutRoute.href)}
-          onClick={closeDrawer}
-        >
-          {AboutRoute.label}
-        </NavigationBarDrawerLink>
-
-        <NavigationBarDrawerLink
-          href={ExperienceRoute.href}
-          active={routeIsActive(ExperienceRoute.href)}
-          onClick={closeDrawer}
-        >
-          {ExperienceRoute.label}
-        </NavigationBarDrawerLink>
-
-        <NavigationBarDrawerLink
-          href={ProjectsRoute.href}
-          active={routeIsActive(ProjectsRoute.href)}
-          onClick={closeDrawer}
-        >
-          {ProjectsRoute.label}
-        </NavigationBarDrawerLink>
-
-        <NavigationBarDrawerLink
-          href={ContactRoute.href}
-          active={routeIsActive(ContactRoute.href)}
-          onClick={closeDrawer}
-        >
-          {ContactRoute.label}
-        </NavigationBarDrawerLink>
+        {navigationSections.map((section: NavigationSection) => (
+          <NavigationBarDrawerLink
+            key={section.id}
+            onClick={() => scrollToSection(section.id)}
+          >
+            {section.label}
+          </NavigationBarDrawerLink>
+        ))}
       </NavigationBarDrawer>
     </NavigationBar>
   );
