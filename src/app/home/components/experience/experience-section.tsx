@@ -27,39 +27,51 @@ import {EXPERIENCE_NAV_SECTION} from "@/app/home/data/navigation/home-navigation
 const pastExperience: Experience[] = [
   {
     title: "Senior Software Engineer",
-    companyName: "Vipps",
-    startYear: "2021",
+    companyName: "Vipps MobilePay",
+    startYear: "Jun 2021",
     endYear: "Present",
-    location: "Oslo, Norway : Vancouver, Canada",
+    location: "Oslo, Norway - Vancouver, Canada",
     descriptionItems: [
-      "I demonstrated initiative by spearheading a pivotal financial service project. This involved. introducing a credit product for Android users, taking ownership of the entire tech stack—encompassing networking, local persistence, business logic, and UI—to ensure a seamless user company-logo.",
-      "Proactively leading the transition of the core payment flow UI from XML to Jetpack Compose, I modernized the interface and enhanced performance by aligning related View Models with Jetpack Compose's statefulness.",
-      "I played a key role in reshaping the logical architecture of the payments flow, introducing standardized helper classes that streamlined complex technical steps, now widely utilized by various product teams.",
-      "Additionally, I maintained a rigorous release schedule, overseeing the end-to-end release process and monitoring crash reports and user behavior to swiftly address issues, ensuring a consistently smooth user company-logo in weekly app updates for both internal and production users."
+      "Led a financial service project, developing a credit product for Android users and managing the entire tech stack.",
+      "Transitioned the core payment flow UI from XML to Jetpack Compose, modernizing and boosting performance.",
+      "Improved the payments flow architecture by creating standardized helper classes.",
+      "Maintained a rigorous release schedule, handling the end-to-end release process, monitoring crash reports, and addressing issues."
     ]
   },
   {
     title: "Senior Android Developer",
     companyName: "FINN.no",
-    startYear: "2019",
-    endYear: "2021",
+    startYear: "Jun 2019",
+    endYear: "May 2021",
     location: "Oslo, Norway",
     descriptionItems: [
-      "I played a pivotal role in conceptualizing and developing an open-source gallery image library, integrated into the production app and available on my Github. This library boasts a modern and user-friendly gallery format with enhanced usability functions and captivating animations, elevating the overall immersive experience for users.",
-      "Additionally, I led a project to incorporate a notification system into the app, creating a new feature module covering networking, push notification handling, local persistence, business logic, and UI. This overhaul significantly improved the app's communication and notification capabilities, contributing to a more engaging user experience.",
-      "Furthermore, I spearheaded the design and implementation of key app components, modernizing the app's appearance and streamlining user interactions, ultimately enhancing user satisfaction and engagement."
+      "Developed and open-source image gallery library, integrated into the production app and available on my Github.",
+      "Led a project to add a notifications system to the app. Created a new feature module for networking, push notifications, local persistence, business logic and UI.",
+      "Designed and implemented key app components, modernizing the app's appearance and increasing user engagement and ratings."
     ]
   },
   {
-    title: "Lead Software Engineer",
+    title: "Lead Android Developer",
     companyName: "DTT",
-    startYear: "2017",
-    endYear: "2019",
+    startYear: "Aug 2017",
+    endYear: "May 2019",
     location: "Amsterdam, the Netherlands",
     descriptionItems: [
-      "I gained valuable experience in team management and honed my skills in overseeing the development of high-quality and cost-effective Android applications from inception to delivery. This leadership role allowed me to guide and mentor a team of developers, fostering collaboration and ensuring the successful execution of projects.",
-      "I developed a much deeper understanding of Android application architecture. I delved into the intricacies of proper modularization, effectively dividing projects into distinct layers: UI, Domain, and Data. Additionally, I mastered the art of managing project dependencies, optimizing code organization, and improving the overall maintainability and scalability of our applications.",
-      "I sharpened my client-facing skills by developing the ability to provide clients with precise and effective project quotes. I adopted a meticulous approach, creating comprehensive reports based on app requirements and design. These reports enabled clients to receive accurate estimates regarding project duration and cost."
+      "Guided and mentored a team of developers, overseeing the development of high-quality, cost-effective Android applications from inception to delivery.",
+      "Architected Android applications for clients.",
+      "Created precise project quotes and reports based on app requirements and design, meeting project duration and cost demands."
+    ]
+  },
+  {
+    title: "Software Engineer",
+    companyName: "DTT",
+    startYear: "Aug 2016",
+    endYear: "Jul 2017",
+    location: "Amsterdam, the Netherlands",
+    descriptionItems: [
+      "Developed native Android and iOS apps for clients as a consultant.",
+      "Developed new features for existing applications and conducted assessments of code quality in establish codebases.",
+      "Showcased my expertise in native mobile development with the use of networking, database storage and persistence, push notifications, interface design, background services, concurrency management, and connectivity."
     ]
   }
 ]
@@ -127,7 +139,7 @@ export default function ExperienceSection() {
 
 function CompanyLogoForCompanyName({companyName}: { companyName: string }) {
   switch (companyName) {
-    case 'Vipps':
+    case 'Vipps MobilePay':
       return <VippsLogo className="size-10 rounded-lg" />
     case 'FINN.no':
       return <FinnLogo className="size-10 rounded-lg" />

@@ -97,7 +97,7 @@ export function ExperienceItemContent({children}: { children: React.ReactNode })
 
 export function ExperienceItemDescriptionList({children}: { children: React.ReactNode }) {
   return (
-    <ul className="list-disc ps-4 space-y-5">
+    <ul className="list-disc ps-4 space-y-2">
       {children}
     </ul>
   )
@@ -105,7 +105,7 @@ export function ExperienceItemDescriptionList({children}: { children: React.Reac
 
 export function ExperienceItemDescriptionListItem({children}: { children: React.ReactNode }) {
   return (
-    <li className="text-xs/5 text-neutral-200">
+    <li className="text-sm text-neutral-300">
       {children}
     </li>
   )
