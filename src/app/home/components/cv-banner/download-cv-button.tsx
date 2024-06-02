@@ -4,7 +4,7 @@ import {Download} from "lucide-react";
 
 //region Constants
 
-const cvDownloadPath: string =  '/files/cv/MHL_CV_170124.pdf'
+const cvDownloadPath: string =  '/files/cv/maxhves_cv.pdf'
 
 //endregion
 
