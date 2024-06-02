@@ -22,18 +22,18 @@ export default function AboutSection() {
         </SectionHeader>
 
         <AboutDescription>
-          I have been working as a Software Engineer full time for 7 years, and throughout that time I have amassed a
-          diverse set of knowledge along with some very keen problem solving skills.
+          I have been working as a Software Engineer full-time for seven years, during which I have developed a diverse
+          set of skills and strong problem-solving abilities.
           {"\n"}{"\n"}
-          Predominantly my experience has been with developing native mobile applications, more specifically, Android
-          applications, though my personal projects and endeavors have given me thorough knowledge over the whole
-          stack, including some very keen design skills.
+          My primary experience lies in developing native mobile applications, specifically for Android. However, my
+          personal projects and endeavors have given me a comprehensive understanding of the entire stack, along with a
+          keen eye for design.
           {"\n"}{"\n"}
-          I love working with meaning projects and seeing the impact that my work has on the users/customers that I
-          have worked with.
+          I am passionate about working on meaningful projects and witnessing the positive impact my work has on users
+          and customers.
           {"\n"}{"\n"}
-          Outside of development, I love to keep fit, and I am a very keen traveller. To date, I have visited just over
-          twenty countries, and I have lived in four different countries, spanning two continents.
+          Outside of development, I enjoy staying fit and am an avid traveler. I have visited over twenty countries and
+          have lived in five different countries.
         </AboutDescription>
 
         <SectionSubheader className="mt-10">
