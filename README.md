@@ -1,4 +1,4 @@
-### MHL personal website
+### Personal website
 
 Please feel free to go ahead and take a look at the site hosted at [hvesserlewis.com](https://www.hvesserlewis.com).
 
