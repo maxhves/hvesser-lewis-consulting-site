@@ -4,8 +4,11 @@ import {SectionHeader, SectionSubheader} from "@/components/ui/header";
 import {ABOUT_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-section";
 import ExpertiseList from "@/app/home/components/about/expertise-list";
 import ExpertiseCard, {
-  ExpertiseCardBody, ExpertiseCardDescriptionList, ExpertiseCardDescriptionListItem,
-  ExpertiseCardHeader, ExpertiseCardIcon,
+  ExpertiseCardBody,
+  ExpertiseCardDescriptionList,
+  ExpertiseCardDescriptionListItem,
+  ExpertiseCardHeader,
+  ExpertiseCardIcon,
   ExpertiseCardTitle
 } from "@/app/home/components/about/expertise-card";
 import {GlobeIcon, LayoutGridIcon, PencilRulerIcon} from "lucide-react";
