@@ -2,12 +2,39 @@ import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
 import {SectionHeader, SectionSubheader} from "@/components/ui/header";
 import {ABOUT_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-section";
+import ExpertiseList from "@/app/home/components/about/expertise-list";
+import ExpertiseCard, {
+  ExpertiseCardBody, ExpertiseCardDescriptionList, ExpertiseCardDescriptionListItem,
+  ExpertiseCardHeader, ExpertiseCardIcon,
+  ExpertiseCardTitle
+} from "@/app/home/components/about/expertise-card";
+import {GlobeIcon, LayoutGridIcon, PencilRulerIcon} from "lucide-react";
 
 //region Model
 
-const technologiesListOne: string[] = ["Kotlin", "Java", "Typescript"]
-const technologiesListTwo: string[] = ["Android", "ReactJS", "NextJS"]
-const technologiesListThree: string[] = ["Git", "Figma"]
+const expertiseMobile: Expertise = {
+  title: "Mobile Development",
+  description: [
+    "Kotlin, Java, Swift, Objective-C",
+    "Compose, Room, Coroutines, Retrofit, Hilt, Glide, Material.",
+    "SQLite, Supabase, Firebase."
+  ]
+}
+const expertiseWeb: Expertise = {
+  title: "Web Development",
+  description: [
+    "Javascript, Typescript.",
+    "NextJS, TailwindCSS, ReactJS, TanStack Query",
+    "Supabase, Firebase, Postgres."
+  ]
+}
+const expertiseDesign: Expertise = {
+  title: "Interface Design",
+  description: [
+    "LaTeX, Typst.",
+    "Figma, Adobe Photoshop, Sketch."
+  ]
+}
 
 //endregion
 
@@ -37,14 +64,70 @@ export default function AboutSection() {
         </AboutDescription>
 
         <SectionSubheader className="mt-10">
-          My proficient technologies
+          My expertise
         </SectionSubheader>
 
-        <AboutTechnologies>
-          <AboutTechnologiesList technologies={technologiesListOne} />
-          <AboutTechnologiesList technologies={technologiesListTwo} />
-          <AboutTechnologiesList technologies={technologiesListThree} />
-        </AboutTechnologies>
+        <ExpertiseList className="mt-4">
+          <ExpertiseCard>
+            <ExpertiseCardHeader>
+              <ExpertiseCardIcon className="bg-pink-400/25">
+                <LayoutGridIcon className="size-6 stroke-pink-400"/>
+              </ExpertiseCardIcon>
+            </ExpertiseCardHeader>
+            <ExpertiseCardBody>
+              <ExpertiseCardTitle>
+                {expertiseMobile.title}
+              </ExpertiseCardTitle>
+              <ExpertiseCardDescriptionList>
+                {expertiseMobile.description.map((descriptionItem: string) => (
+                  <ExpertiseCardDescriptionListItem key={descriptionItem}>
+                    {descriptionItem}
+                  </ExpertiseCardDescriptionListItem>
+                ))}
+              </ExpertiseCardDescriptionList>
+            </ExpertiseCardBody>
+          </ExpertiseCard>
+
+          <ExpertiseCard>
+            <ExpertiseCardHeader>
+              <ExpertiseCardIcon className="bg-green-300/25">
+                <GlobeIcon className="size-6 stroke-green-300"/>
+              </ExpertiseCardIcon>
+            </ExpertiseCardHeader>
+            <ExpertiseCardBody>
+              <ExpertiseCardTitle>
+                {expertiseWeb.title}
+              </ExpertiseCardTitle>
+              <ExpertiseCardDescriptionList>
+                {expertiseWeb.description.map((descriptionItem: string) => (
+                  <ExpertiseCardDescriptionListItem key={descriptionItem}>
+                    {descriptionItem}
+                  </ExpertiseCardDescriptionListItem>
+                ))}
+              </ExpertiseCardDescriptionList>
+            </ExpertiseCardBody>
+          </ExpertiseCard>
+
+          <ExpertiseCard>
+            <ExpertiseCardHeader>
+              <ExpertiseCardIcon className="bg-yellow-200/25">
+                <PencilRulerIcon className="size-6 stroke-yellow-200"/>
+              </ExpertiseCardIcon>
+            </ExpertiseCardHeader>
+            <ExpertiseCardBody>
+              <ExpertiseCardTitle>
+                {expertiseDesign.title}
+              </ExpertiseCardTitle>
+              <ExpertiseCardDescriptionList>
+                {expertiseDesign.description.map((descriptionItem: string) => (
+                  <ExpertiseCardDescriptionListItem key={descriptionItem}>
+                    {descriptionItem}
+                  </ExpertiseCardDescriptionListItem>
+                ))}
+              </ExpertiseCardDescriptionList>
+            </ExpertiseCardBody>
+          </ExpertiseCard>
+        </ExpertiseList>
       </ContentContainer>
     </section>
   );
@@ -59,30 +142,6 @@ function AboutDescription({children}: { children: React.ReactNode }) {
     <p className="mt-4 text-sm text-neutral-400 whitespace-pre-wrap">
       {children}
     </p>
-  )
-}
-
-//endregion
-
-//region Technologies list
-
-function AboutTechnologies({children}: { children: React.ReactNode}) {
-  return (
-    <div className="flex flex-row mt-4">
-      {children}
-    </div>
-  )
-}
-
-function AboutTechnologiesList({technologies}: { technologies: string[] }) {
-  return (
-    <ul className="list-disc list-inside flex-1">
-      {technologies.map((technology: string) => (
-        <li key={technology} className="text-neutral-400 text-sm">
-          {technology}
-        </li>
-      ))}
-    </ul>
   )
 }
 
