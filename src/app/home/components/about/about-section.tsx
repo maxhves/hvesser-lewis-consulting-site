@@ -45,7 +45,7 @@ const expertiseDesign: Expertise = {
 
 export default function AboutSection() {
   return (
-    <section id={ABOUT_NAV_SECTION.id} className="bg-lavender-950 scroll-mt-14">
+    <section id={ABOUT_NAV_SECTION.id} className="bg-stone-50 scroll-mt-14">
       <ContentContainer className="py-16">
         <SectionHeader>
           About Me
