@@ -1,32 +1,33 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
-import IntroductionGraphic from "@/app/home/components/introduction/introduction-graphic";
+import Image from "next/image";
+
+//region Resources
+
+import profileImageSource from '@/../public/images/introduction/mhl_portrait.jpg'
+import {clsx} from "clsx";
+import {karla} from "@/app/fonts";
+
+//endregion
 
 //region Entry
 
 export default function IntroductionSection() {
   return (
-    <section className="bg-lavender-900">
-      <ContentContainer className="py-16">
-        <div className="flex flex-col md:flex-row items-center gap-x-0 md:gap-x-20 gap-y-16 md:gap-y-0">
-          <IntroductionText>
-            <IntroductionTextHeading>
-              Hi, I&apos;m Maximilian.
-            </IntroductionTextHeading>
+    <section className="bg-stone-100">
+      <ContentContainer className="py-24">
+        <div className="flex flex-col items-center">
+          <ProfileImageSurface>
+            <ProfileImage />
+          </ProfileImageSurface>
 
-            <IntroductionTextTagLine>
-              <mark className="bg-lavender-200">I love to build things</mark>
-            </IntroductionTextTagLine>
+          <GreetingText>
+            Hi, I&apos;m Maximilian.
+          </GreetingText>
 
-            <IntroductionTextDescription>
-              I am an experienced Senior Software Engineer, currently working at Vipps, specializing in native
-              Android development, creating simplicity in peoples&apos; financial lives.
-            </IntroductionTextDescription>
-          </IntroductionText>
-
-          <IntroductionImage>
-            <IntroductionGraphic />
-          </IntroductionImage>
+          <HeadlineText>
+            Based in Bangkok, I specialize in native mobile app development, where I take ideas to production.
+          </HeadlineText>
         </div>
       </ContentContainer>
     </section>
@@ -35,49 +36,46 @@ export default function IntroductionSection() {
 
 //endregion
 
-//region Text
+//region Image
 
-function IntroductionText({children}: { children: React.ReactNode }) {
+function ProfileImageSurface({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex-1 space-y-2">
+    <div className="grid size-36 bg-stone-50 border border-stone-950/10 rounded-full place-items-center">
       {children}
     </div>
   )
 }
 
-function IntroductionTextHeading({children}: { children: React.ReactNode }) {
+function ProfileImage() {
   return (
-    <div className="text-neutral-300 text-sm">
-      {children}
-    </div>
-  )
-}
-
-function IntroductionTextTagLine({children}: { children: React.ReactNode }) {
-  return (
-    <div className="w-fit text-3xl text-neutral-50 sm:text-nowrap">
-      {children}
-    </div>
-  )
-}
-
-function IntroductionTextDescription({children}: { children: React.ReactNode }) {
-  return (
-    <p className="text-neutral-300 text-sm">
-      {children}
-    </p>
+    <Image
+      className="object-cover rounded-full size-32"
+      src={profileImageSource}
+      alt="Maximilian Profile Image"
+      width={128}
+      height={128}
+      placeholder="blur"
+    />
   )
 }
 
 //endregion
 
-//region Image
+//region Text
 
-function IntroductionImage({children}: { children: React.ReactNode }) {
+function GreetingText({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex-1 h-52">
+    <label className={clsx(karla.className, "mt-4 text-stone-700 font-normal text-sm")}>
       {children}
-    </div>
+    </label>
+  )
+}
+
+function HeadlineText({children}: { children: React.ReactNode }) {
+  return (
+    <h1 className={clsx(karla.className, "mt-2 max-w-xs sm:max-w-md text-center font-bold text-2xl")}>
+      {children}
+    </h1>
   )
 }
 
