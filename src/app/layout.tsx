@@ -1,17 +1,11 @@
 import React from 'react';
 import type {Metadata} from 'next'
 import {Analytics} from '@vercel/analytics/react';
-import {JetBrains_Mono} from "next/font/google";
+import {inter} from './fonts';
 import './globals.css'
 import {clsx} from "clsx";
 import HomeNavigationBar from "@/app/home/components/home-navigation-bar";
 import HomeFooter from "@/app/home/components/home-footer";
-
-//region Font
-
-const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
-
-//endregion
 
 //region Metadata
 
@@ -29,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="en" className="dark">
-      <body id="home" className={clsx(jetBrainsMono.className, "dark:bg-lavender-950 h-dvh flex flex-col antialiased")}>
+      <body id="home" className={clsx(inter.className, "dark:bg-lavender-950 h-dvh flex flex-col antialiased")}>
         {/* Navigation bar */}
         <HomeNavigationBar />
 
