@@ -4,7 +4,7 @@ import {SectionHeader, SectionSubheader} from "@/components/ui/header";
 import {Project} from "@/types/project/project";
 import {
   PrimaryProjectDescription,
-  PrimaryProjectFooter,
+  PrimaryProjectFooter, PrimaryProjectHeader, PrimaryProjectLink,
   PrimaryProjectListItem,
   PrimaryProjectsList,
   PrimaryProjectTechnologiesList,
@@ -84,30 +84,29 @@ export default function ProjectsSection() {
           me to do exactly that.
         </ProjectsDescription>
 
-        <PrimaryProjectsList className="mt-16">
+        <PrimaryProjectsList className="mt-10">
           {primaryProjects.map((project: Project) => (
             <PrimaryProjectListItem key={project.title}>
-              <PrimaryProjectTitle>
-                {project.title}
-              </PrimaryProjectTitle>
-              {/* TODO: Setup project image resources */}
-              {/*{project.imageSource && (*/}
-              {/*  <PrimaryProjectImage imageSource={project.imageSource} />*/}
-              {/*)}*/}
+              <PrimaryProjectHeader>
+                <PrimaryProjectTitle>
+                  {project.title}
+                </PrimaryProjectTitle>
+                <PrimaryProjectLink href={project.href} />
+              </PrimaryProjectHeader>
               <PrimaryProjectDescription>
                 {project.description}
               </PrimaryProjectDescription>
               <PrimaryProjectFooter>
                 <PrimaryProjectTechnologiesList>
                   {project.technologies.map((technology: Technology) => (
-                    <PrimaryProjectTechnologyListItem key={technology.toString()}>
+                    <PrimaryProjectTechnologyListItem
+                      key={technology.toString()}
+                      color={technology.color}
+                    >
                       {technology.toString()}
                     </PrimaryProjectTechnologyListItem>
                   ))}
                 </PrimaryProjectTechnologiesList>
-                <PrimaryProjectVisitButton href={project.href}>
-                  Visit
-                </PrimaryProjectVisitButton>
               </PrimaryProjectFooter>
             </PrimaryProjectListItem>
           ))}

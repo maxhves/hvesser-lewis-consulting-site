@@ -59,11 +59,11 @@ export function SecondaryProjectLink({href}: { href: string }) {
   return (
     <Link
       href={href}
-      className="grid size-8 bg-stone-200/35 active:bg-stone-200/75 place-items-center rounded-lg"
+      className="grid size-10 bg-stone-200/35 active:bg-stone-200/75 place-items-center rounded-lg"
       rel="noreferrer"
       target="_blank"
     >
-      <LucideLink2 className="size-4 stroke-stone-900" />
+      <LucideLink2 className="size-6 stroke-stone-900" />
     </Link>
   )
 }
