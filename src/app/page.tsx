@@ -1,7 +1,6 @@
 import AboutSection from "@/app/home/components/about/about-section";
 import IntroductionSection from "@/app/home/components/introduction/introduction-section";
 import ExperienceSection from "@/app/home/components/experience/experience-section";
-import DownloadCvBanner from "@/app/home/components/cv-banner/download-cv-banner";
 import ProjectsSection from "@/app/home/components/projects/projects-section";
 import ContactSection from "@/app/home/components/contact/contact-section";
 import {Divider} from "@/components/ui/divider";
@@ -14,8 +13,9 @@ export default function Home() {
       <IntroductionSection />
       <Divider />
       <AboutSection />
+      <Divider />
       <ExperienceSection />
-      <DownloadCvBanner />
+      <Divider />
       <ProjectsSection />
       <ContactSection />
     </main>
