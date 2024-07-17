@@ -3,6 +3,12 @@ import {Button} from "@headlessui/react";
 import {LucideDownload} from "lucide-react";
 import {clsx} from "clsx";
 
+//region Constants
+
+const cvDownloadPath: string =  '/files/cv/maxhves_cv.pdf'
+
+//endregion
+
 //region Entry
 
 export default function DownloadCvButton() {
@@ -21,9 +27,14 @@ export default function DownloadCvButton() {
 function DesktopDownloadButton({className}: { className?: string }) {
   return (
     <div className={className}>
-      <Button className="bg-stone-300/35 active:bg-stone-300/75 p-2 rounded-lg">
+      <a
+        className="bg-stone-300/35 active:bg-stone-300/75 p-2 rounded-lg"
+        href={cvDownloadPath}
+        rel="noreferrer"
+        target="_blank"
+      >
         <LucideDownload className="stroke-stone-900"/>
-      </Button>
+      </a>
     </div>
   )
 }
@@ -35,12 +46,17 @@ function DesktopDownloadButton({className}: { className?: string }) {
 function MobileDownloadButton({className}: { className?: string }) {
   return (
     <div className={clsx(className)}>
-      <Button className="flex flex-row w-full space-x-3 bg-stone-300/35 active:bg-stone-300/75 justify-center rounded-b-lg py-4">
+      <a
+        className="flex flex-row w-full space-x-3 bg-stone-300/35 active:bg-stone-300/75 justify-center rounded-b-lg py-4"
+        href={cvDownloadPath}
+        rel="noreferrer"
+        target="_blank"
+      >
         <p className="text-base font-medium text-stone-900">
           Download
         </p>
         <LucideDownload className="stroke-stone-900" />
-      </Button>
+      </a>
     </div>
   )
 }
