@@ -1,6 +1,7 @@
 import React from 'react';
 import {LucideDownload} from "lucide-react";
 import {clsx} from "clsx";
+import Link from "next/link";
 
 //region Constants
 
@@ -26,14 +27,14 @@ export default function DownloadCvButton() {
 function DesktopDownloadButton({className}: { className?: string }) {
   return (
     <div className={className}>
-      <a
+      <Link
         className="bg-stone-300/35 active:bg-stone-300/75 p-2 rounded-lg"
         href={cvDownloadPath}
         rel="noreferrer"
         target="_blank"
       >
         <LucideDownload className="stroke-stone-900"/>
-      </a>
+      </Link>
     </div>
   )
 }
@@ -45,7 +46,7 @@ function DesktopDownloadButton({className}: { className?: string }) {
 function MobileDownloadButton({className}: { className?: string }) {
   return (
     <div className={clsx(className)}>
-      <a
+      <Link
         className="flex flex-row w-full space-x-3 bg-stone-300/35 active:bg-stone-300/75 justify-center rounded-b-lg py-4"
         href={cvDownloadPath}
         rel="noreferrer"
@@ -55,7 +56,7 @@ function MobileDownloadButton({className}: { className?: string }) {
           Download
         </p>
         <LucideDownload className="stroke-stone-900" />
-      </a>
+      </Link>
     </div>
   )
 }

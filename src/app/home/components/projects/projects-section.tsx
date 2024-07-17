@@ -70,7 +70,7 @@ const secondaryProjects: Project[] = [
 
 export default function ProjectsSection() {
   return (
-    <section id={PROJECTS_NAV_SECTION.id} className="bg-lavender-950 scroll-mt-14">
+    <section id={PROJECTS_NAV_SECTION.id} className="bg-stone-50 scroll-mt-14">
       <ContentContainer className="py-16">
         <SectionHeader>
           Side Projects
