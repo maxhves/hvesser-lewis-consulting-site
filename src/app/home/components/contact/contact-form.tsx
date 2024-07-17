@@ -43,7 +43,7 @@ export default function ContactForm({className}: { className?: string }) {
         </div>
 
         <Button
-          color="dark/white"
+          color="dark"
           disabled={submitDisabled}
           onClick={handleGetInTouchClicked}
         >

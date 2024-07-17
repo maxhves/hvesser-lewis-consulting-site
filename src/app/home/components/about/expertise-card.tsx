@@ -5,7 +5,7 @@ import {clsx} from "clsx";
 
 export default function ExpertiseCard({children}: { children: React.ReactNode }) {
   return (
-    <li className="flex-1 rounded-lg p-8 bg-lavender-900/75">
+    <li className="flex-1">
       {children}
     </li>
   )
@@ -37,7 +37,7 @@ export function ExpertiseCardBody({children}: { children: React.ReactNode }) {
 
 export function ExpertiseCardIcon({className, children}: { className?: string, children: React.ReactNode }) {
   return (
-    <div className={clsx(className, "flex size-10 items-center justify-center rounded-lg")}>
+    <div className={clsx(className, "flex size-10 items-center justify-center rounded-lg bg-stone-700")}>
       {children}
     </div>
   )
@@ -49,7 +49,7 @@ export function ExpertiseCardIcon({className, children}: { className?: string, c
 
 export function ExpertiseCardTitle({children}: { children: React.ReactNode }) {
   return (
-    <div className="text-neutral-50 text-sm font-bold">
+    <div className="text-stone-900 text-sm font-semibold">
       {children}
     </div>
   )
@@ -61,7 +61,7 @@ export function ExpertiseCardTitle({children}: { children: React.ReactNode }) {
 
 export function ExpertiseCardDescriptionList({children}: { children: React.ReactNode }) {
   return (
-    <ul className="space-y-2">
+    <ul className="space-y-3">
       {children}
     </ul>
   )
@@ -69,7 +69,7 @@ export function ExpertiseCardDescriptionList({children}: { children: React.React
 
 export function ExpertiseCardDescriptionListItem({children}: { children: React.ReactNode }) {
   return (
-    <li className="list-disc ms-4 text-xs text-neutral-400">
+    <li className="text-xs font-normal text-stone-700">
       {children}
     </li>
   )

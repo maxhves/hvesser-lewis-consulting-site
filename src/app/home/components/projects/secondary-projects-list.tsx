@@ -1,6 +1,9 @@
 import React from 'react';
 import {clsx} from "clsx";
 import {Link} from "@/components/ui/link";
+import {karla} from "@/app/fonts";
+import {LucideLink2} from "lucide-react";
+import {Badge} from "@/components/ui/badge";
 
 //region Entry
 
@@ -18,7 +21,7 @@ export function SecondaryProjectsList({className, children}: { className?: strin
 
 export function SecondaryProjectListItem({children}: { children: React.ReactNode }) {
   return (
-    <div className="bg-lavender-900 p-8 rounded-lg">
+    <div className="bg-stone-50 p-8 rounded-lg border border-stone-950/10">
       {children}
     </div>
   )
@@ -28,9 +31,17 @@ export function SecondaryProjectListItem({children}: { children: React.ReactNode
 
 //region Components
 
+export function SecondaryProjectHeader({children}: { children: React.ReactNode }) {
+  return (
+    <div className="flex flex-row items-center">
+      {children}
+    </div>
+  )
+}
+
 export function SecondaryProjectTitle({children}: { children: React.ReactNode }) {
   return (
-    <h1 className="text-sm font-medium text-neutral-50">
+    <h1 className={clsx(karla.className, "flex-grow text-sm font-bold text-stone-900")}>
       {children}
     </h1>
   )
@@ -38,38 +49,39 @@ export function SecondaryProjectTitle({children}: { children: React.ReactNode })
 
 export function SecondaryProjectDescription({children}: { children: React.ReactNode }) {
   return (
-    <p className="text-sm text-neutral-400 mt-3 mb-4">
+    <p className="text-xs text-stone-700 mt-3 mb-8">
       {children}
     </p>
   )
 }
 
-export function SecondaryProjectLink({href, children}: { href: string, children: React.ReactNode }) {
+export function SecondaryProjectLink({href}: { href: string }) {
   return (
     <Link
       href={href}
-      className="text-sm text-green-300 underline"
+      className="grid size-10 bg-stone-200/35 active:bg-stone-200/75 place-items-center rounded-lg"
       rel="noreferrer"
       target="_blank"
     >
-      {children}
+      <LucideLink2 className="size-6 stroke-stone-900" />
     </Link>
   )
 }
 
 export function SecondaryProjectTechnologiesList({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-wrap gap-4 mt-6">
+    <div className="flex flex-wrap gap-3">
       {children}
     </div>
   )
 }
 
-export function SecondaryProjectTechnologyListItem({children}: { children: React.ReactNode }) {
+export function SecondaryProjectTechnologyListItem({color, children}: { color: string, children: React.ReactNode }) {
   return (
-    <label className="text-neutral-50 text-xs font-medium">
+    // @ts-ignore
+    <Badge color={color}>
       {children}
-    </label>
+    </Badge>
   )
 }
 

@@ -1,12 +1,14 @@
 import React from 'react';
+import {clsx} from "clsx";
+import {karla} from "@/app/fonts";
 
 //region Entry
 
 export default function HomeFooter() {
   return (
-    <footer className="flex min-h-14 w-full bg-lavender-900 justify-center items-center border-t border-neutral-50/5">
-      <p className="font-light text-xs text-neutral-400 text-center">
-        Designed & engineered by <strong className="font-extrabold">Maximilian Hvesser-Lewis</strong>
+    <footer className="flex min-h-14 w-full bg-stone-100 justify-center items-center">
+      <p className={clsx(karla.className, "font-normal text-xs text-stone-500 text-center")}>
+        Created by <strong className="font-bold">Maximilian Hvesser-Lewis</strong>
       </p>
     </footer>
   );

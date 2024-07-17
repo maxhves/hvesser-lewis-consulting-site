@@ -13,15 +13,15 @@ import {CONTACT_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-se
 
 export default function ContactSection() {
   return (
-    <section id={CONTACT_NAV_SECTION.id} className="bg-lavender-900 scroll-mt-14">
+    <section id={CONTACT_NAV_SECTION.id} className="bg-stone-100 scroll-mt-14">
       <ContentContainer className="py-16">
         <SectionHeader>
           Contact Me
         </SectionHeader>
 
         <ContactDescription>
-          I am always looking to make new connections and I am always open to hearing about interesting projects.
-          Feel free to reach out via the contact form, or email me directly at <Link href="mailto:max@hvesserlewis.com" className="underline">max@hvesserlewis.com</Link>.
+          I am seeking new projects to get involved with and am available for a variety of consulting services. Feel
+          free to reach out through the contact form or email me directly at <Link href="mailto:max@hvesserlewis.com" className="underline font-medium">max@hvesserlewis.com</Link>.
         </ContactDescription>
 
         <ContactForm className="mt-10" />
@@ -33,19 +33,19 @@ export default function ContactSection() {
 
           <ContactSocialNetworksList>
             <Link href="https://www.github.com/maxhves" rel="noreferrer" target="_blank">
-              <GithubLogo className="size-8 text-neutral-400" />
+              <GithubLogo className="size-8 text-stone-700" />
             </Link>
 
             <Link href="https://www.linkedin.com/in/maxhves" rel="noreferrer" target="_blank">
-              <LinkedinLogo className="size-8 text-neutral-400" />
+              <LinkedinLogo className="size-8 text-stone-700" />
             </Link>
 
             <Link href="https://www.twitter.com/maxhves" rel="noreferrer" target="_blank">
-              <TwitterLogo className="size-8 text-neutral-400" />
+              <TwitterLogo className="size-8 text-stone-700" />
             </Link>
 
             <Link href="https://www.instagram.com/maxhves" rel="noreferrer" target="_blank">
-              <InstagramLogo className="size-8 text-neutral-400" />
+              <InstagramLogo className="size-8 text-stone-700" />
             </Link>
           </ContactSocialNetworksList>
         </ContactSocialNetworks>
@@ -60,7 +60,7 @@ export default function ContactSection() {
 
 function ContactDescription({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-4 text-sm text-neutral-400 whitespace-pre-wrap">
+    <p className="mt-4 text-sm font-normal text-stone-700 whitespace-pre-wrap">
       {children}
     </p>
   )

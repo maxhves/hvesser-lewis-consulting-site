@@ -1,11 +1,12 @@
 import React from 'react';
 import {clsx} from "clsx";
+import {karla} from "@/app/fonts";
 
 //region Section
 
 export function SectionHeader({className, children}: { className?: string, children: React.ReactNode }) {
   return (
-    <h2 className={clsx(className, "text-xl font-medium text-neutral-50")}>
+    <h2 className={clsx(className, karla.className, "text-xl font-bold text-stone-900")}>
       {children}
     </h2>
   )
@@ -13,7 +14,7 @@ export function SectionHeader({className, children}: { className?: string, child
 
 export function SectionSubheader({className, children}: { className?: string, children: React.ReactNode }) {
   return (
-    <h3 className={clsx(className, "text-sm text-neutral-50 font-medium")}>
+    <h3 className={clsx(className, karla.className, "text-sm text-stone-900 font-bold")}>
       {children}
     </h3>
   )

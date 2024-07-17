@@ -5,7 +5,7 @@ import {clsx} from "clsx";
 
 export default function ExpertiseList({className, children}: { className?: string, children: React.ReactNode }) {
   return (
-    <ul className={clsx(className, "flex flex-col sm:flex-row gap-4")}>
+    <ul className={clsx(className, "flex flex-col sm:flex-row gap-8 sm:gap-4")}>
       {children}
     </ul>
   );

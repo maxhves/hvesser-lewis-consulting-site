@@ -1,6 +1,10 @@
 import React from 'react';
 import {clsx} from "clsx";
 import {Button} from "@/components/ui/button";
+import {karla} from "@/app/fonts";
+import {Badge} from "@/components/ui/badge";
+import {Link} from "@/components/ui/link";
+import {LucideLink2} from "lucide-react";
 
 //region Entry
 
@@ -18,7 +22,7 @@ export function PrimaryProjectsList({className, children}: { className?: string,
 
 export function PrimaryProjectListItem({children}: { children: React.ReactNode }) {
   return (
-    <div className="bg-lavender-900/25 border border-neutral-50/10 p-8 rounded-lg space-y-4">
+    <div className="bg-stone-100 p-8 rounded-lg">
       {children}
     </div>
   )
@@ -28,9 +32,17 @@ export function PrimaryProjectListItem({children}: { children: React.ReactNode }
 
 //region Container
 
+export function PrimaryProjectHeader({children}: { children: React.ReactNode }) {
+  return (
+    <div className="flex flex-row items-center mb-3">
+      {children}
+    </div>
+  )
+}
+
 export function PrimaryProjectFooter({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-8 sm:gap-4">
+    <div className="mt-8">
       {children}
     </div>
   )
@@ -42,30 +54,15 @@ export function PrimaryProjectFooter({children}: { children: React.ReactNode }) 
 
 export function PrimaryProjectTitle({children}: { children: React.ReactNode }) {
   return (
-    <h1 className="text-neutral-50 text-base/5 font-medium">
+    <h1 className={clsx(karla.className, "flex-grow text-stone-900 text-sm font-bold")}>
       {children}
     </h1>
   )
 }
 
-export function PrimaryProjectImage({imageSource}: { imageSource: string }) {
-  return (
-    <div className="w-full h-24 bg-lavender-400/5 rounded-lg">
-      {/* TODO: Create project image resources */}
-      {/*<Image*/}
-      {/*  src={imageSource}*/}
-      {/*  alt="Project preview"*/}
-      {/*  width={816}*/}
-      {/*  height={128}*/}
-      {/*/>*/}
-      {/* TODO: Create project image resources */}
-    </div>
-  )
-}
-
 export function PrimaryProjectDescription({children}: { children: React.ReactNode }) {
   return (
-    <p className="text-sm text-neutral-400">
+    <p className="text-xs/5 text-stone-700">
       {children}
     </p>
   )
@@ -73,17 +70,18 @@ export function PrimaryProjectDescription({children}: { children: React.ReactNod
 
 export function PrimaryProjectTechnologiesList({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap gap-3">
       {children}
     </div>
   )
 }
 
-export function PrimaryProjectTechnologyListItem({children}: { children: React.ReactNode }) {
+export function PrimaryProjectTechnologyListItem({color, children}: { color: string, children: React.ReactNode }) {
   return (
-    <label className="text-neutral-50 text-xs font-medium">
+    // @ts-ignore
+    <Badge color={color}>
       {children}
-    </label>
+    </Badge>
   )
 }
 
@@ -92,6 +90,19 @@ export function PrimaryProjectVisitButton({href, children}: { href: string, chil
     <Button outline={true} href={href} rel="noreferrer" target="_blank">
       {children}
     </Button>
+  )
+}
+
+export function PrimaryProjectLink({href}: { href: string }) {
+  return (
+    <Link
+      href={href}
+      className="grid size-10 bg-stone-200/35 active:bg-stone-200/75 place-items-center rounded-lg"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <LucideLink2 className="size-6 stroke-stone-900" />
+    </Link>
   )
 }
 

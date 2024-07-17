@@ -45,36 +45,40 @@ const expertiseDesign: Expertise = {
 
 export default function AboutSection() {
   return (
-    <section id={ABOUT_NAV_SECTION.id} className="bg-lavender-950 scroll-mt-14">
+    <section id={ABOUT_NAV_SECTION.id} className="bg-stone-50 scroll-mt-14">
       <ContentContainer className="py-16">
         <SectionHeader>
           About Me
         </SectionHeader>
 
         <AboutDescription>
-          I have been working as a Software Engineer full-time for seven years, during which I have developed a diverse
-          set of skills and strong problem-solving abilities.
+          I have been working as a Software Engineer for seven years, during which I have developed a diverse array of
+          technical skills across the full stack. My experience includes developing native mobile applications, hybrid
+          mobile applications, back-end web applications, front-end web applications, and databases.
           {"\n"}{"\n"}
-          My primary experience lies in developing native mobile applications, specifically for Android. However, my
-          personal projects and endeavors have given me a comprehensive understanding of the entire stack, along with a
-          keen eye for design.
+          I have a keen focus on solving problems, leveraging my clear understanding of Data Structures and Algorithms,
+          along with my proficiency in various programming languages, frameworks, and tools. This expertise has been
+          applied across numerous projects I have worked on.
           {"\n"}{"\n"}
-          I am passionate about working on meaningful projects and witnessing the positive impact my work has on users
-          and customers.
+          My most extensive experience is in developing native mobile applications for the Android platform, where I
+          have held a senior role. I have proven expertise in developing with Kotlin, utilizing the latest Android
+          technology stack in an enterprise setting, including Jetpack Compose, Android Architecture components, and
+          Kotlin Coroutines.
           {"\n"}{"\n"}
-          Outside of development, I enjoy staying fit and am an avid traveler. I have visited over twenty countries and
-          have lived in five different countries.
+          I have excellent communication skills and thrive in discussions, taking a proactive role in shaping the
+          projects I am involved in. I am passionate about my work, and this enthusiasm drives me to produce measurable
+          results and strive for the best solutions.
         </AboutDescription>
 
         <SectionSubheader className="mt-10">
           My expertise
         </SectionSubheader>
 
-        <ExpertiseList className="mt-4">
+        <ExpertiseList className="mt-6">
           <ExpertiseCard>
             <ExpertiseCardHeader>
-              <ExpertiseCardIcon className="bg-pink-400/25">
-                <LayoutGridIcon className="size-6 stroke-pink-400"/>
+              <ExpertiseCardIcon>
+                <LayoutGridIcon className="size-6 stroke-stone-50"/>
               </ExpertiseCardIcon>
             </ExpertiseCardHeader>
             <ExpertiseCardBody>
@@ -93,8 +97,8 @@ export default function AboutSection() {
 
           <ExpertiseCard>
             <ExpertiseCardHeader>
-              <ExpertiseCardIcon className="bg-green-300/25">
-                <GlobeIcon className="size-6 stroke-green-300"/>
+              <ExpertiseCardIcon>
+                <GlobeIcon className="size-6 stroke-stone-50"/>
               </ExpertiseCardIcon>
             </ExpertiseCardHeader>
             <ExpertiseCardBody>
@@ -113,8 +117,8 @@ export default function AboutSection() {
 
           <ExpertiseCard>
             <ExpertiseCardHeader>
-              <ExpertiseCardIcon className="bg-yellow-200/25">
-                <PencilRulerIcon className="size-6 stroke-yellow-200"/>
+              <ExpertiseCardIcon>
+                <PencilRulerIcon className="size-6 stroke-stone-50"/>
               </ExpertiseCardIcon>
             </ExpertiseCardHeader>
             <ExpertiseCardBody>
@@ -142,7 +146,7 @@ export default function AboutSection() {
 
 function AboutDescription({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-4 text-sm text-neutral-400 whitespace-pre-wrap">
+    <p className="mt-4 text-sm text-stone-700 font-normal whitespace-pre-wrap">
       {children}
     </p>
   )
