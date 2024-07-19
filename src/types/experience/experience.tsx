@@ -6,4 +6,5 @@ export interface Experience {
   location: string,
   locationShorthand: string,
   descriptionItems: string[]
+  recent: boolean,
 }

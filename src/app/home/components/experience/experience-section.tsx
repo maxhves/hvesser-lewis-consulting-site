@@ -5,21 +5,7 @@ import {Experience} from "@/types/experience/experience";
 import VippsLogo from "@/components/icon/company-logo/vipps-logo";
 import FinnLogo from "@/components/icon/company-logo/finn-logo";
 import DttLogo from "@/components/icon/company-logo/dtt-logo";
-import {
-  ExperienceItemCompanyNameText,
-  ExperienceItemContent,
-  ExperienceItemDatesText,
-  ExperienceItemDescriptionList,
-  ExperienceItemDescriptionListItem, ExperienceItemExpandCollapseButton,
-  ExperienceItemHeader,
-  ExperienceItemHeaderImage,
-  ExperienceItemHeaderText,
-  ExperienceItemHeaderTextRow,
-  ExperienceItemLocationText,
-  ExperienceItemTitleText,
-  ExperienceList,
-  ExperienceListItem
-} from "@/app/home/components/experience/experience-list";
+import ExperienceList from "@/app/home/components/experience/experience-list";
 import {EXPERIENCE_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-section";
 import {Divider} from "@/components/ui/divider";
 import {
@@ -28,6 +14,10 @@ import {
 } from "@/app/home/components/experience/download-cv-banner/download-cv-banner";
 import DownloadCvButton from "@/app/home/components/experience/download-cv-banner/download-cv-button";
 import HvalLogo from "@/components/icon/company-logo/hval-logo";
+import ExperienceCard, {
+  ExperienceDescriptionList,
+  ExperienceDescriptionListItem
+} from "@/app/home/components/experience/experience-card";
 
 //region Model
 
@@ -44,6 +34,7 @@ const pastExperience: Experience[] = [
       "Primarily developed web applications, enhancing my technical knowledge of front-end, back-end, and database technologies.",
       "My experience has been particularly focused on working with ReactJS, NextJS, PostgreSQL, JavaScript, and TypeScript."
     ],
+    recent: true,
   },
   {
     title: "Senior Software Engineer",
@@ -57,7 +48,8 @@ const pastExperience: Experience[] = [
       "Transitioned the core payment flow UI from XML to Jetpack Compose, modernizing and boosting performance.",
       "Improved the payments flow architecture by creating standardized helper classes.",
       "Maintained a rigorous release schedule, handling the end-to-end release process, monitoring crash reports, and addressing issues."
-    ]
+    ],
+    recent: true,
   },
   {
     title: "Senior Android Developer",
@@ -70,7 +62,8 @@ const pastExperience: Experience[] = [
       "Developed and open-source image gallery library, integrated into the production app and available on my Github.",
       "Led a project to add a notifications system to the app. Created a new feature module for networking, push notifications, local persistence, business logic and UI.",
       "Designed and implemented key app components, modernizing the app's appearance and increasing user engagement and ratings."
-    ]
+    ],
+    recent: false,
   },
   {
     title: "Lead Android Developer",
@@ -83,7 +76,8 @@ const pastExperience: Experience[] = [
       "Guided and mentored a team of developers, overseeing the development of high-quality, cost-effective Android applications from inception to delivery.",
       "Architected Android applications for clients.",
       "Created precise project quotes and reports based on app requirements and design, meeting project duration and cost demands."
-    ]
+    ],
+    recent: false,
   },
   {
     title: "Software Engineer",
@@ -96,7 +90,8 @@ const pastExperience: Experience[] = [
       "Developed native Android and iOS apps for clients as a consultant.",
       "Developed new features for existing applications and conducted assessments of code quality in establish codebases.",
       "Showcased my expertise in native mobile development with the use of networking, database storage and persistence, push notifications, interface design, background services, concurrency management, and connectivity."
-    ]
+    ],
+    recent: false,
   }
 ]
 
@@ -114,74 +109,25 @@ export default function ExperienceSection() {
 
         <ExperienceList className="mt-4">
           {pastExperience.map((experience: Experience) => (
-            <ExperienceListItem key={experience.title + experience.companyName}>
-              <ExperienceItemHeader className="hidden sm:flex">
-                <ExperienceItemHeaderImage>
-                  <CompanyLogoForCompanyName companyName={experience.companyName} />
-                </ExperienceItemHeaderImage>
-
-                <ExperienceItemHeaderText>
-                  <ExperienceItemHeaderTextRow>
-                    <ExperienceItemCompanyNameText>
-                      {experience.companyName}
-                    </ExperienceItemCompanyNameText>
-                    <ExperienceItemDatesText>
-                      {experience.startDate}-{experience.endDate}
-                    </ExperienceItemDatesText>
-                  </ExperienceItemHeaderTextRow>
-                  <ExperienceItemHeaderTextRow>
-                    <ExperienceItemTitleText>
-                      {experience.title}
-                    </ExperienceItemTitleText>
-                    <ExperienceItemLocationText>
-                      {experience.location}
-                    </ExperienceItemLocationText>
-                  </ExperienceItemHeaderTextRow>
-                </ExperienceItemHeaderText>
-
-                <ExperienceItemExpandCollapseButton />
-              </ExperienceItemHeader>
-
-              <ExperienceItemHeader className="flex sm:hidden flex-col">
-                <div className="flex flex-row justify-between">
-                  <ExperienceItemHeaderImage>
-                    <CompanyLogoForCompanyName companyName={experience.companyName} />
-                  </ExperienceItemHeaderImage>
-                  <ExperienceItemExpandCollapseButton />
-                </div>
-
-                <ExperienceItemHeaderText>
-                  <ExperienceItemHeaderTextRow className="mt-4">
-                    <ExperienceItemCompanyNameText>
-                      {experience.companyName}
-                    </ExperienceItemCompanyNameText>
-                  </ExperienceItemHeaderTextRow>
-                  <ExperienceItemHeaderTextRow>
-                    <ExperienceItemTitleText>
-                      {experience.title}
-                    </ExperienceItemTitleText>
-                  </ExperienceItemHeaderTextRow>
-                  <ExperienceItemHeaderTextRow className="mt-3">
-                    <ExperienceItemLocationText>
-                      {experience.locationShorthand}
-                    </ExperienceItemLocationText>
-                    <ExperienceItemDatesText>
-                      {experience.startDate}-{experience.endDate}
-                    </ExperienceItemDatesText>
-                  </ExperienceItemHeaderTextRow>
-                </ExperienceItemHeaderText>
-              </ExperienceItemHeader>
-
-              <ExperienceItemContent>
-                <ExperienceItemDescriptionList>
-                  {experience.descriptionItems.map((item: string) =>
-                    <ExperienceItemDescriptionListItem key={item}>
-                      {item}
-                    </ExperienceItemDescriptionListItem>
-                  )}
-                </ExperienceItemDescriptionList>
-              </ExperienceItemContent>
-            </ExperienceListItem>
+            <ExperienceCard
+              key={experience.title + experience.companyName}
+              logo={<CompanyLogoForCompanyName companyName={experience.companyName} />}
+              companyName={experience.companyName}
+              role={experience.title}
+              startDate={experience.startDate}
+              endDate={experience.endDate}
+              location={experience.location}
+              locationShorthand={experience.locationShorthand}
+              initiallyShowDescription={experience.recent}
+            >
+              <ExperienceDescriptionList>
+                {experience.descriptionItems.map((item: string) => (
+                  <ExperienceDescriptionListItem key={item}>
+                    {item}
+                  </ExperienceDescriptionListItem>
+                ))}
+              </ExperienceDescriptionList>
+            </ExperienceCard>
           ))}
         </ExperienceList>
 
@@ -212,13 +158,13 @@ export default function ExperienceSection() {
 function CompanyLogoForCompanyName({companyName}: { companyName: string }) {
   switch (companyName) {
     case 'Hval':
-      return <HvalLogo className="rounded-full" />
+      return <HvalLogo className="flex-none rounded-full" />
     case 'Vipps MobilePay':
-      return <VippsLogo className="size-10 rounded-full" />
+      return <VippsLogo className="flex-none size-10 rounded-full" />
     case 'FINN.no':
-      return <FinnLogo className="size-10 rounded-full" />
+      return <FinnLogo className="flex-none size-10 rounded-full" />
     case 'DTT':
-      return <DttLogo className="size-10 rounded-full" />
+      return <DttLogo className="flex-none size-10 rounded-full" />
   }
 }
 
