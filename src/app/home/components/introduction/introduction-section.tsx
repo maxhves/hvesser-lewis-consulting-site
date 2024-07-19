@@ -1,14 +1,9 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
 import Image from "next/image";
-
-//region Resources
-
-import profileImageSource from '@/../public/images/introduction/mhl_portrait.jpg'
 import {clsx} from "clsx";
 import {karla} from "@/app/fonts";
-
-//endregion
+import profileImageSource from '@/../public/images/introduction/mhl_portrait.jpg'
 
 //region Entry
 

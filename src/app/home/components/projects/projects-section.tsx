@@ -4,16 +4,18 @@ import {SectionHeader, SectionSubheader} from "@/components/ui/header";
 import {Project} from "@/types/project/project";
 import {
   PrimaryProjectDescription,
-  PrimaryProjectFooter, PrimaryProjectHeader, PrimaryProjectLink,
+  PrimaryProjectFooter,
+  PrimaryProjectHeader,
+  PrimaryProjectLink,
   PrimaryProjectListItem,
   PrimaryProjectsList,
   PrimaryProjectTechnologiesList,
   PrimaryProjectTechnologyListItem,
-  PrimaryProjectTitle,
-  PrimaryProjectVisitButton
+  PrimaryProjectTitle
 } from "@/app/home/components/projects/primary-projects-list";
 import {
-  SecondaryProjectDescription, SecondaryProjectHeader,
+  SecondaryProjectDescription,
+  SecondaryProjectHeader,
   SecondaryProjectLink,
   SecondaryProjectListItem,
   SecondaryProjectsList,

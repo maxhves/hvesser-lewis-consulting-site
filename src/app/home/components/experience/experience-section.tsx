@@ -10,7 +10,10 @@ import {EXPERIENCE_NAV_SECTION} from "@/app/home/data/navigation/home-navigation
 import {Divider} from "@/components/ui/divider";
 import {
   DownloadCvBanner,
-  DownloadCvBannerBody, DownloadCvBannerDescription, DownloadCvBannerFooter, DownloadCvBannerTitle
+  DownloadCvBannerBody,
+  DownloadCvBannerDescription,
+  DownloadCvBannerFooter,
+  DownloadCvBannerTitle
 } from "@/app/home/components/experience/download-cv-banner/download-cv-banner";
 import DownloadCvButton from "@/app/home/components/experience/download-cv-banner/download-cv-button";
 import HvalLogo from "@/components/icon/company-logo/hval-logo";

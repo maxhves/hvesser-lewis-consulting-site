@@ -1,12 +1,7 @@
 import React from 'react';
 import {clsx} from "clsx";
 import Image from "next/image";
-
-//region Image resource
-
 import hvalImageSource from '@/../public/images/company/hval_logo.png'
-
-//endregion
 
 //region Implementation
 

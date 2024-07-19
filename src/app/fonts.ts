@@ -1,4 +1,4 @@
-import { Inter, Karla } from 'next/font/google'
+import {Inter, Karla} from 'next/font/google'
 
 //region Karla
 
