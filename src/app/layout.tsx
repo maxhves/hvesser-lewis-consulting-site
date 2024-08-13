@@ -9,12 +9,10 @@ import HomeFooter from "@/app/home/components/home-footer";
 
 //region Metadata
 
-// TODO: Update metadata
 export const metadata: Metadata = {
   title: 'Maximilian Hvesser-Lewis',
-  description: 'Senior Android Developer',
+  description: 'Full Stack Developer | Mobile | Android',
 }
-// TODO: Update metadata
 
 //endregion
 
