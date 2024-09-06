@@ -21,7 +21,8 @@ export default function IntroductionSection() {
           </GreetingText>
 
           <HeadlineText>
-            Based in Bangkok, I specialize in native mobile app development, where I take ideas to production.
+            Based in Bangkok, I specialize in full stack development where I turn ideas into exceptional user
+            experiences.
           </HeadlineText>
         </div>
       </ContentContainer>
