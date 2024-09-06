@@ -52,22 +52,21 @@ export default function AboutSection() {
         </SectionHeader>
 
         <AboutDescription>
-          I have been working as a Software Engineer for seven years, during which I have developed a diverse array of
-          technical skills across the full stack. My experience includes developing native mobile applications, hybrid
-          mobile applications, back-end web applications, front-end web applications, and databases.
+          As a Software Engineer with over seven years of experience, I have honed a diverse set of technical skills
+          across the full stack. My expertise covers native and hybrid mobile app development, backend and frontend web
+          applications, as well as full integration with APIs and databases.
           {"\n"}{"\n"}
-          I have a keen focus on solving problems, leveraging my clear understanding of Data Structures and Algorithms,
-          along with my proficiency in various programming languages, frameworks, and tools. This expertise has been
-          applied across numerous projects I have worked on.
+          I have a strong passion for solving complex technical challenges, utilizing my deep knowledge of Data
+          Structures and Algorithms, alongside proficiency in various programming languages, frameworks, and tools.
+          This foundation has enabled me to tackle intricate problems and deliver effective solutions.
           {"\n"}{"\n"}
-          My most extensive experience is in developing native mobile applications for the Android platform, where I
-          have held a senior role. I have proven expertise in developing with Kotlin, utilizing the latest Android
-          technology stack in an enterprise setting, including Jetpack Compose, Android Architecture components, and
-          Kotlin Coroutines.
+          I thrive in collaborative environments, leveraging my excellent communication skills and professionalism to
+          take a proactive role in shaping projects. My passion for development drives me to consistently deliver
+          solutions that yield measurable results.
           {"\n"}{"\n"}
-          I have excellent communication skills and thrive in discussions, taking a proactive role in shaping the
-          projects I am involved in. I am passionate about my work, and this enthusiasm drives me to produce measurable
-          results and strive for the best solutions.
+          Currently, I focus on turning clients’ ideas into digital solutions through my Web Development Agency, Hval.
+          Alongside client work, I also dedicate time to building my own ideas, further fueling my enthusiasm for
+          development.
         </AboutDescription>
 
         <SectionSubheader className="mt-10">
@@ -146,7 +145,7 @@ export default function AboutSection() {
 
 function AboutDescription({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-4 text-sm text-stone-700 font-normal whitespace-pre-wrap">
+    <p className="mt-4 text-sm text-stone-700 font-normal whitespace-pre-line">
       {children}
     </p>
   )
