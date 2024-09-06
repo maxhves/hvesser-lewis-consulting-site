@@ -27,7 +27,7 @@ const expertiseWeb: Expertise = {
   title: "Web Development",
   description: [
     "Javascript, Typescript.",
-    "NextJS, TailwindCSS, ReactJS, TanStack Query",
+    "NextJS, TailwindCSS, ReactJS, SvelteKit",
     "Supabase, Firebase, Postgres."
   ]
 }
