@@ -161,7 +161,7 @@ export default function ExperienceSection() {
 function CompanyLogoForCompanyName({companyName}: { companyName: string }) {
   switch (companyName) {
     case 'Hval':
-      return <HvalLogo className="flex-none rounded-full" />
+      return <HvalLogo className="flex-none size-10 rounded-full ring-1 ring-stone-950/10 p-1" />
     case 'Vipps MobilePay':
       return <VippsLogo className="flex-none size-10 rounded-full" />
     case 'FINN.no':
