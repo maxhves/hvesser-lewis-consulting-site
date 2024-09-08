@@ -80,10 +80,8 @@ export default function ProjectsSection() {
         </SectionHeader>
 
         <ProjectsDescription>
-          The projects you see listed here are just some of the ideas that I have been developing and working on during
-          my self-employment. I am passionate about working on projects that personally motivate me and I am passionate
-          about developing my own ideas and that is why I gave myself the opportunity to work on something that enables
-          me to do exactly that.
+          The projects you see listed here are just some of the ideas that I have been developing as passion projects.
+          I am motivated to develop my own ideas and that is why I dedicate my free-time to explore these ideas.
         </ProjectsDescription>
 
         <PrimaryProjectsList className="mt-10">
