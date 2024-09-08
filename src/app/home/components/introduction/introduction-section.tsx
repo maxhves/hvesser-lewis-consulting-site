@@ -22,7 +22,7 @@ export default function IntroductionSection() {
 
           <HeadlineText>
             Based in Bangkok, I specialize in full stack development where I turn ideas into exceptional user
-            experiences.
+            experiences
           </HeadlineText>
         </div>
       </ContentContainer>
