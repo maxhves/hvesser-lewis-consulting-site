@@ -55,7 +55,7 @@ export default function ExperienceSection() {
               user experience.
               <br /><br />
               Furthermore in this role, I am responsible for attracting new customers along and securing them as
-              clients by composing proposals and sales documentation.`
+              clients by composing proposals and sales documentation.
             </ExperienceDescription>
           </ExperienceCard>
 
