@@ -5,6 +5,7 @@ export interface Experience {
   endDate: string,
   location: string,
   locationShorthand: string,
-  descriptionItems: string[]
+  descriptionPoints: string[],
+  description: string,
   recent: boolean,
 }

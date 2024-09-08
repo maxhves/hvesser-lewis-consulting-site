@@ -166,6 +166,14 @@ function Location({children}: { children: React.ReactNode }) {
 
 //region Description
 
+export function ExperienceDescription({children}: { children: React.ReactNode }) {
+  return (
+    <p className="text-xs/4 text-stone-700 whitespace-pre-line">
+      {children}
+    </p>
+  )
+}
+
 export function ExperienceDescriptionList({children}: { children: React.ReactNode }) {
   return (
     <ul className="list-disc ps-3 space-y-2">
