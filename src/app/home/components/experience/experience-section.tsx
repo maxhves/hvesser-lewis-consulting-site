@@ -38,7 +38,7 @@ export default function ExperienceSection() {
           <ExperienceCard
             logo={<CompanyLogoForCompanyName companyName="Hval" />}
             companyName="Hval"
-            role="Owner • Fullstack Developer"
+            role="Owner • Full Stack Developer"
             startDate="Jan 2024"
             endDate="Present"
             location="Bangkok, Thailand"
@@ -46,9 +46,10 @@ export default function ExperienceSection() {
             initiallyShowDescription={true}
           >
             <ExperienceDescription>
-              <a href="https://hval.dev" className="font-semibold underline underline-offset-2" target="_blank" rel="noreferrer">Hval</a> is a Web Development Agency that I started to enable me to
-              work on a number of personal projects that I am passionate about, whilst also allowing me to provide my
-              technical expertise to clients in the form of development services.
+              <a href="https://hval.dev" className="font-semibold underline underline-offset-2" target="_blank" rel="noreferrer">Hval</a> is a
+              Web Development Agency that I started to allow me to provide my technical expertise to clients in the
+              form of development services. This opportunity also enables me to work on and launch a number of personal
+              projects that I feel passionate about.
               <br /><br />
               In this company I function as a full stack developer where I take control over building all aspects of a
               project, from database design, API integration and backend development to user interaction and frontend
