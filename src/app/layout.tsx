@@ -11,7 +11,7 @@ import HomeFooter from "@/app/home/components/home-footer";
 
 export const metadata: Metadata = {
   title: 'Maximilian Hvesser-Lewis',
-  description: 'Full Stack Developer | Mobile | Android',
+  description: 'Full Stack Developer • Web Developer • Development Agency',
 }
 
 //endregion
