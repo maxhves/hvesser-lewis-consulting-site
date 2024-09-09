@@ -52,7 +52,7 @@ export default function AboutSection() {
         </SectionHeader>
 
         <AboutDescription>
-          As a Software Engineer with over seven years of experience, I have honed a diverse set of technical skills
+          As a Software Engineer with over seven years of experience, I have amassed a diverse set of technical skills
           across the full stack. My expertise covers native and hybrid mobile app development, backend and frontend web
           applications, as well as full integration with APIs and databases.
           {"\n"}{"\n"}
