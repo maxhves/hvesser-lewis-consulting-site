@@ -38,7 +38,7 @@ export default function ExperienceSection() {
           <ExperienceCard
             logo={<CompanyLogoForCompanyName companyName="Hval" />}
             companyName="Hval"
-            role="Owner • Full Stack Developer"
+            role="Owner & Full Stack Developer"
             startDate="Jan 2024"
             endDate="Present"
             location="Bangkok, Thailand"
@@ -67,7 +67,7 @@ export default function ExperienceSection() {
             role="Senior Software Engineer"
             startDate="Jun 2021"
             endDate="Dec 2024"
-            location="Oslo, Norway • Vancouver, Canada"
+            location="Oslo, Norway & Vancouver, Canada"
             locationShorthand="Norway • Canada"
             initiallyShowDescription={true}
           >
