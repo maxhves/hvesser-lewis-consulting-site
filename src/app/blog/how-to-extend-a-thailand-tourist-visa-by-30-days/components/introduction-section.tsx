@@ -34,7 +34,7 @@ export function IntroductionTitle({children}: { children: React.ReactNode }) {
 
 export function IntroductionPreface({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-6 text-xl leading-8 text-stone-700">
+    <p className="mt-6 text-lg leading-8 text-stone-700">
       {children}
     </p>
   )

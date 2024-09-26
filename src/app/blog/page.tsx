@@ -38,9 +38,9 @@ export default function Blog() {
                 How to extend a Thailand tourist visa by 30 days
               </ArticleCardTitle>
               <ArticleCardPreviewText>
-                If, like me, you&apos;ve recently taken advantage of Thailand&apos;s 60-day visa exemption or 60-day Visa on
-                Arrival, you might now be wondering how to extend your stay by an additional 30 days. Official
-                information on the process can seem a bit scarce and confusing.
+                If, like me, you&apos;ve recently taken advantage of Thailand&apos;s 60-day visa exemption or 60-day
+                Visa on Arrival, you might now be wondering how to extend your stay by an additional 30 days. If so,
+                you&apos;ve come to the right place.
               </ArticleCardPreviewText>
             </ArticleCardBody>
           </ArticleCard>
