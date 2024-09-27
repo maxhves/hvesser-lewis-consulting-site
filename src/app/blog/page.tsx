@@ -35,7 +35,7 @@ export default function Blog() {
             </ArticleCardHeader>
             <ArticleCardBody href="/blog/how-to-extend-a-thailand-tourist-visa-by-30-days">
               <ArticleCardTitle>
-                How to extend a Thailand tourist visa by 30 days
+                How To Extend A Thailand Tourist Visa By 30 Days
               </ArticleCardTitle>
               <ArticleCardPreviewText>
                 If, like me, you&apos;ve recently taken advantage of Thailand&apos;s 60-day visa exemption or 60-day
