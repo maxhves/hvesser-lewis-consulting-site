@@ -1,14 +1,16 @@
 import React from 'react'
 import {clsx} from "clsx";
 import {karla} from "@/app/fonts";
+import ArticleSection
+  from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
 
 //region Entry
 
 export default function FinalCommentsSection({children}: { children: React.ReactNode }) {
   return (
-    <section>
+    <ArticleSection>
       {children}
-    </section>
+    </ArticleSection>
   )
 }
 
