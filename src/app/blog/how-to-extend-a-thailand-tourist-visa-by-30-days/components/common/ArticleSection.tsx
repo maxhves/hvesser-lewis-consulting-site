@@ -48,6 +48,22 @@ export function ArticleSectionBodyLink({href, children}: { href: string, childre
 
 //region Action list
 
+export function ArticleSectionActionList({children}: { children: React.ReactNode }) {
+  return (
+    <ol role="list" className="mt-8 space-y-8">
+      {children}
+    </ol>
+  )
+}
 
+export function ArticleSectionActionListItem({children}: { children: React.ReactNode }) {
+  return (
+    <li className="text-base font-normal leading-7 text-stone-600">
+      <div className="flex gap-x-3">
+        {children}
+      </div>
+    </li>
+  )
+}
 
 //endregion
