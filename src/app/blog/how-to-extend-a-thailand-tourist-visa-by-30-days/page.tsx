@@ -16,6 +16,11 @@ import WhereToGoSection
   WhereToGoBody, WhereToGoLink,
   WhereToGoTitle
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/where-to-go-section";
+import WhatToExpectSection
+  , {
+  WhatToExpectBody, WhatToExpectStep, WhatToExpectSteps,
+  WhatToExpectTitle
+} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/what-to-expect-section";
 
 //region Model
 
@@ -42,6 +47,25 @@ const itemsNeeded = [
   }
 ]
 
+const processSteps = [
+  {
+    label: "Queue card.",
+    description: "The first step is to present your application form along with all the required documents to an immigration assistant, who will be easy to spot at a desk. They’ll do a quick pre-check of your paperwork to make sure everything is filled out correctly. If everything looks good, you’ll be handed a queue card—a numbered card to hold your place in line."
+  },
+  {
+    label: "Document check.",
+    description: "Once you’ve got your queue card, head to the area where they’re calling out the numbers. When yours is called, go to the assigned desk and hand over your application form and documents. The immigration assistant will review your paperwork, ask you to pay the 1,900 THB fee, and take your picture with the webcam at their desk. You’ll also need to hand over your passport, which you won’t get back until the final step, but do make sure to keep your queue card."
+  },
+  {
+    label: "Visa processing.",
+    description: "After completing the document check, head to the waiting area. The wait time will depend on how many people are ahead of you in the queue. While you’re waiting, the immigration department will process your details and paperwork to prepare your visa extension."
+  },
+  {
+    label: "Passport return.",
+    description: "When your number is called again, you’ll be given back your passport along with a physical document confirming your extension and payment. Inside your passport, you’ll find an update to your original arrival stamp with a new date—usually 30 days beyond the end of your initial stay."
+  }
+]
+
 //endregion
 
 //region Entry
@@ -59,14 +83,14 @@ export default function HowToExtendAThailandTouristVisaBy30Days() {
               How To Extend A Thailand Tourist Visa By 30 Days
             </IntroductionTitle>
             <IntroductionPreface>
-              If, like me, you&apos;ve recently taken advantage of Thailand&apos;s 60-day visa exemption or 60-day Visa
-              on Arrival, you might now be wondering how to extend your stay by an additional 30 days. If so,
-              you&apos;ve come to the right place.
+              If, like me, you’ve recently taken advantage of Thailand’s 60-day visa exemption or 60-day Visa on
+              Arrival, you might now be wondering how to extend your stay by an additional 30 days. If so, you’ve come
+              to the right place.
             </IntroductionPreface>
             <IntroductionBody>
-              I&apos;d like to start by noting that immigration offices may vary slightly depending on their location
-              and specific procedures. So, where it&apos;s relevant, the information I&apos;m sharing here is based on
-              my personal experience of extending my 60-day visa exemption in Bangkok.
+              I’d like to start by noting that immigration offices may vary slightly depending on their location and
+              specific procedures. So, where it’s relevant, the information I’m sharing here is based on my personal
+              experience of extending my 60-day visa exemption in Bangkok.
             </IntroductionBody>
           </IntroductionSection>
 
@@ -112,6 +136,29 @@ export default function HowToExtendAThailandTouristVisaBy30Days() {
               </span>
             </WhereToGoBody>
           </WhereToGoSection>
+
+          <WhatToExpectSection>
+            <WhatToExpectTitle>
+              What to expect
+            </WhatToExpectTitle>
+            <WhatToExpectBody>
+              At the immigration office I visited, the process was split into four steps. I’ll go over these steps and
+              provide a small commentary for clarity. I cannot promise that each immigration office across the entirety
+              of Thailand is the same, but I imagine the process to be fairly similar.
+            </WhatToExpectBody>
+            <WhatToExpectSteps>
+              {processSteps.map(step => (
+                <WhatToExpectStep key={step.label}>
+                  <span>
+                    <strong className="font-semibold text-stone-900">{step.label}</strong> {step.description}
+                  </span>
+                </WhatToExpectStep>
+              ))}
+            </WhatToExpectSteps>
+            <WhatToExpectBody>
+              Congratulations! You’re done now, no further action is needed, go ahead and enjoy the rest of your stay.
+            </WhatToExpectBody>
+          </WhatToExpectSection>
         </article>
       </ContentContainer>
     </main>
