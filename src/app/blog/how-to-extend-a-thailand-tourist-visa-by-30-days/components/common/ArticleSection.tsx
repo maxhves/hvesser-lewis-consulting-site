@@ -28,7 +28,13 @@ export function ArticleSectionHeading({children}: { children: React.ReactNode })
 
 //region Body
 
-
+export function ArticleSectionBody({children}: { children: React.ReactNode }) {
+  return (
+    <p className="mt-8 text-base font-normal leading-7 text-stone-700">
+      {children}
+    </p>
+  )
+}
 
 //endregion
 

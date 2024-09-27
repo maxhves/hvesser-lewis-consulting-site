@@ -2,6 +2,7 @@ import React from 'react'
 import {CircleCheckIcon} from "lucide-react";
 import ArticleSection
   , {
+  ArticleSectionBody,
   ArticleSectionHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
 
@@ -9,9 +10,7 @@ import ArticleSection
 
 export default function WhatYouNeedSection({children}: { children: React.ReactNode }) {
   return (
-    <ArticleSection>
-      {children}
-    </ArticleSection>
+    <ArticleSection>{children}</ArticleSection>
   )
 }
 
@@ -27,9 +26,7 @@ export function WhatYouNeedHeading({children}: { children: React.ReactNode }) {
 
 export function WhatYouNeedBody({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-8 text-base font-normal leading-7 text-stone-700">
-      {children}
-    </p>
+    <ArticleSectionBody>{children}</ArticleSectionBody>
   )
 }
 

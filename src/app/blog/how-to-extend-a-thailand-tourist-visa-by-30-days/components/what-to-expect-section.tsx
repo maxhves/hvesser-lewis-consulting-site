@@ -2,6 +2,7 @@ import React from 'react'
 import {CircleArrowRight} from "lucide-react";
 import ArticleSection
   , {
+  ArticleSectionBody,
   ArticleSectionHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
 
@@ -25,9 +26,7 @@ export function WhatToExpectHeading({children}: { children: React.ReactNode }) {
 
 export function WhatToExpectBody({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-8 text-base font-normal leading-7 text-stone-700">
-      {children}
-    </p>
+    <ArticleSectionBody>{children}</ArticleSectionBody>
   )
 }
 
