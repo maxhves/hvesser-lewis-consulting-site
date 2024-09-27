@@ -30,7 +30,7 @@ export function ArticleSectionHeading({children}: { children: React.ReactNode })
 
 export function ArticleSectionBody({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-8 text-base font-normal leading-7 text-stone-700">
+    <p className="mt-8 text-base font-normal leading-7 text-stone-700 whitespace-pre-wrap">
       {children}
     </p>
   )
