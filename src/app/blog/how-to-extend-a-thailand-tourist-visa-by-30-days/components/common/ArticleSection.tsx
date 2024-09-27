@@ -36,6 +36,14 @@ export function ArticleSectionBody({children}: { children: React.ReactNode }) {
   )
 }
 
+export function ArticleSectionBodyLink({href, children}: { href: string, children: React.ReactNode }) {
+  return (
+    <a href={href} className="underline font-medium" rel="noreferrer" target="_blank">
+      {children}
+    </a>
+  )
+}
+
 //endregion
 
 //region Action list
