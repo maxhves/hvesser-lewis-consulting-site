@@ -21,6 +21,11 @@ import WhatToExpectSection
   WhatToExpectBody, WhatToExpectStep, WhatToExpectSteps,
   WhatToExpectTitle
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/what-to-expect-section";
+import FinalCommentsSection
+  , {
+  FinalCommentsBody, FinalCommentsLink,
+  FinalCommentsTitle
+} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/final-comments-section";
 
 //region Model
 
@@ -159,6 +164,21 @@ export default function HowToExtendAThailandTouristVisaBy30Days() {
               Congratulations! You’re done now, no further action is needed, go ahead and enjoy the rest of your stay.
             </WhatToExpectBody>
           </WhatToExpectSection>
+
+          <FinalCommentsSection>
+            <FinalCommentsTitle>
+              Final comments
+            </FinalCommentsTitle>
+            <FinalCommentsBody>
+              With this article, I hope to have clarified what to do and what to expect when extending a short-term
+              tourist visa. While I was in Thailand trying to find this information myself, I found it a bit confusing.
+              My aim is to make things easier for others by sharing my experience.
+              {'\n'}{'\n'}
+              If you think something’s missing or have suggestions for improving this article, please reach out to me
+              at <FinalCommentsLink href="mailto:max@hvesserlewis.com">max@hvesserlewis.com</FinalCommentsLink>—I’d be
+              glad to hear from you.
+            </FinalCommentsBody>
+          </FinalCommentsSection>
         </article>
       </ContentContainer>
     </main>
