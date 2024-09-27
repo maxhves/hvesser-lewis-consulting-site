@@ -42,7 +42,7 @@ export function IntroductionPreface({children}: { children: React.ReactNode }) {
 
 export function IntroductionBody({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-8 text-base leading-7 text-gray-700">
+    <p className="mt-8 text-sm leading-6 text-gray-700">
       {children}
     </p>
   )
