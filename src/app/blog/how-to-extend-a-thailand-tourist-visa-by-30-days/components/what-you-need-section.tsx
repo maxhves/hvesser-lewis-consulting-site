@@ -1,9 +1,9 @@
 import React from 'react'
-import {clsx} from "clsx";
-import {karla} from "@/app/fonts";
 import {CircleCheckIcon} from "lucide-react";
 import ArticleSection
-  from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
+  , {
+  ArticleSectionHeading
+} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
 
 //region Entry
 
@@ -19,11 +19,9 @@ export default function WhatYouNeedSection({children}: { children: React.ReactNo
 
 //region Text
 
-export function WhatYouNeedTitle({children}: { children: React.ReactNode }) {
+export function WhatYouNeedHeading({children}: { children: React.ReactNode }) {
   return (
-    <h2 className={clsx(karla.className, "mt-16 text-2xl font-bold tracking-tight text-stone-900")}>
-      {children}
-    </h2>
+    <ArticleSectionHeading>{children}</ArticleSectionHeading>
   )
 }
 

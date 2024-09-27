@@ -1,16 +1,14 @@
 import React from 'react'
-import {clsx} from "clsx";
-import {karla} from "@/app/fonts";
 import ArticleSection
-  from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
+  , {
+  ArticleSectionHeading
+} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
 
 //region Entry
 
 export default function FinalCommentsSection({children}: { children: React.ReactNode }) {
   return (
-    <ArticleSection>
-      {children}
-    </ArticleSection>
+    <ArticleSection>{children}</ArticleSection>
   )
 }
 
@@ -18,11 +16,9 @@ export default function FinalCommentsSection({children}: { children: React.React
 
 //region Text
 
-export function FinalCommentsTitle({children}: { children: React.ReactNode }) {
+export function FinalCommentsHeading({children}: { children: React.ReactNode }) {
   return (
-    <h2 className={clsx(karla.className, "mt-16 text-2xl font-bold tracking-tight text-stone-900")}>
-      {children}
-    </h2>
+    <ArticleSectionHeading>{children}</ArticleSectionHeading>
   )
 }
 

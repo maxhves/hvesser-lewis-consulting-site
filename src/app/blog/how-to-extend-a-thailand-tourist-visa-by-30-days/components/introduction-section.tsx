@@ -8,9 +8,7 @@ import ArticleSection
 
 export default function IntroductionSection({children}: { children: React.ReactNode }) {
   return (
-    <ArticleSection>
-      {children}
-    </ArticleSection>
+    <ArticleSection>{children}</ArticleSection>
   )
 }
 
@@ -26,7 +24,7 @@ export function IntroductionPreTitle({children}: { children: React.ReactNode }) 
   )
 }
 
-export function IntroductionTitle({children}: { children: React.ReactNode }) {
+export function IntroductionHeading({children}: { children: React.ReactNode }) {
   return (
     <h1 className={clsx(karla.className, "mt-2 text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl")}>
       {children}

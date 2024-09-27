@@ -4,27 +4,27 @@ import IntroductionSection
   IntroductionBody,
   IntroductionPreface,
   IntroductionPreTitle,
-  IntroductionTitle
+  IntroductionHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/introduction-section";
 import WhatYouNeedSection
   , {
   WhatYouNeedBody, WhatYouNeedChecklist, WhatYouNeedChecklistItem,
-  WhatYouNeedTitle
+  WhatYouNeedHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/what-you-need-section";
 import WhereToGoSection
   , {
   WhereToGoBody, WhereToGoLink,
-  WhereToGoTitle
+  WhereToGoHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/where-to-go-section";
 import WhatToExpectSection
   , {
   WhatToExpectBody, WhatToExpectStep, WhatToExpectSteps,
-  WhatToExpectTitle
+  WhatToExpectHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/what-to-expect-section";
 import FinalCommentsSection
   , {
   FinalCommentsBody, FinalCommentsLink,
-  FinalCommentsTitle
+  FinalCommentsHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/final-comments-section";
 
 //region Model
@@ -84,9 +84,9 @@ export default function HowToExtendAThailandTouristVisaBy30Days() {
             <IntroductionPreTitle>
               A guide on
             </IntroductionPreTitle>
-            <IntroductionTitle>
+            <IntroductionHeading>
               How To Extend A Thailand Tourist Visa By 30 Days
-            </IntroductionTitle>
+            </IntroductionHeading>
             <IntroductionPreface>
               If, like me, you’ve recently taken advantage of Thailand’s 60-day visa exemption or 60-day Visa on
               Arrival, you might now be wondering how to extend your stay by an additional 30 days. If so, you’ve come
@@ -100,9 +100,9 @@ export default function HowToExtendAThailandTouristVisaBy30Days() {
           </IntroductionSection>
 
           <WhatYouNeedSection>
-            <WhatYouNeedTitle>
+            <WhatYouNeedHeading>
               What you need
-            </WhatYouNeedTitle>
+            </WhatYouNeedHeading>
             <WhatYouNeedChecklist>
               {itemsNeeded.map((item => (
                 <WhatYouNeedChecklistItem key={item.label}>
@@ -118,9 +118,9 @@ export default function HowToExtendAThailandTouristVisaBy30Days() {
           </WhatYouNeedSection>
 
           <WhereToGoSection>
-            <WhereToGoTitle>
+            <WhereToGoHeading>
               Where to go
-            </WhereToGoTitle>
+            </WhereToGoHeading>
             <WhereToGoBody>
               <span>
                 Some online sources suggest you can visit any immigration office in Thailand, which sounds convenient.
@@ -143,9 +143,9 @@ export default function HowToExtendAThailandTouristVisaBy30Days() {
           </WhereToGoSection>
 
           <WhatToExpectSection>
-            <WhatToExpectTitle>
+            <WhatToExpectHeading>
               What to expect
-            </WhatToExpectTitle>
+            </WhatToExpectHeading>
             <WhatToExpectBody>
               At the immigration office I visited, the process was split into four steps. I’ll go over these steps and
               provide a small commentary for clarity. I cannot promise that each immigration office across the entirety
@@ -166,9 +166,9 @@ export default function HowToExtendAThailandTouristVisaBy30Days() {
           </WhatToExpectSection>
 
           <FinalCommentsSection>
-            <FinalCommentsTitle>
+            <FinalCommentsHeading>
               Final comments
-            </FinalCommentsTitle>
+            </FinalCommentsHeading>
             <FinalCommentsBody>
               With this article, I hope to have clarified what to do and what to expect when extending a short-term
               tourist visa. While I was in Thailand trying to find this information myself, I found it a bit confusing.
