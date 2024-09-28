@@ -73,6 +73,15 @@ export function NavigationBarMenuLink({onClick, children}: {
   )
 }
 
+export function NavigationBarMenuLinkTest({onClick, children}: {
+  onClick: () => void,
+  children: React.ReactNode
+}) {
+  return (
+    <Link href={""} />
+  )
+}
+
 //endregion
 
 //region Drawer
