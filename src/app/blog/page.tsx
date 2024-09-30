@@ -7,13 +7,15 @@ import ArticleCard, {
   ArticleCardBody,
   ArticleCardCategoryPill,
   ArticleCardDate,
-  ArticleCardHeader, ArticleCardPreviewText, ArticleCardTitle
+  ArticleCardHeader,
+  ArticleCardPreviewText,
+  ArticleCardTitle
 } from "@/app/blog/components/article-card";
 
 export default function Blog() {
   return (
     <main className="flex-grow">
-      <ContentContainer className="py-32">
+      <ContentContainer className="py-16 sm:py-32">
         <Header>
           <Heading>
             The Blog

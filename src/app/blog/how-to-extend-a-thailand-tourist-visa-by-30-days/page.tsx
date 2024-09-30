@@ -1,30 +1,31 @@
 import ContentContainer from "@/components/ui/content-container";
-import IntroductionSection
-  , {
+import IntroductionSection, {
   IntroductionBody,
+  IntroductionHeading,
   IntroductionPreface,
-  IntroductionPreTitle,
-  IntroductionHeading
+  IntroductionPreTitle
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/introduction-section";
-import WhatYouNeedSection
-  , {
-  WhatYouNeedBody, WhatYouNeedChecklist, WhatYouNeedChecklistItem,
+import WhatYouNeedSection, {
+  WhatYouNeedBody,
+  WhatYouNeedChecklist,
+  WhatYouNeedChecklistItem,
   WhatYouNeedHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/what-you-need-section";
-import WhereToGoSection
-  , {
-  WhereToGoBody, WhereToGoLink,
-  WhereToGoHeading
+import WhereToGoSection, {
+  WhereToGoBody,
+  WhereToGoHeading,
+  WhereToGoLink
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/where-to-go-section";
-import WhatToExpectSection
-  , {
-  WhatToExpectBody, WhatToExpectStep, WhatToExpectSteps,
-  WhatToExpectHeading
+import WhatToExpectSection, {
+  WhatToExpectBody,
+  WhatToExpectHeading,
+  WhatToExpectStep,
+  WhatToExpectSteps
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/what-to-expect-section";
-import FinalCommentsSection
-  , {
-  FinalCommentsBody, FinalCommentsLink,
-  FinalCommentsHeading
+import FinalCommentsSection, {
+  FinalCommentsBody,
+  FinalCommentsHeading,
+  FinalCommentsLink
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/final-comments-section";
 
 //region Model
@@ -78,7 +79,7 @@ const processSteps = [
 export default function HowToExtendAThailandTouristVisaBy30Days() {
   return (
     <main className="flex-grow">
-      <ContentContainer className="py-32">
+      <ContentContainer className="py-16 sm:py-32">
         <article>
           <IntroductionSection>
             <IntroductionPreTitle>

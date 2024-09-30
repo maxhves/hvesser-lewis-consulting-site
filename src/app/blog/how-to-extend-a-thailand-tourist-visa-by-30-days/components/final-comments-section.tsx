@@ -1,7 +1,7 @@
 import React from 'react'
-import ArticleSection
-  , {
-  ArticleSectionBody, ArticleSectionBodyLink,
+import ArticleSection, {
+  ArticleSectionBody,
+  ArticleSectionBodyLink,
   ArticleSectionHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
 
