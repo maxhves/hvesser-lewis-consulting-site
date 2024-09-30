@@ -44,13 +44,6 @@ export default function HomeNavigationBar() {
     setDrawerOpen(true)
   }
 
-  function scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId)
-    element?.scrollIntoView({ behavior: "smooth" })
-
-    closeDrawer()
-  }
-
   function formatLinkLabel(label: string): string {
     return label.charAt(0).toUpperCase() + label.slice(1)
   }
