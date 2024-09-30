@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- region Main Paths -->
+
+    <url>
+        <loc>https://www.hvesserlewis.com/</loc>
+        <lastmod>2024-09-30</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.hvesserlewis.com/#section_about</loc>
+        <lastmod>2024-09-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.hvesserlewis.com/#section_experience</loc>
+        <lastmod>2024-09-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.hvesserlewis.com/#section_projects</loc>
+        <lastmod>2024-09-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.hvesserlewis.com/#section_contact</loc>
+        <lastmod>2024-09-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- endregion -->
+
+    <!-- region Blog Paths -->
+
+    <url>
+        <loc>https://www.hvesserlewis.com/blog</loc>
+        <lastmod>2024-09-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.hvesserlewis.com/blog/how-to-extend-a-thailand-tourist-visa-by-30-days</loc>
+        <lastmod>2024-09-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- endregion -->
+</urlset>
