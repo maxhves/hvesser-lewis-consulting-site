@@ -45,7 +45,7 @@ const itemsNeeded = [
   },
   {
     label: "Passport photocopies.",
-    description: "You’ll need two photocopies: one of the photo/personal details page in your passport and one of the page with your entry stamp. Like with your photo, you can get these at a local shop or near the immigration office. I went to a local store, and the two copies cost me 100 THB."
+    description: "You’ll need two photocopies: one of the photo/personal details page in your passport and one of the page with your entry stamp. Like with your photo, you can get these at a local shop or near the immigration office. I went to a local store, and the two copies cost me 4 THB."
   },
   {
     label: "Application form.",
