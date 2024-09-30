@@ -96,7 +96,7 @@ export function NavigationBarDrawer({children, open}: { children: React.ReactNod
   return (
     <div className="fixed sm:hidden w-full mt-14 z-[5] pointer-events-none">
       <nav className={clsx(
-        open ? "translate-y-0" : "-translate-y-60",
+        open ? "translate-y-0" : "-translate-y-72",
         "flex flex-col transition-transform duration-300 ease-in-out pointer-events-auto bg-stone-100 border-b border-stone-950/10 py-4 gap-y-2"
       )}>
         {children}
@@ -105,13 +105,15 @@ export function NavigationBarDrawer({children, open}: { children: React.ReactNod
   )
 }
 
-export function NavigationBarDrawerLink({onClick, children}: {
+export function NavigationBarDrawerLink({href, onClick, children}: {
+  href: string,
   onClick: () => void,
   children: React.ReactNode
 }) {
   return (
     <Button
       plain={true}
+      href={href}
       onClick={onClick}
       className={clsx(karla.className, "mx-4 text-stone-800 font-normal text-base")}
     >

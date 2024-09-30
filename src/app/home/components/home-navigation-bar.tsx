@@ -79,16 +79,15 @@ export default function HomeNavigationBar() {
       </NavigationBarContent>
 
       <NavigationBarDrawer open={drawerOpen}>
-        {/* TODO: Replace with new link type */}
         {navigationSections.map((section: NavigationLink) => (
           <NavigationBarDrawerLink
             key={section.id}
-            onClick={() => scrollToSection(section.id)}
+            href={section.href}
+            onClick={closeDrawer}
           >
-            {section.label}
+            {formatLinkLabel(section.label)}
           </NavigationBarDrawerLink>
         ))}
-        {/* TODO: Replace with new link type */}
       </NavigationBarDrawer>
     </NavigationBar>
   );
