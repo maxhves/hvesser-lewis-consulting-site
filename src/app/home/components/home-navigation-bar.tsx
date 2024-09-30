@@ -9,11 +9,12 @@ import {
   NavigationBarHomeLink,
   NavigationBarHomeLinkLabel,
   NavigationBarMenu,
-  NavigationBarMenuLink
+  NavigationBarMenuLink,
 } from "@/components/ui/navigation-bar";
-import {NavigationSection} from "@/types/navigation/NavigationSection";
+import {NavigationLink} from "@/types/navigation/navigation-link";
 import {
   ABOUT_NAV_SECTION,
+  BLOG_PAGE,
   CONTACT_NAV_SECTION,
   EXPERIENCE_NAV_SECTION,
   PROJECTS_NAV_SECTION
@@ -21,8 +22,8 @@ import {
 
 //region Model
 
-const navigationSections: NavigationSection[] = [
-  ABOUT_NAV_SECTION, EXPERIENCE_NAV_SECTION, PROJECTS_NAV_SECTION, CONTACT_NAV_SECTION
+const navigationSections: NavigationLink[] = [
+  ABOUT_NAV_SECTION, EXPERIENCE_NAV_SECTION, PROJECTS_NAV_SECTION, CONTACT_NAV_SECTION, BLOG_PAGE
 ]
 
 //endregion
@@ -44,11 +45,8 @@ export default function HomeNavigationBar() {
     setDrawerOpen(true)
   }
 
-  function scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId)
-    element?.scrollIntoView({ behavior: "smooth" })
-
-    closeDrawer()
+  function formatLinkLabel(label: string): string {
+    return label.charAt(0).toUpperCase() + label.slice(1)
   }
 
   return (
@@ -61,12 +59,12 @@ export default function HomeNavigationBar() {
         </NavigationBarHomeLink>
 
         <NavigationBarMenu>
-          {navigationSections.map((section: NavigationSection) => (
+          {navigationSections.map((section: NavigationLink) => (
             <NavigationBarMenuLink
               key={section.id}
-              onClick={() => scrollToSection(section.id)}
+              href={section.href}
             >
-              {section.label}
+              {formatLinkLabel(section.label)}
             </NavigationBarMenuLink>
           ))}
         </NavigationBarMenu>
@@ -75,12 +73,13 @@ export default function HomeNavigationBar() {
       </NavigationBarContent>
 
       <NavigationBarDrawer open={drawerOpen}>
-        {navigationSections.map((section: NavigationSection) => (
+        {navigationSections.map((section: NavigationLink) => (
           <NavigationBarDrawerLink
             key={section.id}
-            onClick={() => scrollToSection(section.id)}
+            href={section.href}
+            onClick={closeDrawer}
           >
-            {section.label}
+            {formatLinkLabel(section.label)}
           </NavigationBarDrawerLink>
         ))}
       </NavigationBarDrawer>
