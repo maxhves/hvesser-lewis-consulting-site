@@ -9,11 +9,11 @@ import {
   NavigationBarHomeLink,
   NavigationBarHomeLinkLabel,
   NavigationBarMenu,
-  NavigationBarMenuLink
+  NavigationBarMenuLink,
 } from "@/components/ui/navigation-bar";
-import {NavigationSection} from "@/types/navigation/NavigationSection";
+import {NavigationLink} from "@/types/navigation/navigation-link";
 import {
-  ABOUT_NAV_SECTION,
+  ABOUT_NAV_SECTION, BLOG_PAGE,
   CONTACT_NAV_SECTION,
   EXPERIENCE_NAV_SECTION,
   PROJECTS_NAV_SECTION
@@ -21,8 +21,8 @@ import {
 
 //region Model
 
-const navigationSections: NavigationSection[] = [
-  ABOUT_NAV_SECTION, EXPERIENCE_NAV_SECTION, PROJECTS_NAV_SECTION, CONTACT_NAV_SECTION
+const navigationSections: NavigationLink[] = [
+  ABOUT_NAV_SECTION, EXPERIENCE_NAV_SECTION, PROJECTS_NAV_SECTION, CONTACT_NAV_SECTION, BLOG_PAGE
 ]
 
 //endregion
@@ -51,6 +51,10 @@ export default function HomeNavigationBar() {
     closeDrawer()
   }
 
+  function formatLinkLabel(label: string): string {
+    return label.charAt(0).toUpperCase() + label.slice(1)
+  }
+
   return (
     <NavigationBar>
       <NavigationBarContent>
@@ -61,12 +65,12 @@ export default function HomeNavigationBar() {
         </NavigationBarHomeLink>
 
         <NavigationBarMenu>
-          {navigationSections.map((section: NavigationSection) => (
+          {navigationSections.map((section: NavigationLink) => (
             <NavigationBarMenuLink
               key={section.id}
-              onClick={() => scrollToSection(section.id)}
+              href={section.href}
             >
-              {section.label}
+              {formatLinkLabel(section.label)}
             </NavigationBarMenuLink>
           ))}
         </NavigationBarMenu>
@@ -75,7 +79,8 @@ export default function HomeNavigationBar() {
       </NavigationBarContent>
 
       <NavigationBarDrawer open={drawerOpen}>
-        {navigationSections.map((section: NavigationSection) => (
+        {/* TODO: Replace with new link type */}
+        {navigationSections.map((section: NavigationLink) => (
           <NavigationBarDrawerLink
             key={section.id}
             onClick={() => scrollToSection(section.id)}
@@ -83,6 +88,7 @@ export default function HomeNavigationBar() {
             {section.label}
           </NavigationBarDrawerLink>
         ))}
+        {/* TODO: Replace with new link type */}
       </NavigationBarDrawer>
     </NavigationBar>
   );

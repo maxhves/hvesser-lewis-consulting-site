@@ -58,27 +58,18 @@ export function NavigationBarMenu({children}: { children: React.ReactNode }) {
   )
 }
 
-export function NavigationBarMenuLink({onClick, children}: {
-  onClick: () => void,
+export function NavigationBarMenuLink({href, children}: {
+  href: string,
   children: React.ReactNode
 }) {
   return (
     <Button
       plain={true}
-      onClick={onClick}
+      href={href}
       className={clsx(karla.className, "text-stone-800 font-normal text-base")}
     >
       {children}
     </Button>
-  )
-}
-
-export function NavigationBarMenuLinkTest({onClick, children}: {
-  onClick: () => void,
-  children: React.ReactNode
-}) {
-  return (
-    <Link href={""} />
   )
 }
 
