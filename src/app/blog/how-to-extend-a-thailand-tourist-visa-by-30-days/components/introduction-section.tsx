@@ -2,7 +2,9 @@ import React from 'react'
 import {clsx} from "clsx";
 import {karla} from "@/app/fonts";
 import ArticleSection
-  from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
+  , {
+  ArticleSectionBody
+} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
 
 //region Entry
 
@@ -34,7 +36,7 @@ export function IntroductionHeading({children}: { children: React.ReactNode }) {
 
 export function IntroductionPreface({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-6 text-lg leading-8 text-stone-700">
+    <p className="mt-6 text-lg leading-7 text-stone-700">
       {children}
     </p>
   )
@@ -42,9 +44,9 @@ export function IntroductionPreface({children}: { children: React.ReactNode }) {
 
 export function IntroductionBody({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-8 text-sm leading-6 text-gray-700">
+    <ArticleSectionBody>
       {children}
-    </p>
+    </ArticleSectionBody>
   )
 }
 
