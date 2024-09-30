@@ -13,7 +13,8 @@ import {
 } from "@/components/ui/navigation-bar";
 import {NavigationLink} from "@/types/navigation/navigation-link";
 import {
-  ABOUT_NAV_SECTION, BLOG_PAGE,
+  ABOUT_NAV_SECTION,
+  BLOG_PAGE,
   CONTACT_NAV_SECTION,
   EXPERIENCE_NAV_SECTION,
   PROJECTS_NAV_SECTION

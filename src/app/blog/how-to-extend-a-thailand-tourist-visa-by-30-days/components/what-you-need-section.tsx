@@ -1,8 +1,8 @@
 import React from 'react'
 import {CircleCheckIcon} from "lucide-react";
-import ArticleSection
-  , {
-  ArticleSectionActionList, ArticleSectionActionListItem,
+import ArticleSection, {
+  ArticleSectionActionList,
+  ArticleSectionActionListItem,
   ArticleSectionBody,
   ArticleSectionHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";

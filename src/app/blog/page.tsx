@@ -7,7 +7,9 @@ import ArticleCard, {
   ArticleCardBody,
   ArticleCardCategoryPill,
   ArticleCardDate,
-  ArticleCardHeader, ArticleCardPreviewText, ArticleCardTitle
+  ArticleCardHeader,
+  ArticleCardPreviewText,
+  ArticleCardTitle
 } from "@/app/blog/components/article-card";
 
 export default function Blog() {
