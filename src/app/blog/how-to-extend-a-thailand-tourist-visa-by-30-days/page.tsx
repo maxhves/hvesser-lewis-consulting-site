@@ -78,7 +78,7 @@ const processSteps = [
 export default function HowToExtendAThailandTouristVisaBy30Days() {
   return (
     <main className="flex-grow">
-      <ContentContainer className="py-32">
+      <ContentContainer className="py-16 sm:py-32">
         <article>
           <IntroductionSection>
             <IntroductionPreTitle>

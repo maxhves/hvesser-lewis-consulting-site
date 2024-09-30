@@ -13,7 +13,7 @@ import ArticleCard, {
 export default function Blog() {
   return (
     <main className="flex-grow">
-      <ContentContainer className="py-32">
+      <ContentContainer className="py-16 sm:py-32">
         <Header>
           <Heading>
             The Blog
