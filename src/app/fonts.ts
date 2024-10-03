@@ -1,5 +1,7 @@
 import {Inter, Karla, Outfit} from 'next/font/google'
 
+// TODO: Remove unused font.
+
 //region Karla
 
 export const karla = Karla({
@@ -8,6 +10,8 @@ export const karla = Karla({
 })
 
 //endregion
+
+// TODO: Remove unused font.
 
 //region Outfit
 
