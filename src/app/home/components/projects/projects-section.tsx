@@ -23,7 +23,6 @@ import {
   SecondaryProjectTechnologyListItem,
   SecondaryProjectTitle
 } from "@/app/home/components/projects/secondary-projects-list";
-import {PROJECTS_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-section";
 import {Technology} from "@/types/project/technology";
 
 //region Model
@@ -73,7 +72,7 @@ const secondaryProjects: Project[] = [
 
 export default function ProjectsSection() {
   return (
-    <section id={PROJECTS_NAV_SECTION.id} className="bg-stone-50 scroll-mt-14">
+    <section className="bg-stone-50 scroll-mt-14">
       <ContentContainer className="py-16">
         <SectionHeader>
           Projects

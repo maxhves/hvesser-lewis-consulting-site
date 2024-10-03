@@ -5,7 +5,6 @@ import VippsLogo from "@/components/icon/company-logo/vipps-logo";
 import FinnLogo from "@/components/icon/company-logo/finn-logo";
 import DttLogo from "@/components/icon/company-logo/dtt-logo";
 import ExperienceList from "@/app/home/components/experience/experience-list";
-import {EXPERIENCE_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-section";
 import {Divider} from "@/components/ui/divider";
 import {
   DownloadCvBanner,
@@ -26,7 +25,7 @@ import ExperienceCard, {
 
 export default function ExperienceSection() {
   return (
-    <section id={EXPERIENCE_NAV_SECTION.id} className="bg-stone-100 scroll-mt-14">
+    <section className="bg-stone-100 scroll-mt-14">
       <ContentContainer className="py-16">
         <SectionHeader>
           Work Experience

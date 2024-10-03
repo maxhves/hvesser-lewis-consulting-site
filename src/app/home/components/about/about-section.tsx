@@ -1,7 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
 import {SectionHeader, SectionSubheader} from "@/components/ui/header";
-import {ABOUT_NAV_SECTION} from "@/app/home/data/navigation/home-navigation-section";
 import ExpertiseList from "@/app/home/components/about/expertise-list";
 import ExpertiseCard, {
   ExpertiseCardBody,
@@ -12,6 +11,7 @@ import ExpertiseCard, {
   ExpertiseCardTitle
 } from "@/app/home/components/about/expertise-card";
 import {GlobeIcon, LayoutGridIcon, PencilRulerIcon} from "lucide-react";
+import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
 
 //region Model
 
@@ -45,7 +45,7 @@ const expertiseDesign: Expertise = {
 
 export default function AboutSection() {
   return (
-    <section id={ABOUT_NAV_SECTION.id} className="bg-stone-50 scroll-mt-14">
+    <section id={HomeNavLink.About.id} className="bg-stone-50 scroll-mt-14">
       <ContentContainer className="py-16">
         <SectionHeader>
           About Me

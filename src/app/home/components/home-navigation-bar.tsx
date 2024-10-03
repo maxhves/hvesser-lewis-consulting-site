@@ -1,7 +1,7 @@
 "use client"
 import React, {useState} from 'react';
 import {
-  NavigationBar,
+  NavigationBar, NavigationBarActionLink,
   NavigationBarContent,
   NavigationBarDrawer,
   NavigationBarDrawerLink,
@@ -11,19 +11,12 @@ import {
   NavigationBarMenu,
   NavigationBarMenuLink,
 } from "@/components/ui/navigation-bar";
-import {NavigationLink} from "@/types/navigation/navigation-link";
-import {
-  ABOUT_NAV_SECTION,
-  BLOG_PAGE,
-  CONTACT_NAV_SECTION,
-  EXPERIENCE_NAV_SECTION,
-  PROJECTS_NAV_SECTION
-} from "@/app/home/data/navigation/home-navigation-section";
+import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
 
 //region Model
 
-const navigationSections: NavigationLink[] = [
-  ABOUT_NAV_SECTION, EXPERIENCE_NAV_SECTION, PROJECTS_NAV_SECTION, CONTACT_NAV_SECTION, BLOG_PAGE
+const homeNavLinks: HomeNavLink[] = [
+  HomeNavLink.About, HomeNavLink.Services, HomeNavLink.Portfolio, HomeNavLink.Blog
 ]
 
 //endregion
@@ -45,10 +38,6 @@ export default function HomeNavigationBar() {
     setDrawerOpen(true)
   }
 
-  function formatLinkLabel(label: string): string {
-    return label.charAt(0).toUpperCase() + label.slice(1)
-  }
-
   return (
     <NavigationBar>
       <NavigationBarContent>
@@ -58,28 +47,25 @@ export default function HomeNavigationBar() {
           </NavigationBarHomeLinkLabel>
         </NavigationBarHomeLink>
 
-        <NavigationBarMenu>
-          {navigationSections.map((section: NavigationLink) => (
-            <NavigationBarMenuLink
-              key={section.id}
-              href={section.href}
-            >
-              {formatLinkLabel(section.label)}
-            </NavigationBarMenuLink>
-          ))}
-        </NavigationBarMenu>
+          <NavigationBarMenu>
+            {homeNavLinks.map((link: HomeNavLink) => (
+              <NavigationBarMenuLink key={link.label} href={link.href}>
+                {link.label}
+              </NavigationBarMenuLink>
+            ))}
+          </NavigationBarMenu>
+
+        <NavigationBarActionLink>
+          Let’s Talk
+        </NavigationBarActionLink>
 
         <NavigationBarDrawerTriggerButton open={drawerOpen} onClick={toggleDrawer} />
       </NavigationBarContent>
 
       <NavigationBarDrawer open={drawerOpen}>
-        {navigationSections.map((section: NavigationLink) => (
-          <NavigationBarDrawerLink
-            key={section.id}
-            href={section.href}
-            onClick={closeDrawer}
-          >
-            {formatLinkLabel(section.label)}
+        {homeNavLinks.map((link: HomeNavLink) => (
+          <NavigationBarDrawerLink key={link.label} href={link.href} onClick={closeDrawer}>
+            {link.label}
           </NavigationBarDrawerLink>
         ))}
       </NavigationBarDrawer>
