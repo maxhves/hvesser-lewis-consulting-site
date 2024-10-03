@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body id="home" className={clsx(inter.className, "bg-stone-100 h-dvh flex flex-col antialiased")}>
+      <body id="home" className={clsx(inter.className, "bg-slate-50 h-dvh flex flex-col antialiased")}>
         {/* Navigation bar */}
         <HomeNavigationBar />
 
