@@ -12,6 +12,7 @@ import ExpertiseCard, {
 } from "@/app/home/components/about/expertise-card";
 import {GlobeIcon, LayoutGridIcon, PencilRulerIcon} from "lucide-react";
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
+import SectionBadge from "@/components/ui/section-badge";
 
 //region Model
 
@@ -45,8 +46,14 @@ const expertiseDesign: Expertise = {
 
 export default function AboutSection() {
   return (
-    <section id={HomeNavLink.About.id} className="bg-stone-50 scroll-mt-14">
+    <section id={HomeNavLink.About.id} className="bg-slate-100 scroll-mt-16">
       <ContentContainer className="py-16">
+        <div className="flex justify-center">
+          <SectionBadge>
+            About
+          </SectionBadge>
+        </div>
+
         <SectionHeader>
           About Me
         </SectionHeader>
