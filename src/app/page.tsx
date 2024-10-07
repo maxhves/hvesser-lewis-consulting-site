@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <main className="flex-grow">
       <IntroductionSection />
-      <Divider soft={true} />
+      <Divider />
       <AboutSection />
-      <Divider soft={true} />
+      <Divider />
       <ExperienceSection />
-      <Divider soft={true} />
+      <Divider />
       <ProjectsSection />
-      <Divider soft={true} />
+      <Divider />
       <ContactSection />
     </main>
   )
