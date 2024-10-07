@@ -3,16 +3,16 @@ import ContentContainer from "@/components/ui/content-container";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 
-//region Entry
+//region Main Component
 
 export default function IntroductionSection() {
   return (
     <section className="bg-slate-50">
-      <ContentContainer className="pt-24 pb-16">
+      <ContentContainer className="flex flex-col pt-24 items-center">
         <div className="flex flex-col items-center">
           <Heading>
             <span>
-              I take your ideas and turn them to <strong className="font-medium text-blue-600">exceptional</strong> user experiences
+              I take your ideas and turn them to <strong className="font-medium text-slate-500">exceptional</strong> user experiences
             </span>
           </Heading>
           <Description>
@@ -20,6 +20,11 @@ export default function IntroductionSection() {
           </Description>
         </div>
       </ContentContainer>
+      <DevProcessStoryboard>
+        <DevProcessCard className="w-1/4" />
+        <DevProcessCard className="w-1/4" />
+        <DevProcessCard className="w-1/2" />
+      </DevProcessStoryboard>
     </section>
   );
 }
@@ -41,6 +46,24 @@ function Description({children}: { children: React.ReactNode }) {
     <p className="mt-8 max-w-md text-center text-base font-normal text-slate-700">
       {children}
     </p>
+  )
+}
+
+//endregion
+
+//region Development Process
+
+function DevProcessStoryboard({children}: { children: React.ReactNode }) {
+  return (
+    <div className="flex flex-row py-16 px-4 gap-x-4">
+      {children}
+    </div>
+  )
+}
+
+function DevProcessCard({className}: { className?: string }) {
+  return (
+    <div className={clsx(className, "h-56 min-w-20 rounded-2xl bg-slate-200/50")} />
   )
 }
 
