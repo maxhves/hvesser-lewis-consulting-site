@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
-import {SectionHeader, SectionSubheader} from "@/components/ui/header";
+import {SectionHeading, SectionSubheading} from "@/components/ui/header";
 import {Link} from "@/components/ui/link";
 import GithubLogo from "@/components/icon/social-network-logo/github-logo";
 import LinkedinLogo from "@/components/icon/social-network-logo/linkedin-logo";
@@ -14,9 +14,9 @@ export default function ContactSection() {
   return (
     <section className="bg-stone-100 scroll-mt-14">
       <ContentContainer className="py-16">
-        <SectionHeader>
+        <SectionHeading>
           Contact Me
-        </SectionHeader>
+        </SectionHeading>
 
         <ContactDescription>
           I am seeking new projects to get involved with and am available for a variety of consulting services. Feel
@@ -26,9 +26,9 @@ export default function ContactSection() {
         <ContactForm className="mt-10" />
 
         <ContactSocialNetworks>
-          <SectionSubheader>
+          <SectionSubheading>
             My social networks
-          </SectionSubheader>
+          </SectionSubheading>
 
           <ContactSocialNetworksList>
             <Link href="https://www.github.com/maxhves" rel="noreferrer" target="_blank">

@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
-import {SectionHeader} from "@/components/ui/header";
+import {SectionHeading} from "@/components/ui/header";
 import VippsLogo from "@/components/icon/company-logo/vipps-logo";
 import FinnLogo from "@/components/icon/company-logo/finn-logo";
 import DttLogo from "@/components/icon/company-logo/dtt-logo";
@@ -27,9 +27,9 @@ export default function ExperienceSection() {
   return (
     <section className="bg-stone-100 scroll-mt-14">
       <ContentContainer className="py-16">
-        <SectionHeader>
+        <SectionHeading>
           Work Experience
-        </SectionHeader>
+        </SectionHeading>
 
         <ExperienceList className="mt-4">
 

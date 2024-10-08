@@ -1,46 +1,11 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
-import {SectionHeader, SectionSubheader} from "@/components/ui/header";
-import ExpertiseList from "@/app/home/components/about/expertise-list";
-import ExpertiseCard, {
-  ExpertiseCardBody,
-  ExpertiseCardDescriptionList,
-  ExpertiseCardDescriptionListItem,
-  ExpertiseCardHeader,
-  ExpertiseCardIcon,
-  ExpertiseCardTitle
-} from "@/app/home/components/about/expertise-card";
-import {GlobeIcon, LayoutGridIcon, PencilRulerIcon} from "lucide-react";
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
 import SectionBadge from "@/components/ui/section-badge";
-
-//region Model
-
-const expertiseMobile: Expertise = {
-  title: "Mobile Development",
-  description: [
-    "Kotlin, Java, Swift, Objective-C",
-    "Compose, Room, Coroutines, Retrofit, Hilt, Glide, Material.",
-    "SQLite, Supabase, Firebase."
-  ]
-}
-const expertiseWeb: Expertise = {
-  title: "Web Development",
-  description: [
-    "Javascript, Typescript.",
-    "NextJS, TailwindCSS, ReactJS, SvelteKit",
-    "Supabase, Firebase, Postgres."
-  ]
-}
-const expertiseDesign: Expertise = {
-  title: "Interface Design",
-  description: [
-    "LaTeX, Typst.",
-    "Figma, Adobe Photoshop, Sketch."
-  ]
-}
-
-//endregion
+import {clsx} from "clsx";
+import {outfit} from "@/app/fonts";
+import Image from "next/image";
+import profileImage from "../../../../../public/images/introduction/mhl_portrait.jpg"
 
 //region Entry
 
@@ -48,99 +13,29 @@ export default function AboutSection() {
   return (
     <section id={HomeNavLink.About.id} className="bg-slate-100 scroll-mt-16">
       <ContentContainer className="py-16">
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center">
           <SectionBadge>
             About
           </SectionBadge>
+
+          <div className="w-full flex flex-row mt-4 gap-x-16">
+            <div className="space-y-6">
+              <AboutHeading>
+                Hi, I’m Maximilian
+              </AboutHeading>
+              <AboutBody>
+                I’m dedicated to helping businesses strengthen and enhance their digital presence. With over seven
+                years of experience in software development, I bring a wide array of full-stack technical skills to the
+                table.
+                {"\n"}{"\n"}
+                I pair my strong communication skills with a proactive approach to play a key role in shaping every
+                project I work on. My passion for development drives me to consistently deliver solutions that achieve
+                tangible, measurable results.
+              </AboutBody>
+            </div>
+            <ProfileImage />
+          </div>
         </div>
-
-        <SectionHeader>
-          About Me
-        </SectionHeader>
-
-        <AboutDescription>
-          As a Software Engineer with over seven years of experience, I have amassed a diverse set of technical skills
-          across the full stack. My expertise covers native and hybrid mobile app development, backend and frontend web
-          applications, as well as full integration with APIs and databases.
-          {"\n"}{"\n"}
-          I have a strong passion for solving complex technical challenges, utilizing my deep knowledge of Data
-          Structures and Algorithms, alongside proficiency in various programming languages, frameworks, and tools.
-          This foundation has enabled me to tackle intricate problems and deliver effective solutions.
-          {"\n"}{"\n"}
-          I thrive in collaborative environments, leveraging my excellent communication skills and professionalism to
-          take a proactive role in shaping projects. My passion for development drives me to consistently deliver
-          solutions that yield measurable results.
-          {"\n"}{"\n"}
-          Currently, I focus on turning clients’ ideas into digital solutions through my Web Development Agency, Hval.
-          Alongside client work, I also dedicate time to building my own ideas, further fueling my enthusiasm for
-          development.
-        </AboutDescription>
-
-        <SectionSubheader className="mt-10">
-          My expertise
-        </SectionSubheader>
-
-        <ExpertiseList className="mt-6">
-          <ExpertiseCard>
-            <ExpertiseCardHeader>
-              <ExpertiseCardIcon>
-                <LayoutGridIcon className="size-6 stroke-stone-50"/>
-              </ExpertiseCardIcon>
-            </ExpertiseCardHeader>
-            <ExpertiseCardBody>
-              <ExpertiseCardTitle>
-                {expertiseMobile.title}
-              </ExpertiseCardTitle>
-              <ExpertiseCardDescriptionList>
-                {expertiseMobile.description.map((descriptionItem: string) => (
-                  <ExpertiseCardDescriptionListItem key={descriptionItem}>
-                    {descriptionItem}
-                  </ExpertiseCardDescriptionListItem>
-                ))}
-              </ExpertiseCardDescriptionList>
-            </ExpertiseCardBody>
-          </ExpertiseCard>
-
-          <ExpertiseCard>
-            <ExpertiseCardHeader>
-              <ExpertiseCardIcon>
-                <GlobeIcon className="size-6 stroke-stone-50"/>
-              </ExpertiseCardIcon>
-            </ExpertiseCardHeader>
-            <ExpertiseCardBody>
-              <ExpertiseCardTitle>
-                {expertiseWeb.title}
-              </ExpertiseCardTitle>
-              <ExpertiseCardDescriptionList>
-                {expertiseWeb.description.map((descriptionItem: string) => (
-                  <ExpertiseCardDescriptionListItem key={descriptionItem}>
-                    {descriptionItem}
-                  </ExpertiseCardDescriptionListItem>
-                ))}
-              </ExpertiseCardDescriptionList>
-            </ExpertiseCardBody>
-          </ExpertiseCard>
-
-          <ExpertiseCard>
-            <ExpertiseCardHeader>
-              <ExpertiseCardIcon>
-                <PencilRulerIcon className="size-6 stroke-stone-50"/>
-              </ExpertiseCardIcon>
-            </ExpertiseCardHeader>
-            <ExpertiseCardBody>
-              <ExpertiseCardTitle>
-                {expertiseDesign.title}
-              </ExpertiseCardTitle>
-              <ExpertiseCardDescriptionList>
-                {expertiseDesign.description.map((descriptionItem: string) => (
-                  <ExpertiseCardDescriptionListItem key={descriptionItem}>
-                    {descriptionItem}
-                  </ExpertiseCardDescriptionListItem>
-                ))}
-              </ExpertiseCardDescriptionList>
-            </ExpertiseCardBody>
-          </ExpertiseCard>
-        </ExpertiseList>
       </ContentContainer>
     </section>
   );
@@ -148,13 +43,38 @@ export default function AboutSection() {
 
 //endregion
 
-//region Description
+//region Text
 
-function AboutDescription({children}: { children: React.ReactNode }) {
+function AboutHeading({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-4 text-sm text-stone-700 font-normal whitespace-pre-line">
+    <h1 className={clsx(outfit.className, "font-medium text-2xl text-blue-950")}>
+      {children}
+    </h1>
+  )
+}
+
+function AboutBody({children}: { children: React.ReactNode }) {
+  return (
+    <p className="text-slate-700 text-base font-normal whitespace-pre-wrap">
       {children}
     </p>
+  )
+}
+
+//endregion
+
+//region Image
+
+function ProfileImage() {
+  return (
+    <Image
+      className="block rounded-2xl h-auto max-w-56 flex-none"
+      src={profileImage}
+      alt="Maximilian Hvesser-Lewis profile image"
+      width={196}
+      height={248}
+      placeholder="blur"
+    />
   )
 }
 

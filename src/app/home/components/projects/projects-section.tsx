@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
-import {SectionHeader, SectionSubheader} from "@/components/ui/header";
+import {SectionHeading, SectionSubheading} from "@/components/ui/header";
 import {Project} from "@/types/project/project";
 import {
   PrimaryProjectDescription,
@@ -74,9 +74,9 @@ export default function ProjectsSection() {
   return (
     <section className="bg-stone-50 scroll-mt-14">
       <ContentContainer className="py-16">
-        <SectionHeader>
+        <SectionHeading>
           Projects
-        </SectionHeader>
+        </SectionHeading>
 
         <ProjectsDescription>
           The projects you see listed here are just some of the ideas that I have been developing as passion projects.
@@ -111,9 +111,9 @@ export default function ProjectsSection() {
           ))}
         </PrimaryProjectsList>
 
-        <SectionSubheader className="mt-16">
+        <SectionSubheading className="mt-16">
           Open source
-        </SectionSubheader>
+        </SectionSubheading>
 
         <SecondaryProjectsList className="mt-4">
           {secondaryProjects.map((project: Project) => (
