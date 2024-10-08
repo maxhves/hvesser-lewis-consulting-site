@@ -11,7 +11,7 @@ import profileImage from "../../../../../public/images/introduction/mhl_portrait
 
 export default function AboutSection() {
   return (
-    <section id={HomeNavLink.About.id} className="bg-slate-100 scroll-mt-16">
+    <section id={HomeNavLink.About.id} className="bg-slate-100 scroll-mt-14">
       <ContentContainer className="py-16">
         <div className="flex flex-col items-center">
           <SectionBadge>

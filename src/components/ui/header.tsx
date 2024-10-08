@@ -1,12 +1,12 @@
 import React from 'react';
 import {clsx} from "clsx";
-import {karla} from "@/app/fonts";
+import {outfit} from "@/app/fonts";
 
 //region Section
 
 export function SectionHeading({className, children}: { className?: string, children: React.ReactNode }) {
   return (
-    <h2 className={clsx(className, karla.className, "text-xl font-bold text-stone-900")}>
+    <h2 className={clsx(className, outfit.className, "text-3xl font-medium text-blue-950")}>
       {children}
     </h2>
   )
@@ -14,7 +14,7 @@ export function SectionHeading({className, children}: { className?: string, chil
 
 export function SectionSubheading({className, children}: { className?: string, children: React.ReactNode }) {
   return (
-    <h3 className={clsx(className, karla.className, "text-sm text-stone-900 font-bold")}>
+    <h3 className={clsx(className, "text-base font-normal text-slate-700")}>
       {children}
     </h3>
   )
