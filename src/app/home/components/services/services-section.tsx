@@ -7,6 +7,7 @@ import {Body} from "@/components/ui/body";
 import {DatabaseZapIcon, LaptopMinimalIcon, TabletSmartphoneIcon} from "lucide-react";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
+import {Link} from "@/components/ui/link";
 
 //region Model
 
@@ -64,8 +65,9 @@ export default function ServicesSection() {
           </ServicesList>
           <Body className="px-8">
             I provide a full range of consultancy services, including detailed estimations and budgeting, end-to-end
-            product development for websites and mobile applications, and ongoing post-launch support. Contact me to
-            discover how I can help your business.
+            product development for websites and mobile applications, and ongoing post-launch support.{" "}
+            <Link className="underline font-medium" href="/contact">Contact me</Link> to discover how I can help your
+            business.
           </Body>
         </div>
       </ContentContainer>
