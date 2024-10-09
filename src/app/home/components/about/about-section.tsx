@@ -68,7 +68,7 @@ function AboutBody({children}: { children: React.ReactNode }) {
 function ProfileImage() {
   return (
     <Image
-      className="block rounded-2xl h-auto max-w-56 flex-none"
+      className="block rounded-2xl h-auto max-w-56 flex-none object-center"
       src={profileImage}
       alt="Maximilian Hvesser-Lewis profile image"
       width={196}

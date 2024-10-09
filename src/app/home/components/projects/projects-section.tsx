@@ -1,68 +1,33 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
 import {SectionHeading, SectionSubheading} from "@/components/ui/header";
-import {Project} from "@/types/project/project";
-import {
-  PrimaryProjectDescription,
-  PrimaryProjectFooter,
-  PrimaryProjectHeader,
-  PrimaryProjectLink,
-  PrimaryProjectListItem,
-  PrimaryProjectsList,
-  PrimaryProjectTechnologiesList,
-  PrimaryProjectTechnologyListItem,
-  PrimaryProjectTitle
-} from "@/app/home/components/projects/primary-projects-list";
-import {
-  SecondaryProjectDescription,
-  SecondaryProjectHeader,
-  SecondaryProjectLink,
-  SecondaryProjectListItem,
-  SecondaryProjectsList,
-  SecondaryProjectTechnologiesList,
-  SecondaryProjectTechnologyListItem,
-  SecondaryProjectTitle
-} from "@/app/home/components/projects/secondary-projects-list";
-import {Technology} from "@/types/project/technology";
+import SectionBadge from "@/components/ui/section-badge";
+import {ExternalLink, Link} from "@/components/ui/link";
+import {ExternalLinkIcon} from "lucide-react";
+import {clsx} from "clsx";
+import {outfit} from "@/app/fonts";
+import {PrimaryButton} from "@/components/ui/button-new";
 
 //region Model
 
-const primaryProjects: Project[] = [
+const recentProjects = [
   {
     title: "Temperature Check",
-    description: "Temperature reading interpretation whereby users are able to enter their body temperature reading and understand if it is normal, or considered a fever. Measurement settings are available for accurate interpretation.",
+    description: "This front-end web application helps users determine whether their current body temperature might be considered a fever.\n\nDesigned with a clean and minimal aesthetic, the website ensures users can easily input their temperature and receive a quick, clear result.",
     href: "https://www.temperature-check.com",
-    technologies: [Technology.TYPESCRIPT, Technology.REACTJS, Technology.NEXTJS, Technology.TAILWINDCSS],
-    imageSource: "/images/projects/temperature-check.png"
+    imageSource: "temperature-check.png"
   },
   {
     title: "Crime Connoisseur",
-    description: "A true-crime podcast player and discovery platform. This site allows users to easily find, listen to and rate podcasts/episodes in the true-crime category, whilst highlighting new and updated podcasts.",
+    description: "A podcast discovery platform and player designed to showcase lesser-known true crime podcasts, helping them reach a broader audience.\n\nThe website features a dark, sleek aesthetic and a fully custom podcast client that is both responsive and highly performant.",
     href: "https://www.crimeconnoisseur.com",
-    technologies: [Technology.TYPESCRIPT, Technology.REACTJS, Technology.NEXTJS, Technology.TAILWINDCSS, Technology.SUPABASE],
-    imageSource: "/images/projects/crime-connoisseur.png"
+    imageSource: "crime-connoisseur.png"
   },
   {
     title: "Visa Match",
-    description: "Informational guides to working abroad, informing users about what visa options are potentially available to them.Each guide provides an overview of the requirements, alongside positive and negative points.",
+    description: "An intuitive website providing informational guides to those considering to pursue experience working abroad.\n\nUsers are informed about what visa options are potentially available to them with each guide providing an overview of the requirements, alongside positive and negative considerations.",
     href: "https://www.visamatch.co",
-    technologies: [Technology.TYPESCRIPT, Technology.REACTJS, Technology.NEXTJS, Technology.TAILWINDCSS, Technology.SUPABASE],
-    imageSource: "/images/projects/visa-match.png"
-  }
-]
-
-const secondaryProjects: Project[] = [
-  {
-    title: "Swap",
-    description: "A native mobile currency converter helping users to convert between the most popular global currencies.",
-    href: "https://github.com/maxhves?tab=repositories&q=swap",
-    technologies: [Technology.ANDROID, Technology.IOS, Technology.KOTLIN, Technology.SWIFT]
-  },
-  {
-    title: "Showroom",
-    description: "An image gallery library built for Android, used for creating an immersive image showcase.",
-    href: "https://github.com/maxhves/showroom",
-    technologies: [Technology.ANDROID, Technology.KOTLIN]
+    imageSource: "visa-match.png"
   }
 ]
 
@@ -72,75 +37,43 @@ const secondaryProjects: Project[] = [
 
 export default function ProjectsSection() {
   return (
-    <section className="bg-stone-50 scroll-mt-14">
+    <section className="bg-slate-50 scroll-mt-14">
       <ContentContainer className="py-16">
-        <SectionHeading>
-          Projects
-        </SectionHeading>
-
-        <ProjectsDescription>
-          The projects you see listed here are just some of the ideas that I have been developing as passion projects.
-          I am motivated to develop my own ideas and that is why I dedicate my free-time to explore these ideas.
-        </ProjectsDescription>
-
-        <PrimaryProjectsList className="mt-10">
-          {primaryProjects.map((project: Project) => (
-            <PrimaryProjectListItem key={project.title}>
-              <PrimaryProjectHeader>
-                <PrimaryProjectTitle>
-                  {project.title}
-                </PrimaryProjectTitle>
-                <PrimaryProjectLink href={project.href} />
-              </PrimaryProjectHeader>
-              <PrimaryProjectDescription>
-                {project.description}
-              </PrimaryProjectDescription>
-              <PrimaryProjectFooter>
-                <PrimaryProjectTechnologiesList>
-                  {project.technologies.map((technology: Technology) => (
-                    <PrimaryProjectTechnologyListItem
-                      key={technology.toString()}
-                      color={technology.color}
-                    >
-                      {technology.toString()}
-                    </PrimaryProjectTechnologyListItem>
-                  ))}
-                </PrimaryProjectTechnologiesList>
-              </PrimaryProjectFooter>
-            </PrimaryProjectListItem>
-          ))}
-        </PrimaryProjectsList>
-
-        <SectionSubheading className="mt-16">
-          Open source
-        </SectionSubheading>
-
-        <SecondaryProjectsList className="mt-4">
-          {secondaryProjects.map((project: Project) => (
-            <SecondaryProjectListItem key={project.title}>
-              <SecondaryProjectHeader>
-                <SecondaryProjectTitle>
-                  {project.title}
-                </SecondaryProjectTitle>
-                <SecondaryProjectLink href={project.href} />
-              </SecondaryProjectHeader>
-
-              <SecondaryProjectDescription>
-                {project.description}
-              </SecondaryProjectDescription>
-              <SecondaryProjectTechnologiesList>
-                {project.technologies.map((technology: Technology) => (
-                  <SecondaryProjectTechnologyListItem
-                    key={technology.toString()}
-                    color={technology.color}
-                  >
-                    {technology.toString()}
-                  </SecondaryProjectTechnologyListItem>
-                ))}
-              </SecondaryProjectTechnologiesList>
-            </SecondaryProjectListItem>
-          ))}
-        </SecondaryProjectsList>
+        <div className="flex flex-col items-center text-center">
+          <SectionBadge>
+            Portfolio
+          </SectionBadge>
+          <SectionHeading className="mt-4">
+            Projects I’ve Worked On Recently
+          </SectionHeading>
+          <SectionSubheading className="mt-8">
+            Take a look at some of the recent projects I’ve been working on, and for a deeper technical dive, explore my
+            open-source contributions on <ExternalLink href="https://www.github.com/maxhves">Github</ExternalLink>.
+          </SectionSubheading>
+          <RecentProjectsList>
+            {recentProjects.map(project => (
+              <RecentProjectCard key={project.title}>
+                <div className="flex gap-x-8">
+                  <div className="space-y-4">
+                    <RecentProjectCardHeading>
+                      {project.title}
+                    </RecentProjectCardHeading>
+                    <RecentProjectCardDescription>
+                      {project.description}
+                    </RecentProjectCardDescription>
+                    <RecentProjectCardLink href={project.href} />
+                  </div>
+                  <div>
+                    <RecentProjectCardImage imageSource={project.imageSource} />
+                  </div>
+                </div>
+              </RecentProjectCard>
+            ))}
+          </RecentProjectsList>
+          <SeeMoreProjectsButton>
+            See More Projects
+          </SeeMoreProjectsButton>
+        </div>
       </ContentContainer>
     </section>
   );
@@ -148,13 +81,68 @@ export default function ProjectsSection() {
 
 //endregion
 
-//region Description
+//region Recent Projects List
 
-function ProjectsDescription({children}: { children: React.ReactNode }) {
+function RecentProjectsList({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-4 text-sm font-normal text-stone-700 whitespace-pre-wrap">
+    <ol className="w-full mt-16 space-y-8" role="list">
+      {children}
+    </ol>
+  )
+}
+
+function RecentProjectCard({children}: { children: React.ReactNode }) {
+  return (
+    <li>
+      <div className="p-8 rounded-3xl bg-white text-start">
+        {children}
+      </div>
+    </li>
+  )
+}
+
+function RecentProjectCardHeading({children}: { children: React.ReactNode }) {
+  return (
+    <h1 className={clsx(outfit.className, "text-blue-950 font-medium text-lg")}>
+      {children}
+    </h1>
+  )
+}
+
+function RecentProjectCardDescription({children}: { children: React.ReactNode }) {
+  return (
+    <p className="text-slate-700 text-base font-normal">
       {children}
     </p>
+  )
+}
+
+function RecentProjectCardLink({href}: { href: string }) {
+  return (
+    <Link className="flex items-center gap-x-2 text-blue-600" href={href} rel="noreferrer" target="_blank">
+      <span className="text-base font-normal">
+        Visit the website
+      </span>
+      <ExternalLinkIcon className="size-4" />
+    </Link>
+  )
+}
+
+function RecentProjectCardImage({imageSource}: { imageSource: string }) {
+  return (
+    <div className="h-full w-44 bg-slate-200/35 rounded-lg"></div>
+  )
+}
+
+//endregion
+
+//region All Projects Button
+
+function SeeMoreProjectsButton({children}: { children: React.ReactNode }) {
+  return (
+    <PrimaryButton className="mt-8" href="/portfolio">
+      {children}
+    </PrimaryButton>
   )
 }
 

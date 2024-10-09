@@ -55,7 +55,7 @@ function Description({children}: { children: React.ReactNode }) {
 
 function DevProcessStoryboard({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-row py-16 px-4 gap-x-4">
+    <div className="flex flex-row max-w-3xl mx-auto py-16 gap-x-4">
       {children}
     </div>
   )
@@ -63,7 +63,7 @@ function DevProcessStoryboard({children}: { children: React.ReactNode }) {
 
 function DevProcessCard({className}: { className?: string }) {
   return (
-    <div className={clsx(className, "h-56 min-w-20 rounded-2xl bg-slate-200/50")} />
+    <div className={clsx(className, "h-56 min-w-20 rounded-2xl bg-slate-200/35")} />
   )
 }
 
