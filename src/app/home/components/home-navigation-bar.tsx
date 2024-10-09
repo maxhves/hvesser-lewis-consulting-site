@@ -1,7 +1,8 @@
 "use client"
 import React, {useState} from 'react';
 import {
-  NavigationBar, NavigationBarActionLink,
+  NavigationBar,
+  NavigationBarActionLink,
   NavigationBarContent,
   NavigationBarDrawer,
   NavigationBarDrawerLink,
