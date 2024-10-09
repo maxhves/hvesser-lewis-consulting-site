@@ -7,6 +7,7 @@ import {ExternalLinkIcon} from "lucide-react";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import {PrimaryButton} from "@/components/ui/button-new";
+import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
 
 //region Model
 
@@ -37,7 +38,7 @@ const recentProjects = [
 
 export default function ProjectsSection() {
   return (
-    <section className="bg-slate-50 scroll-mt-14">
+    <section id={HomeNavLink.Portfolio.id} className="bg-slate-50 scroll-mt-14">
       <ContentContainer className="py-16">
         <div className="flex flex-col items-center text-center">
           <SectionBadge>
