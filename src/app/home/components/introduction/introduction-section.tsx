@@ -35,7 +35,7 @@ export default function IntroductionSection() {
 
 function Heading({children}: { children: React.ReactNode }) {
   return (
-    <h1 className={clsx(outfit.className, "text-blue-950 text-center font-medium text-5xl")}>
+    <h1 className={clsx(outfit.className, "text-blue-950 text-center font-medium text-3xl sm:text-5xl")}>
       {children}
     </h1>
   )
@@ -43,7 +43,7 @@ function Heading({children}: { children: React.ReactNode }) {
 
 function Description({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-8 max-w-md text-center text-base font-normal text-slate-700">
+    <p className="mt-8 max-w-xs sm:max-w-md text-center text-sm sm:text-base font-normal text-slate-700">
       {children}
     </p>
   )
@@ -55,7 +55,7 @@ function Description({children}: { children: React.ReactNode }) {
 
 function DevProcessStoryboard({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-row max-w-3xl mx-auto py-16 gap-x-4">
+    <div className="flex flex-row max-w-3xl mx-auto py-16 px-4 sm:px-0 gap-x-4">
       {children}
     </div>
   )
@@ -63,7 +63,7 @@ function DevProcessStoryboard({children}: { children: React.ReactNode }) {
 
 function DevProcessCard({className}: { className?: string }) {
   return (
-    <div className={clsx(className, "h-56 min-w-20 rounded-2xl bg-slate-200/35")} />
+    <div className={clsx(className, "h-32 sm:h-56 rounded-2xl bg-slate-200/35")} />
   )
 }
 
