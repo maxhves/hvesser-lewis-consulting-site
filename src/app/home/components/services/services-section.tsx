@@ -82,7 +82,7 @@ export default function ServicesSection() {
 function ServicesList({children}: { children: React.ReactNode }) {
   return (
     <ol
-      className="w-full flex list-none py-16 gap-x-8"
+      className="w-full flex flex-col sm:flex-row list-none py-16 gap-8"
       role="list"
     >
       {children}
