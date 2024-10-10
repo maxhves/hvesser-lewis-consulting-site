@@ -19,7 +19,7 @@ export default function AboutSection() {
           </SectionBadge>
 
           <div className="w-full flex flex-row mt-4 gap-x-16">
-            <div className="space-y-6">
+            <div className="space-y-6 text-center sm:text-start">
               <AboutHeading>
                 Hi, I’m Maximilian
               </AboutHeading>
@@ -68,7 +68,7 @@ function AboutBody({children}: { children: React.ReactNode }) {
 function ProfileImage() {
   return (
     <Image
-      className="block rounded-2xl h-auto max-w-56 flex-none object-center"
+      className="hidden sm:block rounded-2xl h-auto max-w-56 flex-none object-cover"
       src={profileImage}
       alt="Maximilian Hvesser-Lewis profile image"
       width={196}
