@@ -64,7 +64,7 @@ export default function ProjectsSection() {
                     </RecentProjectCardDescription>
                     <RecentProjectCardLink href={project.href} />
                   </div>
-                  <div>
+                  <div className="hidden sm:block">
                     <RecentProjectCardImage imageSource={project.imageSource} />
                   </div>
                 </div>
