@@ -43,7 +43,7 @@ function Heading({children}: { children: React.ReactNode }) {
 
 function Description({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-8 max-w-xs sm:max-w-md text-center text-sm sm:text-base font-normal text-slate-700">
+    <p className="mt-8 max-w-xs sm:max-w-md text-center text-base font-normal text-slate-700">
       {children}
     </p>
   )

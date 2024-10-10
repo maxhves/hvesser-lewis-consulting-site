@@ -36,14 +36,18 @@ export function NavigationBarHomeLink({onClick, children}: { onClick: () => void
     <Link
       href="/"
       onClick={onClick}
-      className="h-full absolute content-center"
-    >{children}</Link>
+      className="h-full absolute items-center content-center"
+    >
+      <div className="flex gap-x-2">
+        {children}
+      </div>
+    </Link>
   )
 }
 
 export function NavigationBarHomeLinkLabel({children}: { children: React.ReactNode }) {
   return (
-    <p className={clsx(outfit.className, "text-blue-950 text-xl font-medium")}>
+    <p className={clsx(outfit.className, "text-blue-950 text-text-lg font-medium")}>
       {children}
     </p>
   )

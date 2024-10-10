@@ -13,6 +13,7 @@ import {
   NavigationBarMenuLink,
 } from "@/components/ui/navigation-bar";
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
+import HvesserLewisConsultingLogo from "@/components/icon/logo/hvesser-lewis-consulting-logo";
 
 //region Model
 
@@ -43,8 +44,14 @@ export default function HomeNavigationBar() {
     <NavigationBar>
       <NavigationBarContent>
         <NavigationBarHomeLink onClick={closeDrawer}>
+          <HvesserLewisConsultingLogo className="size-6 text-blue-950" />
           <NavigationBarHomeLinkLabel>
-            maxhves
+            <span className="hidden md:block">
+              Hvesser-Lewis Consulting
+            </span>
+            <span className="block md:hidden font-semibold">
+              HLC
+            </span>
           </NavigationBarHomeLinkLabel>
         </NavigationBarHomeLink>
 
