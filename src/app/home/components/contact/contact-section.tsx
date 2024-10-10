@@ -14,7 +14,7 @@ export default function ContactSection() {
           <SectionHeading className="text-slate-50">
             Get In Touch
           </SectionHeading>
-          <SectionSubheading className="mt-8 px-8 text-slate-200">
+          <SectionSubheading className="mt-8 px-8 text-slate-100">
             Discover how I can help elevate your business and expand your digital presence with a fully customized,
             results-driven solution tailored to your needs. Reach out today to request a detailed quote and explore the
             possibilities.
