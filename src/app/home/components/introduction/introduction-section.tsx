@@ -55,7 +55,7 @@ function Description({children}: { children: React.ReactNode }) {
 
 function DevProcessStoryboard({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-row max-w-3xl mx-auto py-16 px-4 sm:px-0 gap-x-4">
+    <div className="flex flex-row max-w-3xl mx-auto py-16 px-4 sm:px-0 gap-x-2 sm:gap-x-4">
       {children}
     </div>
   )
