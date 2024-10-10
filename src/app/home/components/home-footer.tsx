@@ -48,7 +48,7 @@ export default function HomeFooter() {
   return (
     <footer className="bg-blue-900">
       <ContentContainer className="py-16">
-        <div className="flex gap-x-16">
+        <div className="flex flex-col sm:flex-row gap-8 sm:gap-16">
           <MotivationalQuote>
             Is today day one, or will you let it remain just one day
           </MotivationalQuote>
