@@ -5,7 +5,7 @@ import SectionBadge from "@/components/ui/section-badge";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import Image from "next/image";
-import profileImage from "../../../../../public/images/introduction/mhl_portrait.jpg"
+import profileImage from "../../../../../public/images/introduction/mhl-portrait.jpg"
 
 //region Entry
 
