@@ -9,13 +9,11 @@ import heroImage from "../../../../../public/images/introduction/introduction-he
 
 export default function IntroductionSection() {
   return (
-    <section className="bg-slate-50">
-      <ContentContainer className="flex flex-col pt-24 items-center">
-        <div className="flex flex-col items-center">
+    <section className="relative h-96 bg-neutral-50">
+      <ContentContainer className="absolute h-full items-center bg-black/25">
+        <div className="flex flex-col">
           <Heading>
-            <span>
-              I take your ideas and turn them to <strong className="font-medium text-slate-500">exceptional</strong> user experiences
-            </span>
+            I take your ideas and turn them to exceptional user experiences
           </Heading>
           <Description>
             Fully realized innovative, and well-designed digital solutions, ready to help you lead in your industry
@@ -23,7 +21,7 @@ export default function IntroductionSection() {
         </div>
       </ContentContainer>
       <Image
-        className="mt-16 h-28 sm:h-56 object-cover"
+        className="h-96 object-cover"
         src={heroImage}
         alt="Introduction hero image"
         placeholder="blur"
@@ -38,7 +36,7 @@ export default function IntroductionSection() {
 
 function Heading({children}: { children: React.ReactNode }) {
   return (
-    <h1 className={clsx(outfit.className, "text-blue-950 text-center font-medium text-3xl sm:text-5xl")}>
+    <h1 className={clsx(outfit.className, "text-neutral-50 font-medium text-3xl sm:text-5xl")}>
       {children}
     </h1>
   )
@@ -46,7 +44,7 @@ function Heading({children}: { children: React.ReactNode }) {
 
 function Description({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-8 max-w-xs sm:max-w-md text-center text-base font-normal text-slate-700">
+    <p className="mt-8 max-w-xs sm:max-w-md text-base font-medium text-neutral-50">
       {children}
     </p>
   )
