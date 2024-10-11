@@ -35,41 +35,39 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id={HomeNavLink.Services.id} className="bg-slate-50 scroll-mt-14">
+    <section id={HomeNavLink.Services.id} className="bg-neutral-200/50 scroll-mt-14">
       <ContentContainer className="py-16">
-        <div className="flex flex-col items-center text-center">
           <SectionBadge>
             Services
           </SectionBadge>
-          <SectionHeading className="pt-4">
-            What I Offer
+          <SectionHeading className="mt-1">
+            My Expertise
           </SectionHeading>
-          <SectionSubheading className="mt-8 px-8">
+          <SectionSubheading className="mt-4">
             I specialize in native mobile app development, backend and frontend web applications, and integration with
             APIs and databases. Essentially covering the entire stack.
           </SectionSubheading>
           <ServicesList>
             {services.map(service => (
               <ServiceCard key={service.heading}>
-                <ServiceCardIcon>
-                  <service.icon className="text-slate-50" />
-                </ServiceCardIcon>
+                <ServiceCardImageHeader image={""} />
+                <ServiceCardBody>
                 <ServiceCardHeading>
                   {service.heading}
                 </ServiceCardHeading>
                 <ServiceCardDescription>
                   {service.description}
                 </ServiceCardDescription>
+                </ServiceCardBody>
               </ServiceCard>
             ))}
           </ServicesList>
-          <Body className="px-8">
+          <Body>
             I provide a full range of consultancy services, including detailed estimations and budgeting, end-to-end
             product development for websites and mobile applications, and ongoing post-launch support.{" "}
             <Link className="underline font-medium" href="/contact">Contact me</Link> to discover how I can help your
             business.
           </Body>
-        </div>
       </ContentContainer>
     </section>
   )
@@ -82,7 +80,7 @@ export default function ServicesSection() {
 function ServicesList({children}: { children: React.ReactNode }) {
   return (
     <ol
-      className="w-full flex flex-col sm:flex-row list-none py-16 gap-8"
+      className="h-full flex flex-col sm:flex-row list-none my-16 gap-8"
       role="list"
     >
       {children}
@@ -92,17 +90,23 @@ function ServicesList({children}: { children: React.ReactNode }) {
 
 function ServiceCard({children}: { children: React.ReactNode }) {
   return (
-    <li className="flex-1">
-      <div className="h-full p-8 rounded-3xl bg-white text-start">
-        {children}
-      </div>
+    <li className="flex-1 flex flex-col">
+      {children}
     </li>
   )
 }
 
-function ServiceCardIcon({children}: { children: React.ReactNode }) {
+function ServiceCardImageHeader({image}: { image: string }) {
   return (
-    <div className="flex size-10 rounded-lg bg-blue-600 justify-center items-center">
+    <div className="w-full h-20 bg-neutral-200">
+      {image}
+    </div>
+  )
+}
+
+function ServiceCardBody({children}: { children: React.ReactNode }) {
+  return (
+    <div className="p-8 bg-white flex-1">
       {children}
     </div>
   )
@@ -110,7 +114,7 @@ function ServiceCardIcon({children}: { children: React.ReactNode }) {
 
 function ServiceCardHeading({children}: { children: React.ReactNode }) {
   return (
-    <h1 className={clsx(outfit.className, "mt-6 text-base leading-7 text-blue-950 font-semibold")}>
+    <h1 className={clsx(outfit.className, "text-base text-emerald-600 font-medium")}>
       {children}
     </h1>
   )
@@ -118,7 +122,7 @@ function ServiceCardHeading({children}: { children: React.ReactNode }) {
 
 function ServiceCardDescription({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-2 text-slate-700 text-sm leading-6">
+    <p className="mt-2 text-neutral-700 text-sm leading-6">
       {children}
     </p>
   )

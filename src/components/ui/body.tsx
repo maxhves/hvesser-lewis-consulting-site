@@ -5,7 +5,7 @@ import {clsx} from "clsx";
 
 export function Body({className, children}: { className?: string, children: React.ReactNode }) {
   return (
-    <p className={clsx(className, "text-base font-normal text-slate-700")}>
+    <p className={clsx(className, "text-base font-normal text-neutral-700")}>
       {children}
     </p>
   )
