@@ -2,6 +2,8 @@ import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
+import Image from "next/image";
+import heroImage from "../../../../../public/images/introduction/introduction-hero-image.png"
 
 //region Main Component
 
@@ -20,11 +22,12 @@ export default function IntroductionSection() {
           </Description>
         </div>
       </ContentContainer>
-      <DevProcessStoryboard>
-        <DevProcessCard className="w-1/4" />
-        <DevProcessCard className="w-1/4" />
-        <DevProcessCard className="w-1/2" />
-      </DevProcessStoryboard>
+      <Image
+        className="mt-16 h-28 sm:h-56 object-cover"
+        src={heroImage}
+        alt="Introduction hero image"
+        placeholder="blur"
+      />
     </section>
   );
 }
@@ -46,24 +49,6 @@ function Description({children}: { children: React.ReactNode }) {
     <p className="mt-8 max-w-xs sm:max-w-md text-center text-base font-normal text-slate-700">
       {children}
     </p>
-  )
-}
-
-//endregion
-
-//region Development Process
-
-function DevProcessStoryboard({children}: { children: React.ReactNode }) {
-  return (
-    <div className="flex flex-row max-w-3xl mx-auto py-16 px-4 sm:px-0 gap-x-2 sm:gap-x-4">
-      {children}
-    </div>
-  )
-}
-
-function DevProcessCard({className}: { className?: string }) {
-  return (
-    <div className={clsx(className, "h-32 sm:h-56 rounded-2xl bg-slate-200/35")} />
   )
 }
 
