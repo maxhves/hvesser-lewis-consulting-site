@@ -1,7 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
-import SectionBadge from "@/components/ui/section-badge";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import Image from "next/image";
@@ -13,13 +12,8 @@ export default function AboutSection() {
   return (
     <section id={HomeNavLink.About.id} className="bg-slate-100 scroll-mt-14">
       <ContentContainer className="py-16">
-        <div className="flex flex-col items-center">
-          <SectionBadge>
-            About
-          </SectionBadge>
-
-          <div className="w-full flex flex-row mt-4 gap-x-16">
-            <div className="space-y-6 text-center sm:text-start">
+          <div className="flex flex-col sm:flex-row">
+            <div className="p-8 space-y-6 bg-neutral-200/50">
               <AboutHeading>
                 Hi, I’m Maximilian
               </AboutHeading>
@@ -33,9 +27,10 @@ export default function AboutSection() {
                 tangible, measurable results.
               </AboutBody>
             </div>
-            <ProfileImage />
+            <div className="h-44 sm:h-full w-full sm:w-48 flex-none border-t-8 border-emerald-600 bg-neutral-200/25">
+              <ProfileImage />
+            </div>
           </div>
-        </div>
       </ContentContainer>
     </section>
   );
@@ -47,7 +42,7 @@ export default function AboutSection() {
 
 function AboutHeading({children}: { children: React.ReactNode }) {
   return (
-    <h1 className={clsx(outfit.className, "font-medium text-2xl text-blue-950")}>
+    <h1 className={clsx(outfit.className, "font-medium text-2xl text-neutral-950")}>
       {children}
     </h1>
   )
@@ -55,7 +50,7 @@ function AboutHeading({children}: { children: React.ReactNode }) {
 
 function AboutBody({children}: { children: React.ReactNode }) {
   return (
-    <p className="text-slate-700 text-base font-normal whitespace-pre-wrap">
+    <p className="text-neutral-700 text-base font-normal whitespace-pre-wrap">
       {children}
     </p>
   )
@@ -68,11 +63,9 @@ function AboutBody({children}: { children: React.ReactNode }) {
 function ProfileImage() {
   return (
     <Image
-      className="hidden sm:block rounded-2xl h-auto max-w-56 flex-none object-cover"
+      className="object-cover size-full"
       src={profileImage}
       alt="Maximilian Hvesser-Lewis profile image"
-      width={196}
-      height={248}
       placeholder="blur"
     />
   )
