@@ -15,7 +15,7 @@ export function PrimaryButton({className, href, onClick, children}: {
     return (
       <button
         type="button"
-        className={clsx(outfit.className, className, "rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-slate-50 hover:bg-blue-500 items-center")}
+        className={clsx(outfit.className, className, "rounded-sm bg-emerald-600 px-3 py-2 text-sm font-semibold text-neutral-50 hover:bg-emerald-500 items-center")}
         onClick={onClick}
       >
         {children}
@@ -77,7 +77,7 @@ export function PlainButton({className, children, href, onClick}: {
     <Link href={href}>
       <button
         type="button"
-        className={clsx(outfit.className, className, "w-full rounded-md bg-transparent px-3 py-2 text-sm font-normal text-slate-700 hover:bg-slate-950/5")}
+        className={clsx(outfit.className, className, "w-full rounded-sm bg-transparent px-3 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-950/5")}
         onClick={onClick}
       >
         {children}

@@ -17,7 +17,7 @@ export function NavigationBar({children}: { children: React.ReactNode }) {
 
 export function NavigationBarContent({children}: { children: React.ReactNode }) {
   return (
-    <nav className="w-full h-14 fixed top-0 z-10 bg-slate-50">
+    <nav className="w-full h-14 fixed top-0 z-10 bg-neutral-50">
       <div className="h-full flex flex-col mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 justify-center">
         <div className="h-9 relative">
           {children}
@@ -47,7 +47,7 @@ export function NavigationBarHomeLink({onClick, children}: { onClick: () => void
 
 export function NavigationBarHomeLinkLabel({children}: { children: React.ReactNode }) {
   return (
-    <p className={clsx(outfit.className, "text-blue-950 text-text-lg font-medium")}>
+    <p className={clsx(outfit.className, "text-neutral-950 text-text-lg font-medium")}>
       {children}
     </p>
   )
@@ -102,8 +102,8 @@ export function NavigationBarActionLink({className, href, onClick, children}: {
 export function NavigationBarDrawerTriggerButton({open, onClick}: { open: boolean, onClick: () => void }) {
   return (
     <button className="h-full sm:hidden absolute end-0" onClick={onClick}>
-      <XIcon className={clsx("size-6 text-blue-950", open ? "block" : "hidden")} />
-      <MenuIcon className={clsx("size-6 text-blue-950", open ? "hidden" : "block")} />
+      <XIcon className={clsx("size-6 text-neutral-950", open ? "block" : "hidden")} />
+      <MenuIcon className={clsx("size-6 text-neutral-950", open ? "hidden" : "block")} />
     </button>
   )
 }

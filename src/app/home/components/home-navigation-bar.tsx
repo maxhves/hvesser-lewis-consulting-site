@@ -44,7 +44,7 @@ export default function HomeNavigationBar() {
     <NavigationBar>
       <NavigationBarContent>
         <NavigationBarHomeLink onClick={closeDrawer}>
-          <HvesserLewisConsultingLogo className="size-6 text-blue-950" />
+          <HvesserLewisConsultingLogo className="size-6 text-neutral-950" />
           <NavigationBarHomeLinkLabel>
             <span className="hidden md:block">
               Hvesser-Lewis Consulting
