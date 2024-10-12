@@ -6,22 +6,11 @@ import {Link} from "@/components/ui/link";
 
 //region Model
 
-const contactLinks = [
+const siteLinks = [
   {
-    label: "Auckland, New Zealand",
-    href: ""
+    label: "Contact",
+    href: "/contact"
   },
-  {
-    label: "max@hvesserlewis.com",
-    href: "mailto:max@hvesserlewis.com"
-  },
-  {
-    label: "+66 615 987 642",
-    href: "tel:+66-615-987-642"
-  }
-]
-
-const whatIDoLinks = [
   {
     label: "About",
     href: "/#about"
@@ -46,46 +35,39 @@ const whatIDoLinks = [
 
 export default function HomeFooter() {
   return (
-    <footer className="bg-blue-900">
+    <footer className="bg-neutral-50">
       <ContentContainer className="py-16">
-        <div className="flex flex-col sm:flex-row gap-8 sm:gap-16">
-          <MotivationalQuote>
-            Is today day one, or will you let it remain just one day
-          </MotivationalQuote>
+        <MotivationalQuote>
+          Is today day one, or will you let it remain just one day
+        </MotivationalQuote>
+        <SiteInformation>
+          <Copyright>
+            © 2024 Hvesser-Lewis Consulting
+          </Copyright>
+          <span className="hidden sm:inline-block mx-4 text-sm font-medium text-neutral-950">|</span>
           <SiteLinks>
-            <SiteLinksSection>
-              <SiteLinksSectionHeading>
-                Contact
-              </SiteLinksSectionHeading>
-              <SiteLinksSectionItems>
-                {contactLinks.map(link => (
-                  <SiteLinksSectionItem key={link.label} href={link.href}>
-                    {link.label}
-                  </SiteLinksSectionItem>
-                ))}
-              </SiteLinksSectionItems>
-            </SiteLinksSection>
-            <SiteLinksSection>
-              <SiteLinksSectionHeading>
-                What I Do
-              </SiteLinksSectionHeading>
-              <SiteLinksSectionItems>
-                {whatIDoLinks.map(link => (
-                  <SiteLinksSectionItem key={link.label} href={link.href}>
-                    {link.label}
-                  </SiteLinksSectionItem>
-                ))}
-              </SiteLinksSectionItems>
-            </SiteLinksSection>
+            {siteLinks.map(link => (
+              <SiteLink key={link.label} href={link.href}>
+                {link.label}
+              </SiteLink>
+            ))}
           </SiteLinks>
-        </div>
-        <AccentDivider />
-        <Copyright>
-          Copyright © 2024, Hvesser-Lewis Consulting
-        </Copyright>
+        </SiteInformation>
       </ContentContainer>
     </footer>
   );
+}
+
+//endregion
+
+//region Container
+
+function SiteInformation({children}: { children: React.ReactNode }) {
+  return (
+    <div className="mt-4 flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0">
+      {children}
+    </div>
+  )
 }
 
 //endregion
@@ -94,7 +76,7 @@ export default function HomeFooter() {
 
 function MotivationalQuote({children}: { children: React.ReactNode }) {
   return (
-    <p className={clsx(outfit.className, "flex-1 text-slate-50 font-medium text-2xl")}>
+    <p className={clsx(outfit.className, "text-neutral-950 font-medium text-base text-center sm:text-start")}>
       {children}
     </p>
   )
@@ -102,7 +84,7 @@ function MotivationalQuote({children}: { children: React.ReactNode }) {
 
 function Copyright({children}: { children: React.ReactNode }) {
   return (
-    <p className="w-full text-center text-sm text-slate-50">
+    <p className="flex-none text-sm font-medium text-neutral-950">
       {children}
     </p>
   )
@@ -114,53 +96,19 @@ function Copyright({children}: { children: React.ReactNode }) {
 
 function SiteLinks({children}: { children: React.ReactNode }) {
   return (
-    <div className="flex gap-x-16">
+    <div className="flex gap-x-6 flex-wrap">
       {children}
     </div>
   )
 }
 
-function SiteLinksSection({children}: { children: React.ReactNode }) {
+function SiteLink({href, children}: { href: string, children: React.ReactNode }) {
   return (
-    <div>
-      {children}
-    </div>
-  )
-}
-
-function SiteLinksSectionHeading({children}: { children: React.ReactNode }) {
-  return (
-    <h1 className="text-slate-50 font-semibold text-base">
-      {children}
-    </h1>
-  )
-}
-
-function SiteLinksSectionItems({children}: { children: React.ReactNode }) {
-  return (
-    <ul className="space-y-2 mt-4">
-      {children}
-    </ul>
-  )
-}
-
-function SiteLinksSectionItem({href, children}: { href: string, children: React.ReactNode }) {
-  return (
-    <li className="text-slate-200 text-sm font-normal">
-      <Link href={href}>
+    <Link href={href}>
+      <span className="text-sm font-normal text-neutral-700 hover:text-emerald-600">
         {children}
-      </Link>
-    </li>
-  )
-}
-
-//endregion
-
-//region Divider
-
-function AccentDivider() {
-  return (
-    <hr role="presentation" className="my-8 w-full border-t border-slate-50/10" />
+      </span>
+    </Link>
   )
 }
 

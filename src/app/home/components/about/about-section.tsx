@@ -10,7 +10,7 @@ import profileImage from "../../../../../public/images/about/mhl-portrait.jpg"
 
 export default function AboutSection() {
   return (
-    <section id={HomeNavLink.About.id} className="bg-slate-100 scroll-mt-14">
+    <section id={HomeNavLink.About.id} className="bg-neutral-50 scroll-mt-14">
       <ContentContainer className="py-16">
           <AboutCard>
             <AboutBody>
