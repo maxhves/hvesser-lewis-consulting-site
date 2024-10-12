@@ -29,7 +29,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body id="home" className={clsx(inter.className, "bg-slate-50 h-dvh flex flex-col antialiased")}>
+      <body id="home" className={clsx(inter.className, "bg-neutral-50 h-dvh flex flex-col antialiased")}>
         <HomeNavigationBar />
         {children}
         <HomeFooter />

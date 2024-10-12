@@ -46,7 +46,7 @@ export function AccentButton({className, href, onClick, children}: {
     return (
       <button
         type="button"
-        className={clsx(outfit.className, className, "rounded-md bg-slate-50 px-3 py-2 text-sm font-semibold text-blue-600 hover:bg-slate-200 items-center")}
+        className={clsx(outfit.className, className, "rounded-sm bg-neutral-50 px-3 py-2 text-sm font-semibold text-emerald-600 hover:bg-neutral-200 items-center")}
         onClick={onClick}
       >
         {children}
