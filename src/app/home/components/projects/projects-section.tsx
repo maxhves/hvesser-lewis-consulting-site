@@ -3,7 +3,7 @@ import ContentContainer from "@/components/ui/content-container";
 import {SectionHeading, SectionSubheading} from "@/components/ui/header";
 import SectionBadge from "@/components/ui/section-badge";
 import {ExternalLink, Link} from "@/components/ui/link";
-import {ExternalLinkIcon} from "lucide-react";
+import {ExternalLinkIcon, MoveRightIcon} from "lucide-react";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import {PrimaryButton} from "@/components/ui/button-new";
@@ -38,43 +38,39 @@ const recentProjects = [
 
 export default function ProjectsSection() {
   return (
-    <section id={HomeNavLink.Portfolio.id} className="bg-slate-50 scroll-mt-14">
+    <section id={HomeNavLink.Portfolio.id} className="bg-neutral-50 scroll-mt-14">
       <ContentContainer className="py-16">
-        <div className="flex flex-col items-center text-center">
-          <SectionBadge>
-            Portfolio
-          </SectionBadge>
-          <SectionHeading className="mt-4">
-            Projects I’ve Worked On Recently
-          </SectionHeading>
-          <SectionSubheading className="mt-8">
-            Take a look at some of the recent projects I’ve been working on, and for a deeper technical dive, explore my
-            open-source contributions on <ExternalLink href="https://www.github.com/maxhves">Github</ExternalLink>.
-          </SectionSubheading>
-          <RecentProjectsList>
-            {recentProjects.map(project => (
-              <RecentProjectCard key={project.title}>
-                <div className="flex gap-x-8">
-                  <div className="space-y-4">
-                    <RecentProjectCardHeading>
-                      {project.title}
-                    </RecentProjectCardHeading>
-                    <RecentProjectCardDescription>
-                      {project.description}
-                    </RecentProjectCardDescription>
-                    <RecentProjectCardLink href={project.href} />
-                  </div>
-                  <div className="hidden sm:block">
-                    <RecentProjectCardImage imageSource={project.imageSource} />
-                  </div>
-                </div>
-              </RecentProjectCard>
-            ))}
-          </RecentProjectsList>
-          <SeeMoreProjectsButton>
-            See More Projects
-          </SeeMoreProjectsButton>
-        </div>
+        <SectionBadge>
+          Portfolio
+        </SectionBadge>
+        <SectionHeading className="mt-1">
+          Projects I’ve Worked On Recently
+        </SectionHeading>
+        <SectionSubheading className="mt-4">
+          Take a look at some of the recent projects I’ve been working on, and for a deeper technical dive, explore my
+          open-source contributions on <ExternalLink href="https://www.github.com/maxhves">Github</ExternalLink>.
+        </SectionSubheading>
+        <RecentProjectsList>
+          {recentProjects.map(project => (
+            <ProjectCard key={project.title}>
+              <ProjectCardBody>
+                <ProjectCardHeading>
+                  {project.title}
+                </ProjectCardHeading>
+                <ProjectCardDescription>
+                  {project.description}
+                </ProjectCardDescription>
+                <ProjectCardLink href={project.href} />
+              </ProjectCardBody>
+              <ProjectCardImageBox>
+                <ProjectCardImage />
+              </ProjectCardImageBox>
+            </ProjectCard>
+          ))}
+        </RecentProjectsList>
+        <SeeMoreProjectsButton>
+          See More Projects
+        </SeeMoreProjectsButton>
       </ContentContainer>
     </section>
   );
@@ -92,46 +88,62 @@ function RecentProjectsList({children}: { children: React.ReactNode }) {
   )
 }
 
-function RecentProjectCard({children}: { children: React.ReactNode }) {
+function ProjectCard({children}: { children: React.ReactNode }) {
   return (
-    <li>
-      <div className="p-8 rounded-3xl bg-white text-start">
+    <li className="flex">
+      <div className="flex flex-col sm:flex-row">
         {children}
       </div>
     </li>
   )
 }
 
-function RecentProjectCardHeading({children}: { children: React.ReactNode }) {
+function ProjectCardBody({children}: { children: React.ReactNode }) {
   return (
-    <h1 className={clsx(outfit.className, "text-blue-950 font-medium text-lg")}>
+    <div className="p-8 bg-neutral-200/50">
+      {children}
+    </div>
+  )
+}
+
+function ProjectCardImageBox({children}: { children: React.ReactNode }) {
+  return (
+    <div className="h-44 sm:h-full w-full sm:w-48 flex-none border-t-8 border-emerald-600 bg-neutral-200">
+      {children}
+    </div>
+  )
+}
+
+function ProjectCardImage() {
+  return (
+    <div className="size-full">{/* TODO: Add Image here */}</div>
+  )
+}
+
+function ProjectCardHeading({children}: { children: React.ReactNode }) {
+  return (
+    <h1 className={clsx(outfit.className, "text-neutral-950 font-medium text-lg")}>
       {children}
     </h1>
   )
 }
 
-function RecentProjectCardDescription({children}: { children: React.ReactNode }) {
+function ProjectCardDescription({children}: { children: React.ReactNode }) {
   return (
-    <p className="text-slate-700 text-base font-normal">
+    <p className="mt-4 text-neutral-700 text-base font-normal whitespace-pre-wrap">
       {children}
     </p>
   )
 }
 
-function RecentProjectCardLink({href}: { href: string }) {
+function ProjectCardLink({href}: { href: string }) {
   return (
-    <Link className="flex items-center gap-x-2 text-blue-600" href={href} rel="noreferrer" target="_blank">
-      <span className="text-base font-normal">
+    <Link className="mt-8 group flex items-center gap-x-2" href={href} rel="noreferrer" target="_blank">
+      <MoveRightIcon className="size-6 text-emerald-600" />
+      <span className="text-base font-semibold uppercase text-slate-950 group-hover:text-emerald-600">
         Visit the website
       </span>
-      <ExternalLinkIcon className="size-4" />
     </Link>
-  )
-}
-
-function RecentProjectCardImage({imageSource}: { imageSource: string }) {
-  return (
-    <div className="h-full w-44 bg-slate-200/35 rounded-lg"></div>
   )
 }
 
@@ -141,9 +153,11 @@ function RecentProjectCardImage({imageSource}: { imageSource: string }) {
 
 function SeeMoreProjectsButton({children}: { children: React.ReactNode }) {
   return (
-    <PrimaryButton className="mt-8" href="/portfolio">
-      {children}
-    </PrimaryButton>
+    <div className="w-full flex mt-16 justify-center">
+      <PrimaryButton href="/portfolio">
+        {children}
+      </PrimaryButton>
+    </div>
   )
 }
 
