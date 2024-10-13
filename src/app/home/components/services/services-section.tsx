@@ -65,7 +65,7 @@ export default function ServicesSection() {
           <Body>
             I provide a full range of consultancy services, including detailed estimations and budgeting, end-to-end
             product development for websites and mobile applications, and ongoing post-launch support.{" "}
-            <Link className="underline font-medium" href="/contact">Contact me</Link> to discover how I can help your
+            <Link className="text-emerald-600 hover:text-emerald-800" href="/contact">Contact me</Link> to discover how I can help your
             business.
           </Body>
       </ContentContainer>

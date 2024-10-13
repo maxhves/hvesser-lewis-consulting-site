@@ -138,9 +138,9 @@ function ProjectCardDescription({children}: { children: React.ReactNode }) {
 
 function ProjectCardLink({href}: { href: string }) {
   return (
-    <Link className="mt-8 group flex items-center gap-x-2" href={href} rel="noreferrer" target="_blank">
+    <Link className="mt-8 group w-fit flex items-center gap-x-2" href={href} rel="noreferrer" target="_blank">
       <MoveRightIcon className="size-6 text-emerald-600" />
-      <span className="text-base font-semibold uppercase text-slate-950 group-hover:text-emerald-600">
+      <span className="text-sm font-semibold uppercase text-slate-950 group-hover:text-emerald-600">
         Visit the website
       </span>
     </Link>

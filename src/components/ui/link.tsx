@@ -22,7 +22,7 @@ export function ExternalLink({className, href, children}: {
   children: React.ReactNode
 }) {
   return (
-    <Link className={clsx(className, "underline font-medium")} href={href} rel="noreferrer" target="_blank">
+    <Link className={clsx(className, "text-emerald-600 hover:text-emerald-800")} href={href} rel="noreferrer" target="_blank">
       {children}
     </Link>
   )
