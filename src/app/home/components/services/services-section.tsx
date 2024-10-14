@@ -8,6 +8,11 @@ import {DatabaseZapIcon, LaptopMinimalIcon, TabletSmartphoneIcon} from "lucide-r
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import {Link} from "@/components/ui/link";
+import Image, {StaticImageData} from "next/image";
+
+import mobileDevelopmentImage from "../../../../../public/images/services/mobile-development-service.png"
+import webDevelopmentImage from "../../../../../public/images/services/web-development-service.png"
+import apiDatabaseDesignImage from "../../../../../public/images/services/api-database-service.png"
 
 //region Model
 
@@ -15,17 +20,20 @@ const services = [
   {
     icon: TabletSmartphoneIcon,
     heading: "Mobile Development",
-    description: "Native mobile application development for Android using Kotlin & Java, and for iOS using Swift & Objective-C."
+    description: "Native mobile application development for Android using Kotlin & Java, and for iOS using Swift & Objective-C.",
+    image: mobileDevelopmentImage
   },
   {
     icon: LaptopMinimalIcon,
     heading: "Web Development",
-    description: "Back end development with Kotlin & Java. Front end development with React using JavaScript & TypeScript."
+    description: "Back end development with Kotlin & Java. Front end development with React using JavaScript & TypeScript.",
+    image: webDevelopmentImage
   },
   {
     icon: DatabaseZapIcon,
     heading: "API & Database Design",
-    description: "REST API design and integration. Database design and development using Postgres, MySQL, SQL & MongoDB."
+    description: "REST API design and integration. Database design and development using Postgres, MySQL, SQL & MongoDB.",
+    image: apiDatabaseDesignImage
   }
 ]
 
@@ -50,7 +58,7 @@ export default function ServicesSection() {
           <ServicesList>
             {services.map(service => (
               <ServiceCard key={service.heading}>
-                <ServiceCardImageHeader image={""} />
+                <ServiceCardImageHeader image={service.image} />
                 <ServiceCardBody>
                 <ServiceCardHeading>
                   {service.heading}
@@ -96,11 +104,14 @@ function ServiceCard({children}: { children: React.ReactNode }) {
   )
 }
 
-function ServiceCardImageHeader({image}: { image: string }) {
+function ServiceCardImageHeader({image}: { image: StaticImageData }) {
   return (
-    <div className="w-full h-20 bg-neutral-200">
-      {image}
-    </div>
+    <Image
+      className="w-full h-20 bg-neutral-200 object-cover"
+      src={image}
+      alt="Service Image"
+      placeholder="blur"
+    />
   )
 }
 
