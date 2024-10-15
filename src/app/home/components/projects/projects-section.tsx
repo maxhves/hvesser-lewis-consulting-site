@@ -3,11 +3,16 @@ import ContentContainer from "@/components/ui/content-container";
 import {SectionHeading, SectionSubheading} from "@/components/ui/header";
 import SectionBadge from "@/components/ui/section-badge";
 import {ExternalLink, Link} from "@/components/ui/link";
-import {ExternalLinkIcon, MoveRightIcon} from "lucide-react";
+import {MoveRightIcon} from "lucide-react";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import {PrimaryButton} from "@/components/ui/button-new";
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
+import Image, {StaticImageData} from "next/image";
+
+import temperatureCheckImage from "../../../../../public/images/portfolio/temperature-check-promo.png"
+import crimeConnoisseurImage from "../../../../../public/images/portfolio/crime-connoisseur-promo.png"
+import visaMatchImage from "../../../../../public/images/portfolio/visa-match-promo.png"
 
 //region Model
 
@@ -16,19 +21,19 @@ const recentProjects = [
     title: "Temperature Check",
     description: "This front-end web application helps users determine whether their current body temperature might be considered a fever.\n\nDesigned with a clean and minimal aesthetic, the website ensures users can easily input their temperature and receive a quick, clear result.",
     href: "https://www.temperature-check.com",
-    imageSource: "temperature-check.png"
+    image: temperatureCheckImage
   },
   {
     title: "Crime Connoisseur",
     description: "A podcast discovery platform and player designed to showcase lesser-known true crime podcasts, helping them reach a broader audience.\n\nThe website features a dark, sleek aesthetic and a fully custom podcast client that is both responsive and highly performant.",
     href: "https://www.crimeconnoisseur.com",
-    imageSource: "crime-connoisseur.png"
+    image: crimeConnoisseurImage
   },
   {
     title: "Visa Match",
     description: "An intuitive website providing informational guides to those considering to pursue experience working abroad.\n\nUsers are informed about what visa options are potentially available to them with each guide providing an overview of the requirements, alongside positive and negative considerations.",
     href: "https://www.visamatch.co",
-    imageSource: "visa-match.png"
+    image: visaMatchImage
   }
 ]
 
@@ -63,7 +68,7 @@ export default function ProjectsSection() {
                 <ProjectCardLink href={project.href} />
               </ProjectCardBody>
               <ProjectCardImageBox>
-                <ProjectCardImage />
+                <ProjectCardImage image={project.image} />
               </ProjectCardImageBox>
             </ProjectCard>
           ))}
@@ -114,9 +119,14 @@ function ProjectCardImageBox({children}: { children: React.ReactNode }) {
   )
 }
 
-function ProjectCardImage() {
+function ProjectCardImage({image}: {image: StaticImageData}) {
   return (
-    <div className="size-full">{/* TODO: Add Image here */}</div>
+    <Image
+      className="size-full object-cover object-center bg-neutral-200"
+      src={image}
+      alt="Project promotional image"
+      placeholder="blur"
+    />
   )
 }
 
