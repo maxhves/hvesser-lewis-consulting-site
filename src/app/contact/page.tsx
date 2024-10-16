@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <main className="flex-grow">
-      <ContentContainer className="py-16 sm:py-24">
+      <ContentContainer className="py-8 sm:py-24">
         <SectionHeading>
           Contact Me
         </SectionHeading>
