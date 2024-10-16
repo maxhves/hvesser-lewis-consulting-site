@@ -11,7 +11,7 @@ import HomeFooter from "@/app/home/components/home-footer";
 
 export const metadata: Metadata = {
   title: 'Hvesser-Lewis Consulting',
-  description: 'Full Stack Developer • Mobile Developer • Web Developer',
+  description: 'Full Stack Developer | Mobile Developer | Web Developer',
 }
 
 //endregion
@@ -21,14 +21,6 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <title>Hvesser-Lewis Consulting</title>
-        <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-      </head>
       <body id="home" className={clsx(inter.className, "bg-neutral-50 h-dvh flex flex-col antialiased")}>
         <HomeNavigationBar />
         {children}
