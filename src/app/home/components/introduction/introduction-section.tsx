@@ -25,6 +25,7 @@ export default function IntroductionSection() {
         src={heroImage}
         alt="Introduction hero image"
         placeholder="blur"
+        priority={true}
       />
     </section>
   );
