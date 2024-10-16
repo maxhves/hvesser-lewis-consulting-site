@@ -1,5 +1,3 @@
-//region Entry
-
 import ContentContainer from "@/components/ui/content-container";
 import Header, {Heading, Subheading} from "@/app/blog/components/header";
 import ArticleList from "@/app/blog/components/article-list";
@@ -11,6 +9,8 @@ import ArticleCard, {
   ArticleCardPreviewText,
   ArticleCardTitle
 } from "@/app/blog/components/article-card";
+
+//region Entry
 
 export default function Blog() {
   return (
