@@ -2,7 +2,7 @@ import React from 'react'
 import ContentContainer from "@/components/ui/content-container";
 import {Input} from "@/components/ui/input-new";
 import {Textarea} from "@/components/ui/textarea-new";
-import {BaseButton} from "@/components/ui/button-new";
+import {Button} from "@/components/ui/button-new";
 import {SectionHeading, SectionSubheading} from "@/components/ui/header";
 import Link from "next/link";
 
@@ -33,9 +33,9 @@ export default function Contact() {
           placeholder="Message"
           rows={6}
         />
-        <BaseButton className="mt-8">
+        <Button className="mt-8" disabled={true}>
           Submit
-        </BaseButton>
+        </Button>
       </ContentContainer>
     </main>
   )

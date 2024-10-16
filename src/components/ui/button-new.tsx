@@ -126,7 +126,7 @@ type ButtonProps = (
   | { accent?: never, plain?: never }
 ) &{ className: string, children: React.ReactNode } & (HeadlessButtonProps | React.ComponentPropsWithoutRef<typeof Link>)
 
-export const BaseButton = React.forwardRef(function BaseButton(
+export const Button = React.forwardRef(function Button(
   {accent, plain, className, children, ...props}: ButtonProps,
   ref: React.ForwardedRef<HTMLElement>
 ) {
