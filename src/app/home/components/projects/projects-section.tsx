@@ -73,9 +73,10 @@ export default function ProjectsSection() {
             </ProjectCard>
           ))}
         </RecentProjectsList>
-        <SeeMoreProjectsButton>
-          See More Projects
-        </SeeMoreProjectsButton>
+        {/* TODO: Implement portfolio page with extensive project list */}
+        {/*<SeeMoreProjectsButton>*/}
+        {/*  See More Projects*/}
+        {/*</SeeMoreProjectsButton>*/}
       </ContentContainer>
     </section>
   );

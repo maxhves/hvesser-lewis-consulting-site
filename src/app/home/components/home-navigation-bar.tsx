@@ -18,7 +18,9 @@ import HvesserLewisConsultingLogo from "@/components/icon/logo/hvesser-lewis-con
 //region Model
 
 const homeNavLinks: HomeNavLink[] = [
-  HomeNavLink.About, HomeNavLink.Services, HomeNavLink.Portfolio, HomeNavLink.Blog
+  HomeNavLink.About, HomeNavLink.Services, HomeNavLink.Portfolio
+  // TODO: Implement new blog design
+  // HomeNavLink.Blog
 ]
 
 //endregion
@@ -63,7 +65,7 @@ export default function HomeNavigationBar() {
             ))}
           </NavigationBarMenu>
 
-        <NavigationBarActionLink>
+        <NavigationBarActionLink href="/contact">
           Let’s Talk
         </NavigationBarActionLink>
 
