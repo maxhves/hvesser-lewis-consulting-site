@@ -72,9 +72,9 @@ export function NavigationBarMenuLink({href, children}: {
   children: React.ReactNode
 }) {
   return (
-    <PlainButton href={href}>
+    <Button plain={true} size="small" href={href}>
       {children}
-    </PlainButton>
+    </Button>
   )
 }
 
