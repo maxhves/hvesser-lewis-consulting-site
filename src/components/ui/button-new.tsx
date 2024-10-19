@@ -12,7 +12,7 @@ const styles = {
     'relative isolate inline-flex items-center justify-center gap-x-2 rounded-sm text-sm font-semibold',
 
     // Sizing
-    'px-3.5 py-2.5 sm:text-sm/6',
+    'sm:text-sm/6',
 
     // Focus
     'focus:outline-none data-[focus]:outline data-[focus]:outline-2 data-[focus]:outline-offset-2 data-[focus]:outline-blue-500',
@@ -28,7 +28,18 @@ const styles = {
   ],
   accent: [
     'bg-neutral-50 hover:bg-neutral-200 text-emerald-600'
-  ]
+  ],
+  sizes: {
+    large: [
+      'px-3.5 py-2.5'
+    ],
+    medium: [
+      'px-3 py-2'
+    ],
+    small: [
+      'px-2.5 py-1.5'
+    ]
+  }
 }
 
 //endregion
@@ -121,20 +132,20 @@ export function PlainButton({className, children, href, onClick}: {
 //region Base
 
 type ButtonProps = (
-  | { accent?: never, plain?: true }
-  | { accent?: true, plain?: never }
-  | { accent?: never, plain?: never }
+  | { size?: never; accent?: never, plain?: true }
+  | { size?: never; accent?: true, plain?: never }
+  | { size?: keyof typeof styles.sizes; accent?: never, plain?: never }
 ) &{ className?: string, children: React.ReactNode } & (HeadlessButtonProps | React.ComponentPropsWithoutRef<typeof Link>)
 
 export const Button = React.forwardRef(function Button(
-  {accent, plain, className, children, ...props}: ButtonProps,
+  {size, accent, plain, className, children, ...props}: ButtonProps,
   ref: React.ForwardedRef<HTMLElement>
 ) {
   let classes = clsx(
     outfit.className,
     className,
     styles.base,
-    accent ? styles.accent : plain ? styles.plain : styles.solid
+    accent ? styles.accent : plain ? styles.plain : clsx(styles.solid, styles.sizes[size ?? 'large'])
   )
 
   return 'href' in props ? (

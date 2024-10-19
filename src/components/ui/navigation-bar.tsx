@@ -3,7 +3,7 @@ import {clsx} from "clsx";
 import {Link} from "@/components/ui/link";
 import {MenuIcon, XIcon} from "lucide-react";
 import {outfit} from "@/app/fonts";
-import {PlainButton, PrimaryButton} from "@/components/ui/button-new";
+import {Button, PlainButton, PrimaryButton} from "@/components/ui/button-new";
 
 //region Container
 
@@ -78,20 +78,16 @@ export function NavigationBarMenuLink({href, children}: {
   )
 }
 
-export function NavigationBarActionLink({className, href, onClick, children}: {
-  className?: string,
+export function NavigationBarActionLink({href, children}: {
   href?: string,
-  onClick?: () => void,
   children: React.ReactNode
 }) {
   return (
-    <PrimaryButton
-      className={clsx(className, "absolute end-0 hidden sm:block")}
-      href={href}
-      onClick={onClick}
-    >
-      {children}
-    </PrimaryButton>
+    <div className="h-full absolute end-0 hidden sm:flex items-center">
+      <Button size="small" href={href}>
+        {children}
+      </Button>
+    </div>
   )
 }
 
