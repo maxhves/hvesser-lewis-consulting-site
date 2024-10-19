@@ -6,7 +6,7 @@ import {ExternalLink, Link} from "@/components/ui/link";
 import {MoveRightIcon} from "lucide-react";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
-import {Button} from "@/components/ui/button-new";
+import {Button} from "@/components/ui/button";
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
 import Image, {StaticImageData} from "next/image";
 

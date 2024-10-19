@@ -1,9 +1,9 @@
 'use client'
 import React, {useEffect, useState} from 'react'
 import ContentContainer from "@/components/ui/content-container";
-import {Input} from "@/components/ui/input-new";
-import {Textarea} from "@/components/ui/textarea-new";
-import {Button} from "@/components/ui/button-new";
+import {Input} from "@/components/ui/input";
+import {Textarea} from "@/components/ui/textarea";
+import {Button} from "@/components/ui/button";
 import {SectionHeading, SectionSubheading} from "@/components/ui/header";
 import Link from "next/link";
 import {ContactService} from "@/app/data/services/contact_service/ContactService";

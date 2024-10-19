@@ -3,7 +3,7 @@ import {clsx} from "clsx";
 import {Link} from "@/components/ui/link";
 import {MenuIcon, XIcon} from "lucide-react";
 import {outfit} from "@/app/fonts";
-import {Button} from "@/components/ui/button-new";
+import {Button} from "@/components/ui/button";
 
 //region Container
 
