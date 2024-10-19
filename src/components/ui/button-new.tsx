@@ -44,29 +44,6 @@ const styles = {
 
 //endregion
 
-//region Plain
-
-export function PlainButton({className, children, href, onClick}: {
-  className?: string,
-  children: React.ReactNode,
-  href: string,
-  onClick?: () => void,
-}) {
-  return (
-    <Link href={href}>
-      <button
-        type="button"
-        className={clsx(outfit.className, className, "w-full rounded-sm bg-transparent px-3 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-950/5")}
-        onClick={onClick}
-      >
-        {children}
-      </button>
-    </Link>
-  )
-}
-
-//endregion
-
 //region Base
 
 type ButtonProps = (
