@@ -44,37 +44,6 @@ const styles = {
 
 //endregion
 
-//region Primary
-
-export function PrimaryButton({className, href, onClick, children}: {
-  className?: string,
-  href?: string,
-  onClick?: () => void,
-  children: React.ReactNode
-}) {
-  function InnerButton() {
-    return (
-      <button
-        type="button"
-        className={clsx(outfit.className, className, "rounded-sm bg-emerald-600 px-3 py-2 text-sm font-semibold text-neutral-50 hover:bg-emerald-500 items-center")}
-        onClick={onClick}
-      >
-        {children}
-      </button>
-    )
-  }
-
-  return href !== undefined ? (
-    <Link href={href}>
-      <InnerButton />
-    </Link>
-  ) : (
-    <InnerButton />
-  )
-}
-
-//endregion
-
 //region Accent
 
 export function AccentButton({className, href, onClick, children}: {
