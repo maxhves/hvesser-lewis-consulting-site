@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
-import {AccentButton} from "@/components/ui/button-new";
+import {Button} from "@/components/ui/button-new";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 
@@ -53,9 +53,9 @@ function PromoText({children}: { children: React.ReactNode }) {
 
 function ContactButton({children}: { children: React.ReactNode }) {
   return (
-    <AccentButton href="/contact">
+    <Button accent={true} href="/contact">
       {children}
-    </AccentButton>
+    </Button>
   )
 }
 

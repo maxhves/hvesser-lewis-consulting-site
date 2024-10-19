@@ -101,8 +101,8 @@ export function PlainButton({className, children, href, onClick}: {
 //region Base
 
 type ButtonProps = (
-  | { size?: never; accent?: never, plain?: true }
-  | { size?: never; accent?: true, plain?: never }
+  | { size?: keyof typeof styles.sizes; accent?: never, plain?: true }
+  | { size?: keyof typeof styles.sizes; accent?: true, plain?: never }
   | { size?: keyof typeof styles.sizes; accent?: never, plain?: never }
 ) &{ className?: string, children: React.ReactNode } & (HeadlessButtonProps | React.ComponentPropsWithoutRef<typeof Link>)
 
@@ -114,7 +114,8 @@ export const Button = React.forwardRef(function Button(
     outfit.className,
     className,
     styles.base,
-    accent ? styles.accent : plain ? styles.plain : clsx(styles.solid, styles.sizes[size ?? 'large'])
+    accent ? styles.accent : plain ? styles.plain : styles.solid,
+    styles.sizes[size ?? 'medium']
   )
 
   return 'href' in props ? (
