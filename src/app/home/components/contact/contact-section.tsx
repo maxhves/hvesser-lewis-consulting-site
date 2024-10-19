@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
-import {Button} from "@/components/ui/button-new";
+import {Button} from "@/components/ui/button";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 
