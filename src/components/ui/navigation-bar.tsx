@@ -123,13 +123,14 @@ export function NavigationBarDrawerLink({href, onClick, children}: {
   children: React.ReactNode
 }) {
   return (
-    <PlainButton
-      className="py-2.5"
+    <Button
+      plain={true}
+      size="large"
       href={href}
       onClick={onClick}
     >
       {children}
-    </PlainButton>
+    </Button>
   )
 }
 
