@@ -124,7 +124,7 @@ type ButtonProps = (
   | { accent?: never, plain?: true }
   | { accent?: true, plain?: never }
   | { accent?: never, plain?: never }
-) &{ className: string, children: React.ReactNode } & (HeadlessButtonProps | React.ComponentPropsWithoutRef<typeof Link>)
+) &{ className?: string, children: React.ReactNode } & (HeadlessButtonProps | React.ComponentPropsWithoutRef<typeof Link>)
 
 export const Button = React.forwardRef(function Button(
   {accent, plain, className, children, ...props}: ButtonProps,

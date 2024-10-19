@@ -6,7 +6,7 @@ import {ExternalLink, Link} from "@/components/ui/link";
 import {MoveRightIcon} from "lucide-react";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
-import {PrimaryButton} from "@/components/ui/button-new";
+import {Button} from "@/components/ui/button-new";
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
 import Image, {StaticImageData} from "next/image";
 
@@ -165,9 +165,9 @@ function ProjectCardLink({href}: { href: string }) {
 function SeeMoreProjectsButton({children}: { children: React.ReactNode }) {
   return (
     <div className="w-full flex mt-16 justify-center">
-      <PrimaryButton href="/portfolio">
+      <Button href="/portfolio">
         {children}
-      </PrimaryButton>
+      </Button>
     </div>
   )
 }
