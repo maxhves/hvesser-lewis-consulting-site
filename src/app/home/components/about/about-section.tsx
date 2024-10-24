@@ -4,7 +4,7 @@ import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import Image from "next/image";
-import profileImage from "../../../../../public/images/about/mhl-portrait.jpg"
+import profileImage from "../../../../../public/images/about/mhl-portrait.webp"
 
 //region Entry
 
