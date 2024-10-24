@@ -6,7 +6,7 @@ This website is used to promote my personal consultation services, and this repo
 
 ### Tech Stack
 
-The project has a fairly standard setup utilizing `NextJS` with `Typescript` and `TailwindCSS` for simplified styling. As the site grows in features, I will update this section with more information about the implementation, but for now there exits a minimal number of pages and complexity.
+The project has a fairly standard setup utilizing `NextJS` with `Typescript` and `TailwindCSS` for simplified styling. As the site grows in features, I will update this section with more information about the implementation, but for now there exists a minimal number of pages and complexity.
 
 
 #### Please note
