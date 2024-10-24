@@ -10,9 +10,9 @@ import {Button} from "@/components/ui/button";
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
 import Image, {StaticImageData} from "next/image";
 
-import temperatureCheckImage from "../../../../../public/images/portfolio/temperature-check-promo.png"
-import crimeConnoisseurImage from "../../../../../public/images/portfolio/crime-connoisseur-promo.png"
-import visaMatchImage from "../../../../../public/images/portfolio/visa-match-promo.png"
+import temperatureCheckImage from "../../../../../public/images/portfolio/temperature-check-promo.webp"
+import crimeConnoisseurImage from "../../../../../public/images/portfolio/crime-connoisseur-promo.webp"
+import visaMatchImage from "../../../../../public/images/portfolio/visa-match-promo.webp"
 
 //region Model
 
