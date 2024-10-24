@@ -41,7 +41,7 @@ const recentProjects = [
 
 //region Entry
 
-export default function ProjectsSection() {
+export default function PortfolioSection() {
   return (
     <section id={HomeNavLink.Portfolio.id} className="bg-neutral-50 scroll-mt-14">
       <ContentContainer className="py-16">
@@ -127,6 +127,7 @@ function ProjectCardImage({image}: {image: StaticImageData}) {
       src={image}
       alt="Project promotional image"
       placeholder="blur"
+      loading="lazy"
     />
   )
 }
