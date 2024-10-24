@@ -111,6 +111,7 @@ function ServiceCardImageHeader({image}: { image: StaticImageData }) {
       src={image}
       alt="Service Image"
       placeholder="blur"
+      loading="lazy"
     />
   )
 }
