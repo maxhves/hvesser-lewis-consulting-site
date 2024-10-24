@@ -10,9 +10,9 @@ import {outfit} from "@/app/fonts";
 import {Link} from "@/components/ui/link";
 import Image, {StaticImageData} from "next/image";
 
-import mobileDevelopmentImage from "../../../../../public/images/services/mobile-development-service.png"
-import webDevelopmentImage from "../../../../../public/images/services/web-development-service.png"
-import apiDatabaseDesignImage from "../../../../../public/images/services/api-database-service.png"
+import mobileDevelopmentImage from "../../../../../public/images/services/mobile-development-service.webp"
+import webDevelopmentImage from "../../../../../public/images/services/web-development-service.webp"
+import apiDatabaseDesignImage from "../../../../../public/images/services/api-database-service.webp"
 
 //region Model
 
