@@ -3,7 +3,7 @@ import ContentContainer from "@/components/ui/content-container";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import Image from "next/image";
-import heroImage from "../../../../../public/images/introduction/introduction-hero-image.png"
+import heroImage from "../../../../../public/images/introduction/introduction-hero-image.webp"
 
 //region Main Component
 
