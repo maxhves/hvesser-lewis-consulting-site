@@ -98,8 +98,26 @@ export function NavigationBarActionLink({href, children}: {
 export function NavigationBarDrawerTriggerButton({open, onClick}: { open: boolean, onClick: () => void }) {
   return (
     <button className="h-full sm:hidden absolute end-0" onClick={onClick}>
-      <XIcon className={clsx("size-6 text-neutral-950", open ? "block" : "hidden")} />
-      <MenuIcon className={clsx("size-6 text-neutral-950", open ? "hidden" : "block")} />
+      <div className="grid grid-cols-1 grid-rows-1 text-neutral-950">
+        <XIcon
+          className={
+            clsx(
+              "size-6 transition-all ease-in-out duration-500",
+              open ? "opacity-100 rotate-0" : "opacity-0 rotate-45"
+            )
+          }
+          style={{ gridRow: 1, gridColumn: 1 }}
+        />
+        <MenuIcon
+          className={
+            clsx(
+              "size-6 transition-all ease-in-out duration-500",
+              open ? "opacity-0 rotate-45" : "opacity-100 rotate-0"
+            )
+          }
+          style={{ gridRow: 1, gridColumn: 1 }}
+        />
+      </div>
     </button>
   )
 }
