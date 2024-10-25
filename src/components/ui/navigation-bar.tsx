@@ -1,9 +1,10 @@
 import React from 'react';
 import {clsx} from "clsx";
 import {Link} from "@/components/ui/link";
-import {MenuIcon, XIcon} from "lucide-react";
 import {outfit} from "@/app/fonts";
 import {Button} from "@/components/ui/button";
+import MenuIcon from "@/components/icon/menu-icon";
+import CloseIcon from "@/components/icon/close-icon";
 
 //region Container
 
@@ -99,7 +100,7 @@ export function NavigationBarDrawerTriggerButton({open, onClick}: { open: boolea
   return (
     <button className="h-full sm:hidden absolute end-0" onClick={onClick}>
       <div className="grid grid-cols-1 grid-rows-1 text-neutral-950">
-        <XIcon
+        <CloseIcon
           className={
             clsx(
               "size-6 transition-all ease-in-out duration-500",
