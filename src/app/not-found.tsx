@@ -1,9 +1,9 @@
 import React from 'react'
 import ContentContainer from "@/components/ui/content-container";
 import {Button} from "@/components/ui/button";
-import {MoveLeftIcon} from "lucide-react";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
+import ArrowLeftLongIcon from "@/components/icon/arrow-left-long-icon";
 
 //region Main Component
 
@@ -57,7 +57,7 @@ function DescriptionLabel({children}: { children: React.ReactNode }) {
 function GoBackHomeButton({children}: { children: React.ReactNode }) {
   return (
     <Button className="mt-8" accent={true} href="/">
-      <MoveLeftIcon />
+      <ArrowLeftLongIcon />
       {children}
     </Button>
   )

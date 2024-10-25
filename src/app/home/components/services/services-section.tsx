@@ -4,7 +4,6 @@ import ContentContainer from "@/components/ui/content-container";
 import SectionBadge from "@/components/ui/section-badge";
 import {SectionHeading, SectionSubheading} from "@/components/ui/header";
 import {Body} from "@/components/ui/body";
-import {DatabaseZapIcon, LaptopMinimalIcon, TabletSmartphoneIcon} from "lucide-react";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import {Link} from "@/components/ui/link";
@@ -18,19 +17,16 @@ import apiDatabaseDesignImage from "../../../../../public/images/services/api-da
 
 const services = [
   {
-    icon: TabletSmartphoneIcon,
     heading: "Mobile Development",
     description: "Native mobile application development for Android using Kotlin & Java, and for iOS using Swift & Objective-C.",
     image: mobileDevelopmentImage
   },
   {
-    icon: LaptopMinimalIcon,
     heading: "Web Development",
     description: "Back end development with Kotlin & Java. Front end development with React using JavaScript & TypeScript.",
     image: webDevelopmentImage
   },
   {
-    icon: DatabaseZapIcon,
     heading: "API & Database Design",
     description: "REST API design and integration. Database design and development using Postgres, MySQL, SQL & MongoDB.",
     image: apiDatabaseDesignImage
