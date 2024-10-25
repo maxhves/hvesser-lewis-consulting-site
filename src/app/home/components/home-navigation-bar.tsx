@@ -13,7 +13,7 @@ import {
   NavigationBarMenuLink,
 } from "@/components/ui/navigation-bar";
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
-import HvesserLewisConsultingLogo from "@/components/icon/logo/hvesser-lewis-consulting-logo";
+import HvesserLewisConsultingLogo from "@/components/icon/hvesser-lewis-consulting-logo";
 
 //region Model
 
