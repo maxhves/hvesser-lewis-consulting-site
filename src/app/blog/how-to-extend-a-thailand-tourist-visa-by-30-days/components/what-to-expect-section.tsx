@@ -1,5 +1,4 @@
 import React from 'react'
-import {CircleArrowRight} from "lucide-react";
 import ArticleSection, {
   ArticleSectionActionList,
   ArticleSectionActionListItem,
@@ -44,7 +43,9 @@ export function WhatToExpectSteps({children}: { children: React.ReactNode }) {
 export function WhatToExpectStep({children}: { children: React.ReactNode }) {
   return (
     <ArticleSectionActionListItem>
-      <CircleArrowRight className="mt-1 size-5 flex-none text-orange-600" />
+      {/* TODO:  Setup new arrow icon */}
+      {/*<CircleArrowRight className="mt-1 size-5 flex-none text-orange-600" />*/}
+      {/* TODO:  Setup new arrow icon */}
       {children}
     </ArticleSectionActionListItem>
   )

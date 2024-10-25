@@ -3,7 +3,6 @@ import ContentContainer from "@/components/ui/content-container";
 import {SectionHeading, SectionSubheading} from "@/components/ui/header";
 import SectionBadge from "@/components/ui/section-badge";
 import {ExternalLink, Link} from "@/components/ui/link";
-import {MoveRightIcon} from "lucide-react";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import {Button} from "@/components/ui/button";
@@ -13,6 +12,7 @@ import Image, {StaticImageData} from "next/image";
 import temperatureCheckImage from "../../../../../public/images/portfolio/temperature-check-promo.webp"
 import crimeConnoisseurImage from "../../../../../public/images/portfolio/crime-connoisseur-promo.webp"
 import visaMatchImage from "../../../../../public/images/portfolio/visa-match-promo.webp"
+import ArrowRightLongIcon from "@/components/icon/arrow-right-long-icon";
 
 //region Model
 
@@ -77,6 +77,7 @@ export default function PortfolioSection() {
         {/*<SeeMoreProjectsButton>*/}
         {/*  See More Projects*/}
         {/*</SeeMoreProjectsButton>*/}
+        {/* TODO: Implement portfolio page with extensive project list */}
       </ContentContainer>
     </section>
   );
@@ -151,7 +152,7 @@ function ProjectCardDescription({children}: { children: React.ReactNode }) {
 function ProjectCardLink({href}: { href: string }) {
   return (
     <Link className="mt-8 group w-fit flex items-center gap-x-2" href={href} rel="noreferrer" target="_blank">
-      <MoveRightIcon className="size-6 text-emerald-600" />
+      <ArrowRightLongIcon className="size-6 text-emerald-600" />
       <span className="text-sm font-semibold uppercase text-slate-950 group-hover:text-emerald-600">
         Visit the website
       </span>
