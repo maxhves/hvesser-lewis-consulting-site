@@ -1,11 +1,11 @@
 import React from 'react'
-import {CircleCheckIcon} from "lucide-react";
 import ArticleSection, {
   ArticleSectionActionList,
   ArticleSectionActionListItem,
   ArticleSectionBody,
   ArticleSectionHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
+import CheckCircleIcon from "@/components/icon/check-circle-icon";
 
 //region Entry
 
@@ -44,7 +44,7 @@ export function WhatYouNeedChecklist({children}: { children: React.ReactNode }) 
 export function WhatYouNeedChecklistItem({children}: { children: React.ReactNode }) {
   return (
     <ArticleSectionActionListItem>
-      <CircleCheckIcon className="mt-1 size-5 flex-none text-orange-600" />
+      <CheckCircleIcon className="mt-1 size-5 flex-none text-orange-600" />
       {children}
     </ArticleSectionActionListItem>
   )
