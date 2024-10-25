@@ -27,6 +27,7 @@ import FinalCommentsSection, {
   FinalCommentsHeading,
   FinalCommentsLink
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/final-comments-section";
+import {notFound} from "next/navigation";
 
 //region Model
 
@@ -77,6 +78,9 @@ const processSteps = [
 //region Entry
 
 export default function HowToExtendAThailandTouristVisaBy30Days() {
+  return notFound()
+
+  // TODO: Refactor this article.
   return (
     <main className="flex-grow">
       <ContentContainer className="py-16 sm:py-32">

@@ -5,6 +5,7 @@ import ArticleSection, {
   ArticleSectionBody,
   ArticleSectionHeading
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
+import ArrowRightCircleIcon from "@/components/icon/arrow-right-circle-icon";
 
 //region Entry
 
@@ -43,9 +44,7 @@ export function WhatToExpectSteps({children}: { children: React.ReactNode }) {
 export function WhatToExpectStep({children}: { children: React.ReactNode }) {
   return (
     <ArticleSectionActionListItem>
-      {/* TODO:  Setup new arrow icon */}
-      {/*<CircleArrowRight className="mt-1 size-5 flex-none text-orange-600" />*/}
-      {/* TODO:  Setup new arrow icon */}
+      <ArrowRightCircleIcon className="mt-1 size-5 flex-none text-orange-600" />
       {children}
     </ArticleSectionActionListItem>
   )
