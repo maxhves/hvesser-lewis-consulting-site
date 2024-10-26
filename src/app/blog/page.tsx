@@ -14,9 +14,6 @@ import {notFound} from "next/navigation";
 //region Entry
 
 export default function Blog() {
-  return notFound()
-
-  // TODO: Implement new blog page design
   return (
     <main className="flex-grow">
       <ContentContainer className="py-16 sm:py-32">

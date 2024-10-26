@@ -22,12 +22,11 @@ const siteLinks = [
   {
     label: "Portfolio",
     href: "/#portfolio"
+  },
+  {
+    label: "Blog",
+    href: "/blog"
   }
-  // TODO: Implement new blog design
-  // {
-  //   label: "Blog",
-  //   href: "/blog"
-  // }
 ]
 
 //endregion

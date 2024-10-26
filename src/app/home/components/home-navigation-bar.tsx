@@ -18,9 +18,7 @@ import HvesserLewisConsultingLogo from "@/components/icon/hvesser-lewis-consulti
 //region Model
 
 const homeNavLinks: HomeNavLink[] = [
-  HomeNavLink.About, HomeNavLink.Services, HomeNavLink.Portfolio
-  // TODO: Implement new blog design
-  // HomeNavLink.Blog
+  HomeNavLink.About, HomeNavLink.Services, HomeNavLink.Portfolio, HomeNavLink.Blog
 ]
 
 //endregion
