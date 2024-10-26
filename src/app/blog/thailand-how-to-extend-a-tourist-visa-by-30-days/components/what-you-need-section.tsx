@@ -4,7 +4,7 @@ import ArticleSection, {
   ArticleSectionActionListItem,
   ArticleSectionBody,
   ArticleSectionHeading
-} from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/common/ArticleSection";
+} from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/common/article-section";
 import CheckCircleIcon from "@/components/icon/check-circle-icon";
 
 //region Entry
