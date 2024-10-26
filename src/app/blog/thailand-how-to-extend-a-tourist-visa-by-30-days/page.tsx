@@ -27,7 +27,10 @@ import FinalCommentsSection, {
   FinalCommentsHeading,
   FinalCommentsLink
 } from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/final-comments-section";
-import {notFound} from "next/navigation";
+import ArticleImageBanner
+  from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/article-image-banner";
+
+import bangkokStreetImage from "../../../../public/images/blog/bangkok-street.webp"
 
 //region Model
 
@@ -77,115 +80,113 @@ const processSteps = [
 
 //region Entry
 
-export default function HowToExtendAThailandTouristVisaBy30Days() {
-  return notFound()
-
-  // TODO: Refactor this article.
+export default function ThailandHowToExtendATouristVisaBy30Days() {
   return (
     <main className="flex-grow">
-      <ContentContainer className="py-16 sm:py-32">
-        <article>
-          <IntroductionSection>
-            <IntroductionPreTitle>
-              A guide on
-            </IntroductionPreTitle>
-            <IntroductionHeading>
-              How To Extend A Thailand Tourist Visa By 30 Days
-            </IntroductionHeading>
-            <IntroductionPreface>
-              If, like me, you’ve recently taken advantage of Thailand’s 60-day visa exemption or 60-day Visa on
-              Arrival, you might now be wondering how to extend your stay by an additional 30 days. If so, you’ve come
-              to the right place.
-            </IntroductionPreface>
-            <IntroductionBody>
-              I’d like to start by noting that immigration offices may vary slightly depending on their location and
-              specific procedures. So, where it’s relevant, the information I’m sharing here is based on my personal
-              experience of extending my 60-day visa exemption in Bangkok.
-            </IntroductionBody>
-          </IntroductionSection>
+      <article>
+        <ArticleImageBanner image={bangkokStreetImage} />
+        <ContentContainer className="py-16 sm:py-32">
+            <IntroductionSection>
+              <IntroductionPreTitle>
+                A guide on
+              </IntroductionPreTitle>
+              <IntroductionHeading>
+                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+              </IntroductionHeading>
+              <IntroductionPreface>
+                If, like me, you’ve recently taken advantage of Thailand’s 60-day visa exemption or 60-day Visa on
+                Arrival, you might now be wondering how to extend your stay by an additional 30 days. If so, you’ve come
+                to the right place.
+              </IntroductionPreface>
+              <IntroductionBody>
+                I’d like to start by noting that immigration offices may vary slightly depending on their location and
+                specific procedures. So, where it’s relevant, the information I’m sharing here is based on my personal
+                experience of extending my 60-day visa exemption in Bangkok.
+              </IntroductionBody>
+            </IntroductionSection>
 
-          <WhatYouNeedSection>
-            <WhatYouNeedHeading>
-              What you need
-            </WhatYouNeedHeading>
-            <WhatYouNeedChecklist>
-              {itemsNeeded.map((item => (
-                <WhatYouNeedChecklistItem key={item.label}>
-                  <span>
-                    <strong className="font-semibold text-stone-900">{item.label}</strong> {item.description}
-                  </span>
-                </WhatYouNeedChecklistItem>
-              )))}
-            </WhatYouNeedChecklist>
-            <WhatYouNeedBody>
-              Once you’ve got everything ready, you can approach the immigration assistants at your chosen office.
-            </WhatYouNeedBody>
-          </WhatYouNeedSection>
+            <WhatYouNeedSection>
+              <WhatYouNeedHeading>
+                What you need
+              </WhatYouNeedHeading>
+              <WhatYouNeedChecklist>
+                {itemsNeeded.map((item => (
+                  <WhatYouNeedChecklistItem key={item.label}>
+                    <span>
+                      <strong className="font-semibold text-stone-900">{item.label}</strong> {item.description}
+                    </span>
+                  </WhatYouNeedChecklistItem>
+                )))}
+              </WhatYouNeedChecklist>
+              <WhatYouNeedBody>
+                Once you’ve got everything ready, you can approach the immigration assistants at your chosen office.
+              </WhatYouNeedBody>
+            </WhatYouNeedSection>
 
-          <WhereToGoSection>
-            <WhereToGoHeading>
-              Where to go
-            </WhereToGoHeading>
-            <WhereToGoBody>
-              <span>
-                Some online sources suggest you can visit any immigration office in Thailand, which sounds convenient.
-                However, I’m not convinced this is always the case. While at the immigration office myself, I overheard
-                a couple who were trying to extend their visa but were turned away because they had arrived in a
-                different province and planned to stay there for their entire trip. Based on this, I recommend
-                visiting the immigration office in the province where you plan to stay if you’re in a similar situation.
-                {"\n"}{"\n"}
-                Once you know the province where you want to extend your visa, you can locate your local immigration
-                office, also known as the Immigration Bureau. There are several locations, which can make it a bit
-                confusing, but for Bangkok, I recommend visiting the immigration office at{' '}
-                <WhereToGoLink href="https://maps.app.goo.gl/dqNeEgV4n6CV31sH7">IT Square</WhereToGoLink>
-                , listed on Google Maps as “Immigration Office - Short-term VISA”.
-                {"\n"}{"\n"}
-                For other provinces, I suggest searching “Immigration Bureau” on Google Maps and checking the reviews.
-                The reviews will give you an idea of whether others have successfully extended their visas at that
-                location.
-              </span>
-            </WhereToGoBody>
-          </WhereToGoSection>
+            <WhereToGoSection>
+              <WhereToGoHeading>
+                Where to go
+              </WhereToGoHeading>
+              <WhereToGoBody>
+                <span>
+                  Some online sources suggest you can visit any immigration office in Thailand, which sounds convenient.
+                  However, I’m not convinced this is always the case. While at the immigration office myself, I overheard
+                  a couple who were trying to extend their visa but were turned away because they had arrived in a
+                  different province and planned to stay there for their entire trip. Based on this, I recommend
+                  visiting the immigration office in the province where you plan to stay if you’re in a similar situation.
+                  {"\n"}{"\n"}
+                  Once you know the province where you want to extend your visa, you can locate your local immigration
+                  office, also known as the Immigration Bureau. There are several locations, which can make it a bit
+                  confusing, but for Bangkok, I recommend visiting the immigration office at{' '}
+                  <WhereToGoLink href="https://maps.app.goo.gl/dqNeEgV4n6CV31sH7">IT Square</WhereToGoLink>
+                  , listed on Google Maps as “Immigration Office - Short-term VISA”.
+                  {"\n"}{"\n"}
+                  For other provinces, I suggest searching “Immigration Bureau” on Google Maps and checking the reviews.
+                  The reviews will give you an idea of whether others have successfully extended their visas at that
+                  location.
+                </span>
+              </WhereToGoBody>
+            </WhereToGoSection>
 
-          <WhatToExpectSection>
-            <WhatToExpectHeading>
-              What to expect
-            </WhatToExpectHeading>
-            <WhatToExpectBody>
-              At the immigration office I visited, the process was split into four steps. I’ll go over these steps and
-              provide a small commentary for clarity. I cannot promise that each immigration office across the entirety
-              of Thailand is the same, but I imagine the process to be fairly similar.
-            </WhatToExpectBody>
-            <WhatToExpectSteps>
-              {processSteps.map(step => (
-                <WhatToExpectStep key={step.label}>
-                  <span>
-                    <strong className="font-semibold text-stone-900">{step.label}</strong> {step.description}
-                  </span>
-                </WhatToExpectStep>
-              ))}
-            </WhatToExpectSteps>
-            <WhatToExpectBody>
-              Congratulations! You’re done now, no further action is needed, go ahead and enjoy the rest of your stay.
-            </WhatToExpectBody>
-          </WhatToExpectSection>
+            <WhatToExpectSection>
+              <WhatToExpectHeading>
+                What to expect
+              </WhatToExpectHeading>
+              <WhatToExpectBody>
+                At the immigration office I visited, the process was split into four steps. I’ll go over these steps and
+                provide a small commentary for clarity. I cannot promise that each immigration office across the entirety
+                of Thailand is the same, but I imagine the process to be fairly similar.
+              </WhatToExpectBody>
+              <WhatToExpectSteps>
+                {processSteps.map(step => (
+                  <WhatToExpectStep key={step.label}>
+                    <span>
+                      <strong className="font-semibold text-stone-900">{step.label}</strong> {step.description}
+                    </span>
+                  </WhatToExpectStep>
+                ))}
+              </WhatToExpectSteps>
+              <WhatToExpectBody>
+                Congratulations! You’re done now, no further action is needed, go ahead and enjoy the rest of your stay.
+              </WhatToExpectBody>
+            </WhatToExpectSection>
 
-          <FinalCommentsSection>
-            <FinalCommentsHeading>
-              Final comments
-            </FinalCommentsHeading>
-            <FinalCommentsBody>
-              With this article, I hope to have clarified what to do and what to expect when extending a short-term
-              tourist visa. While I was in Thailand trying to find this information myself, I found it a bit confusing.
-              My aim is to make things easier for others by sharing my experience.
-              {'\n'}{'\n'}
-              If you think something’s missing or have suggestions for improving this article, please reach out to me
-              at <FinalCommentsLink href="mailto:max@hvesserlewis.com">max@hvesserlewis.com</FinalCommentsLink>—I’d be
-              glad to hear from you.
-            </FinalCommentsBody>
-          </FinalCommentsSection>
-        </article>
-      </ContentContainer>
+            <FinalCommentsSection>
+              <FinalCommentsHeading>
+                Final comments
+              </FinalCommentsHeading>
+              <FinalCommentsBody>
+                With this article, I hope to have clarified what to do and what to expect when extending a short-term
+                tourist visa. While I was in Thailand trying to find this information myself, I found it a bit confusing.
+                My aim is to make things easier for others by sharing my experience.
+                {'\n'}{'\n'}
+                If you think something’s missing or have suggestions for improving this article, please reach out to me
+                at <FinalCommentsLink href="mailto:max@hvesserlewis.com">max@hvesserlewis.com</FinalCommentsLink>—I’d be
+                glad to hear from you.
+              </FinalCommentsBody>
+            </FinalCommentsSection>
+        </ContentContainer>
+      </article>
     </main>
   )
 }
