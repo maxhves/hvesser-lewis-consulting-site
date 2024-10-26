@@ -1,5 +1,5 @@
 import ContentContainer from "@/components/ui/content-container";
-import Header, {Heading, Subheading} from "@/app/blog/components/header";
+import BlogHeader, {BlogHeading, BlogDescription} from "@/app/blog/components/blog-header";
 import ArticleList from "@/app/blog/components/article-list";
 import ArticleCard, {
   ArticleCardBody,
@@ -17,14 +17,14 @@ export default function Blog() {
   return (
     <main className="flex-grow">
       <ContentContainer className="py-16 sm:py-32">
-        <Header>
-          <Heading>
+        <BlogHeader>
+          <BlogHeading>
             The Blog
-          </Heading>
-          <Subheading>
+          </BlogHeading>
+          <BlogDescription>
             A place where I share interesting and noteworthy self-written articles
-          </Subheading>
-        </Header>
+          </BlogDescription>
+        </BlogHeader>
 
         <ArticleList>
           <ArticleCard>

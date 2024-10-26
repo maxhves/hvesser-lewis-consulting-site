@@ -1,6 +1,6 @@
 import React from 'react'
 import {clsx} from "clsx";
-import {karla} from "@/app/fonts";
+import {outfit} from "@/app/fonts";
 import ArticleSection, {
   ArticleSectionBody
 } from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
@@ -19,7 +19,7 @@ export default function IntroductionSection({children}: { children: React.ReactN
 
 export function IntroductionPreTitle({children}: { children: React.ReactNode }) {
   return (
-    <p className={clsx(karla.className, "font-semibold text-base leading-7 text-orange-600")}>
+    <p className={clsx(outfit.className, "font-semibold text-base leading-7 text-orange-600")}>
       {children}
     </p>
   )
@@ -27,7 +27,7 @@ export function IntroductionPreTitle({children}: { children: React.ReactNode }) 
 
 export function IntroductionHeading({children}: { children: React.ReactNode }) {
   return (
-    <h1 className={clsx(karla.className, "mt-2 text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl")}>
+    <h1 className={clsx(outfit.className, "mt-2 text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl")}>
       {children}
     </h1>
   )
