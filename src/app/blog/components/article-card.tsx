@@ -1,6 +1,6 @@
 import React from 'react'
 import {clsx} from "clsx";
-import {karla} from "@/app/fonts";
+import {outfit} from "@/app/fonts";
 import {Link} from "@/components/ui/link";
 
 //region Entry
@@ -15,7 +15,7 @@ export default function ArticleCard({children}: { children: React.ReactNode }) {
 
 //endregion
 
-//region Header
+//region BlogHeader
 
 export function ArticleCardHeader({children}: { children: React.ReactNode}) {
   return (
@@ -53,7 +53,7 @@ export function ArticleCardDate({children}: { children: React.ReactNode }) {
 
 export function ArticleCardTitle({children}: { children: React.ReactNode }) {
   return (
-    <h3 className={clsx(karla.className, "text-lg font-semibold leading-6 text-stone-900 group-hover:text-stone-600")}>
+    <h3 className={clsx(outfit.className, "text-lg font-semibold leading-6 text-stone-900 group-hover:text-stone-600")}>
       {children}
     </h3>
   )
