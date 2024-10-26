@@ -3,11 +3,11 @@ import ArticleSection, {
   ArticleSectionBody,
   ArticleSectionBodyLink,
   ArticleSectionHeading
-} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
+} from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/common/ArticleSection";
 
 //region Entry
 
-export default function FinalCommentsSection({children}: { children: React.ReactNode }) {
+export default function WhereToGoSection({children}: { children: React.ReactNode }) {
   return (
     <ArticleSection>{children}</ArticleSection>
   )
@@ -17,13 +17,13 @@ export default function FinalCommentsSection({children}: { children: React.React
 
 //region Text
 
-export function FinalCommentsHeading({children}: { children: React.ReactNode }) {
+export function WhereToGoHeading({children}: { children: React.ReactNode }) {
   return (
     <ArticleSectionHeading>{children}</ArticleSectionHeading>
   )
 }
 
-export function FinalCommentsBody({children}: { children: React.ReactNode }) {
+export function WhereToGoBody({children}: { children: React.ReactNode }) {
   return (
     <ArticleSectionBody>{children}</ArticleSectionBody>
   )
@@ -33,7 +33,7 @@ export function FinalCommentsBody({children}: { children: React.ReactNode }) {
 
 //region Link
 
-export function FinalCommentsLink({href, children}: { href: string, children: React.ReactNode }) {
+export function WhereToGoLink({href, children}: { href: string, children: React.ReactNode }) {
   return (
     <ArticleSectionBodyLink href={href}>{children}</ArticleSectionBodyLink>
   )

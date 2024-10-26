@@ -3,7 +3,7 @@ import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";
 import ArticleSection, {
   ArticleSectionBody
-} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/common/ArticleSection";
+} from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/common/ArticleSection";
 
 //region Entry
 
