@@ -6,7 +6,7 @@ import {outfit} from "@/app/fonts";
 
 export default function BlogHeader({children}: { children: React.ReactNode }) {
   return (
-    <div className="space-y-4">
+    <div className="pt-8 sm:pt-24 pb-16 space-y-4">
       {children}
     </div>
   )
@@ -26,7 +26,7 @@ export function BlogHeading({children}: { children: React.ReactNode }) {
 
 export function BlogDescription({children}: { children: React.ReactNode }) {
   return (
-    <h3 className="text-lg leading-8 text-stone-600">
+    <h3 className="text-base font-normal text-neutral-700">
       {children}
     </h3>
   )

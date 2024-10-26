@@ -3,49 +3,47 @@ import BlogHeader, {BlogHeading, BlogDescription} from "@/app/blog/components/bl
 import ArticleList from "@/app/blog/components/article-list";
 import ArticleCard, {
   ArticleCardBody,
-  ArticleCardCategoryPill,
   ArticleCardDate,
-  ArticleCardHeader,
-  ArticleCardPreviewText,
-  ArticleCardTitle
+  ArticleCardHeader, ArticleCardText,
+  ArticleCardTitle, ArticleImage
 } from "@/app/blog/components/article-card";
-import {notFound} from "next/navigation";
+
+import bangkokStreetImage from "../../../public/images/blog/bangkok-street.webp"
 
 //region Entry
 
 export default function Blog() {
   return (
     <main className="flex-grow">
-      <ContentContainer className="py-16 sm:py-32">
+      <ContentContainer>
         <BlogHeader>
           <BlogHeading>
-            The Blog
+            Beyond Code: Hvesser-Lewis Insights
           </BlogHeading>
           <BlogDescription>
-            A place where I share interesting and noteworthy self-written articles
+            Join me in exploring a range of self-written articles covering diverse topics, from technology to travel. I
+            delve into subjects that reflect both my personal passions and professional interests, offering informative
+            insights that highlight my unique perspectives and expertise.
           </BlogDescription>
         </BlogHeader>
 
         <ArticleList>
           <ArticleCard>
-            <ArticleCardHeader>
-              <ArticleCardDate>
-                Sep 26, 2024
-              </ArticleCardDate>
-              <ArticleCardCategoryPill>
-                Travel
-              </ArticleCardCategoryPill>
-            </ArticleCardHeader>
-            <ArticleCardBody href="/blog/how-to-extend-a-thailand-tourist-visa-by-30-days">
-              <ArticleCardTitle>
-                How To Extend A Thailand Tourist Visa By 30 Days
-              </ArticleCardTitle>
-              <ArticleCardPreviewText>
-                If, like me, you&apos;ve recently taken advantage of Thailand&apos;s 60-day visa exemption or 60-day
-                Visa on Arrival, you might now be wondering how to extend your stay by an additional 30 days. If so,
-                you&apos;ve come to the right place.
-              </ArticleCardPreviewText>
-            </ArticleCardBody>
+            <ArticleImage image={bangkokStreetImage} />
+            <ArticleCardText>
+              <ArticleCardHeader>
+                <ArticleCardTitle href="/blog/thailand-how-to-extend-a-tourist-visa-by-30-days">
+                  Thailand: How to Extend a Tourist Visa by 30 Days
+                </ArticleCardTitle>
+                <ArticleCardDate>
+                  September 26, 2024
+                </ArticleCardDate>
+              </ArticleCardHeader>
+              <ArticleCardBody>
+                A straightforward guide for travelers on a 60-day tourist visa, detailing how to extend it by 30 days,
+                along with helpful tips and key things to watch out for.
+              </ArticleCardBody>
+            </ArticleCardText>
           </ArticleCard>
         </ArticleList>
       </ContentContainer>

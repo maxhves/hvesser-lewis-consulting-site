@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function ArticleList({children}: { children: React.ReactNode }) {
   return(
-    <ol className="space-y-16 mt-10 sm:mt-16">
+    <ol className="space-y-16">
       {children}
     </ol>
   )

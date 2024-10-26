@@ -4,29 +4,29 @@ import IntroductionSection, {
   IntroductionHeading,
   IntroductionPreface,
   IntroductionPreTitle
-} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/introduction-section";
+} from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/introduction-section";
 import WhatYouNeedSection, {
   WhatYouNeedBody,
   WhatYouNeedChecklist,
   WhatYouNeedChecklistItem,
   WhatYouNeedHeading
-} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/what-you-need-section";
+} from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/what-you-need-section";
 import WhereToGoSection, {
   WhereToGoBody,
   WhereToGoHeading,
   WhereToGoLink
-} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/where-to-go-section";
+} from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/where-to-go-section";
 import WhatToExpectSection, {
   WhatToExpectBody,
   WhatToExpectHeading,
   WhatToExpectStep,
   WhatToExpectSteps
-} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/what-to-expect-section";
+} from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/what-to-expect-section";
 import FinalCommentsSection, {
   FinalCommentsBody,
   FinalCommentsHeading,
   FinalCommentsLink
-} from "@/app/blog/how-to-extend-a-thailand-tourist-visa-by-30-days/components/final-comments-section";
+} from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/final-comments-section";
 import {notFound} from "next/navigation";
 
 //region Model
