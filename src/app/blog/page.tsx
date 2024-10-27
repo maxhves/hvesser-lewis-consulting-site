@@ -22,8 +22,7 @@ export default function Blog() {
           </BlogHeading>
           <BlogDescription>
             Join me in exploring a range of self-written articles covering diverse topics, from technology to travel. I
-            delve into subjects that reflect both my personal passions and professional interests, offering informative
-            insights that highlight my unique perspectives and expertise.
+            delve into subjects that reflect both my personal passions and professional interests.
           </BlogDescription>
         </BlogHeader>
 
@@ -40,7 +39,7 @@ export default function Blog() {
                 </ArticleCardDate>
               </ArticleCardHeader>
               <ArticleCardBody>
-                A straightforward guide for travelers on a 60-day tourist visa, detailing how to extend it by 30 days,
+                A straightforward guide for travelers on a tourist visa, detailing how to extend it by 30 days,
                 along with helpful tips and key things to watch out for.
               </ArticleCardBody>
             </ArticleCardText>
