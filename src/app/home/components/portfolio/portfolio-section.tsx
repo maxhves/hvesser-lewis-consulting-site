@@ -153,7 +153,7 @@ function ProjectCardLink({href}: { href: string }) {
   return (
     <Link className="mt-8 group w-fit flex items-center gap-x-2" href={href} rel="noreferrer" target="_blank">
       <ArrowRightLongIcon className="size-6 text-emerald-600" />
-      <span className="text-sm font-semibold uppercase text-slate-950 group-hover:text-emerald-600">
+      <span className="text-sm font-semibold uppercase text-neutral-950 group-hover:text-emerald-600">
         Visit the website
       </span>
     </Link>

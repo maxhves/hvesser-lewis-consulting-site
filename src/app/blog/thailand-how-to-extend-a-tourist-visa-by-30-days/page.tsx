@@ -31,6 +31,10 @@ import ArticleImageBanner
   from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/article-image-banner";
 
 import bangkokStreetImage from "../../../../public/images/blog/bangkok-street.webp"
+import {
+  BackToBlog,
+  BackToBlogButton
+} from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/back-to-blog";
 
 //region Model
 
@@ -85,13 +89,18 @@ export default function ThailandHowToExtendATouristVisaBy30Days() {
     <main className="flex-grow">
       <article>
         <ArticleImageBanner image={bangkokStreetImage} />
+        <BackToBlog>
+          <BackToBlogButton>
+            Back to blog
+          </BackToBlogButton>
+        </BackToBlog>
         <ContentContainer className="py-16 sm:py-32">
             <IntroductionSection>
               <IntroductionPreTitle>
                 A guide on
               </IntroductionPreTitle>
               <IntroductionHeading>
-                XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                Thailand: How to Extend a Tourist Visa by 30 Days
               </IntroductionHeading>
               <IntroductionPreface>
                 If, like me, you’ve recently taken advantage of Thailand’s 60-day visa exemption or 60-day Visa on
