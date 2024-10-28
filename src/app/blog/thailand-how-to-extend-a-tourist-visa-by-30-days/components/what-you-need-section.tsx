@@ -44,7 +44,7 @@ export function WhatYouNeedChecklist({children}: { children: React.ReactNode }) 
 export function WhatYouNeedChecklistItem({children}: { children: React.ReactNode }) {
   return (
     <ArticleSectionActionListItem>
-      <CheckCircleIcon className="mt-1 size-5 flex-none text-orange-600" />
+      <CheckCircleIcon className="mt-0.5 size-5 flex-none text-emerald-600" />
       {children}
     </ArticleSectionActionListItem>
   )

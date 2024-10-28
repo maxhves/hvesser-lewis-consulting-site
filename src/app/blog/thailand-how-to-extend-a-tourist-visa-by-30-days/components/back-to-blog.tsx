@@ -5,7 +5,7 @@ import ArrowLeftLongIcon from "@/components/icon/arrow-left-long-icon";
 
 export function BackToBlog({children}: { children: React.ReactNode }) {
   return (
-    <div className="w-full py-4 bg-neutral-800">
+    <div className="w-full py-4 bg-neutral-700">
       <ContentContainer>
         {children}
       </ContentContainer>

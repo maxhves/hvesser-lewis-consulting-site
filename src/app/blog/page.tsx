@@ -1,5 +1,5 @@
 import ContentContainer from "@/components/ui/content-container";
-import BlogHeader, {BlogHeading, BlogDescription} from "@/app/blog/components/blog-header";
+import BlogHeader from "@/app/blog/components/blog-header";
 import ArticleList from "@/app/blog/components/article-list";
 import ArticleCard, {
   ArticleCardBody,
@@ -7,6 +7,7 @@ import ArticleCard, {
   ArticleCardHeader, ArticleCardText,
   ArticleCardTitle, ArticleImage
 } from "@/app/blog/components/article-card";
+import {PageDescription, PageHeading} from "@/components/ui/header";
 
 import bangkokStreetImage from "../../../public/images/blog/bangkok-street.webp"
 
@@ -17,13 +18,13 @@ export default function Blog() {
     <main className="flex-grow">
       <ContentContainer>
         <BlogHeader>
-          <BlogHeading>
+          <PageHeading>
             Beyond Code: Hvesser-Lewis Insights
-          </BlogHeading>
-          <BlogDescription>
+          </PageHeading>
+          <PageDescription>
             Join me in exploring a range of self-written articles covering diverse topics, from technology to travel. I
             delve into subjects that reflect both my personal passions and professional interests.
-          </BlogDescription>
+          </PageDescription>
         </BlogHeader>
 
         <ArticleList>
