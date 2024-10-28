@@ -1,9 +1,7 @@
 import ContentContainer from "@/components/ui/content-container";
 import IntroductionSection, {
-  IntroductionBody,
+  IntroductionBody, IntroductionDate,
   IntroductionHeading,
-  IntroductionPreface,
-  IntroductionPreTitle
 } from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/introduction-section";
 import WhatYouNeedSection, {
   WhatYouNeedBody,
@@ -94,20 +92,19 @@ export default function ThailandHowToExtendATouristVisaBy30Days() {
             Back to blog
           </BackToBlogButton>
         </BackToBlog>
-        <ContentContainer className="py-16 sm:py-32">
+        <ContentContainer className="py-8">
             <IntroductionSection>
-              <IntroductionPreTitle>
-                A guide on
-              </IntroductionPreTitle>
               <IntroductionHeading>
                 Thailand: How to Extend a Tourist Visa by 30 Days
               </IntroductionHeading>
-              <IntroductionPreface>
-                If, like me, you’ve recently taken advantage of Thailand’s 60-day visa exemption or 60-day Visa on
-                Arrival, you might now be wondering how to extend your stay by an additional 30 days. If so, you’ve come
-                to the right place.
-              </IntroductionPreface>
+              <IntroductionDate>
+                September 26, 2024
+              </IntroductionDate>
               <IntroductionBody>
+                If, like me, you’ve recently taken advantage of Thailand’s 60-day visa exemption or 60-day Visa on
+                Arrival, you might now be wondering how to extend your stay by an additional 30 days. If so, you’ve
+                come to the right place.
+                {"\n"}{"\n"}
                 I’d like to start by noting that immigration offices may vary slightly depending on their location and
                 specific procedures. So, where it’s relevant, the information I’m sharing here is based on my personal
                 experience of extending my 60-day visa exemption in Bangkok.
@@ -116,7 +113,7 @@ export default function ThailandHowToExtendATouristVisaBy30Days() {
 
             <WhatYouNeedSection>
               <WhatYouNeedHeading>
-                What you need
+                What You Need
               </WhatYouNeedHeading>
               <WhatYouNeedChecklist>
                 {itemsNeeded.map((item => (

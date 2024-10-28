@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
-import {SectionHeading, SectionSubheading} from "@/components/ui/header";
+import {PageHeading, PageDescription} from "@/components/ui/header";
 import SectionBadge from "@/components/ui/section-badge";
 import {ExternalLink, Link} from "@/components/ui/link";
 import {clsx} from "clsx";
@@ -48,13 +48,13 @@ export default function PortfolioSection() {
         <SectionBadge>
           Portfolio
         </SectionBadge>
-        <SectionHeading className="mt-1">
+        <PageHeading className="mt-1">
           Projects I’ve Worked On Recently
-        </SectionHeading>
-        <SectionSubheading className="mt-4">
+        </PageHeading>
+        <PageDescription className="mt-4">
           Take a look at some of the recent projects I’ve been working on, and for a deeper technical dive, explore my
           open-source contributions on <ExternalLink href="https://www.github.com/maxhves">Github</ExternalLink>.
-        </SectionSubheading>
+        </PageDescription>
         <RecentProjectsList>
           {recentProjects.map(project => (
             <ProjectCard key={project.title}>

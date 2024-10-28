@@ -18,7 +18,7 @@ export default function ArticleSection({children}: { children: React.ReactNode }
 
 export function ArticleSectionHeading({children}: { children: React.ReactNode }) {
   return (
-    <h2 className={clsx(outfit.className, "mt-16 text-2xl font-bold tracking-tight text-stone-900")}>
+    <h2 className={clsx(outfit.className, "mt-10 text-base font-semibold text-neutral-950")}>
       {children}
     </h2>
   )
@@ -30,7 +30,7 @@ export function ArticleSectionHeading({children}: { children: React.ReactNode })
 
 export function ArticleSectionBody({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-8 text-base font-normal leading-7 text-stone-700 whitespace-pre-wrap">
+    <p className="mt-4 text-base font-normal text-neutral-700 whitespace-pre-wrap">
       {children}
     </p>
   )
@@ -50,7 +50,7 @@ export function ArticleSectionBodyLink({href, children}: { href: string, childre
 
 export function ArticleSectionActionList({children}: { children: React.ReactNode }) {
   return (
-    <ol role="list" className="mt-8 space-y-8">
+    <ol role="list" className="mt-8 space-y-6">
       {children}
     </ol>
   )
@@ -58,7 +58,7 @@ export function ArticleSectionActionList({children}: { children: React.ReactNode
 
 export function ArticleSectionActionListItem({children}: { children: React.ReactNode }) {
   return (
-    <li className="text-base font-normal leading-7 text-stone-600">
+    <li className="text-base font-normal text-neutral-700">
       <div className="flex gap-x-3">
         {children}
       </div>
