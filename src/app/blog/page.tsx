@@ -16,16 +16,16 @@ import bangkokStreetImage from "../../../public/images/blog/bangkok-street.webp"
 export default function Blog() {
   return (
     <main className="flex-grow">
+      <BlogHeader>
+        <PageHeading className="text-white">
+          Beyond Code: Hvesser-Lewis Insights
+        </PageHeading>
+      </BlogHeader>
       <ContentContainer>
-        <BlogHeader>
-          <PageHeading>
-            Beyond Code: Hvesser-Lewis Insights
-          </PageHeading>
-          <PageDescription>
-            Join me in exploring a range of self-written articles covering diverse topics, from technology to travel. I
-            delve into subjects that reflect both my personal passions and professional interests.
-          </PageDescription>
-        </BlogHeader>
+        <PageDescription className="mt-8">
+          Join me in exploring a range of self-written articles covering diverse topics, from technology to travel. I
+          delve into subjects that reflect both my personal passions and professional interests.
+        </PageDescription>
 
         <ArticleList>
           <ArticleCard>
