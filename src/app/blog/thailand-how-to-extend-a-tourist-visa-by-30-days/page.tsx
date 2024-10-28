@@ -119,7 +119,7 @@ export default function ThailandHowToExtendATouristVisaBy30Days() {
                 {itemsNeeded.map((item => (
                   <WhatYouNeedChecklistItem key={item.label}>
                     <span>
-                      <strong className="font-semibold text-stone-900">{item.label}</strong> {item.description}
+                      <strong className="font-semibold">{item.label}</strong> {item.description}
                     </span>
                   </WhatYouNeedChecklistItem>
                 )))}
@@ -167,7 +167,7 @@ export default function ThailandHowToExtendATouristVisaBy30Days() {
                 {processSteps.map(step => (
                   <WhatToExpectStep key={step.label}>
                     <span>
-                      <strong className="font-semibold text-stone-900">{step.label}</strong> {step.description}
+                      <strong className="font-semibold">{step.label}</strong> {step.description}
                     </span>
                   </WhatToExpectStep>
                 ))}

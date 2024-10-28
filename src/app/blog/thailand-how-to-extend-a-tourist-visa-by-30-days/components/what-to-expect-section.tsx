@@ -27,7 +27,7 @@ export function WhatToExpectHeading({children}: { children: React.ReactNode }) {
 
 export function WhatToExpectBody({children}: { children: React.ReactNode }) {
   return (
-    <ArticleSectionBody>{children}</ArticleSectionBody>
+    <ArticleSectionBody className="mt-8">{children}</ArticleSectionBody>
   )
 }
 
@@ -44,7 +44,7 @@ export function WhatToExpectSteps({children}: { children: React.ReactNode }) {
 export function WhatToExpectStep({children}: { children: React.ReactNode }) {
   return (
     <ArticleSectionActionListItem>
-      <ArrowRightCircleIcon className="mt-1 size-5 flex-none text-orange-600" />
+      <ArrowRightCircleIcon className="mt-0.5 size-5 flex-none text-emerald-600" />
       {children}
     </ArticleSectionActionListItem>
   )
