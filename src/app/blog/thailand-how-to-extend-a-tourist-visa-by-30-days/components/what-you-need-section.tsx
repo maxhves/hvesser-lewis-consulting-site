@@ -27,7 +27,7 @@ export function WhatYouNeedHeading({children}: { children: React.ReactNode }) {
 
 export function WhatYouNeedBody({children}: { children: React.ReactNode }) {
   return (
-    <ArticleSectionBody>{children}</ArticleSectionBody>
+    <ArticleSectionBody className="mt-8">{children}</ArticleSectionBody>
   )
 }
 

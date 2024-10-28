@@ -27,7 +27,7 @@ export function IntroductionHeading({children}: { children: React.ReactNode }) {
 
 export function IntroductionDate({children}: { children: React.ReactNode }) {
   return (
-    <p className="mt-16 text-sm font-semibold text-neutral-700 uppercase">
+    <p className="mt-8 sm:mt-16 text-sm font-semibold text-neutral-700 uppercase">
       {children}
     </p>
   )

@@ -28,9 +28,9 @@ export function ArticleSectionHeading({children}: { children: React.ReactNode })
 
 //region Body
 
-export function ArticleSectionBody({children}: { children: React.ReactNode }) {
+export function ArticleSectionBody({className, children}: { className?: string, children: React.ReactNode }) {
   return (
-    <p className="mt-4 text-base font-normal text-neutral-700 whitespace-pre-wrap">
+    <p className={clsx(className, "mt-4 text-base font-normal text-neutral-700 whitespace-pre-wrap")}>
       {children}
     </p>
   )
@@ -38,7 +38,7 @@ export function ArticleSectionBody({children}: { children: React.ReactNode }) {
 
 export function ArticleSectionBodyLink({href, children}: { href: string, children: React.ReactNode }) {
   return (
-    <a href={href} className="underline font-medium" rel="noreferrer" target="_blank">
+    <a href={href} className="text-emerald-600 hover:text-emerald-800" rel="noreferrer" target="_blank">
       {children}
     </a>
   )
