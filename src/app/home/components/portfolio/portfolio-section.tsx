@@ -8,11 +8,11 @@ import {outfit} from "@/app/fonts";
 import {Button} from "@/components/ui/button";
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
 import Image, {StaticImageData} from "next/image";
-
-import temperatureCheckImage from "../../../../../public/images/portfolio/temperature-check-promo.webp"
-import crimeConnoisseurImage from "../../../../../public/images/portfolio/crime-connoisseur-promo.webp"
-import visaMatchImage from "../../../../../public/images/portfolio/visa-match-promo.webp"
 import ArrowRightLongIcon from "@/components/icon/arrow-right-long-icon";
+
+import temperatureCheckPreview from "../../../../../public/images/portfolio/temperature-check-preview.webp"
+import crimeConnoisseurPreview from "../../../../../public/images/portfolio/crime-connoisseur-preview.webp"
+import visaMatchPreview from "../../../../../public/images/portfolio/visa-match-preview.webp"
 
 //region Model
 
@@ -21,19 +21,19 @@ const recentProjects = [
     title: "Temperature Check",
     description: "This front-end web application helps users determine whether their current body temperature might be considered a fever.\n\nDesigned with a clean and minimal aesthetic, the website ensures users can easily input their temperature and receive a quick, clear result.",
     href: "https://www.temperature-check.com",
-    image: temperatureCheckImage
+    image: temperatureCheckPreview
   },
   {
     title: "Crime Connoisseur",
     description: "A podcast discovery platform and player designed to showcase lesser-known true crime podcasts, helping them reach a broader audience.\n\nThe website features a dark, sleek aesthetic and a fully custom podcast client that is both responsive and highly performant.",
     href: "https://www.crimeconnoisseur.com",
-    image: crimeConnoisseurImage
+    image: crimeConnoisseurPreview
   },
   {
     title: "Visa Match",
     description: "An intuitive website providing informational guides to those considering to pursue experience working abroad.\n\nUsers are informed about what visa options are potentially available to them with each guide providing an overview of the requirements, alongside positive and negative considerations.",
     href: "https://www.visamatch.co",
-    image: visaMatchImage
+    image: visaMatchPreview
   }
 ]
 
