@@ -4,7 +4,7 @@ import ContentContainer from "@/components/ui/content-container";
 import {Input} from "@/components/ui/input";
 import {Textarea} from "@/components/ui/textarea";
 import {Button} from "@/components/ui/button";
-import {PageHeading, PageDescription} from "@/components/ui/header";
+import {PageDescription, PageHeading} from "@/components/ui/header";
 import Link from "next/link";
 import {ContactService} from "@/app/data/services/contact_service/ContactService";
 import {EmailJSResponseStatus} from "@emailjs/browser";

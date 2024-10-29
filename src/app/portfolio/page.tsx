@@ -12,7 +12,8 @@ import ProjectList from "@/app/portfolio/components/project-list";
 import ProjectCard, {
   ProjectCardBody,
   ProjectCardContent,
-  ProjectCardImage, ProjectCardLink,
+  ProjectCardImage,
+  ProjectCardLink,
   ProjectCardTitle
 } from "@/app/portfolio/components/project-card";
 import TechnologyList, {TechnologyItem} from "@/app/portfolio/components/technology-list";
