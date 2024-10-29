@@ -3,8 +3,10 @@ import ArticleList from "@/app/blog/components/article-list";
 import ArticleCard, {
   ArticleCardBody,
   ArticleCardDate,
-  ArticleCardHeader, ArticleCardText,
-  ArticleCardTitle, ArticleImage
+  ArticleCardHeader,
+  ArticleCardText,
+  ArticleCardTitle,
+  ArticleImage
 } from "@/app/blog/components/article-card";
 import {PageDescription} from "@/components/ui/header";
 import ImageBanner from "@/components/ui/image-banner";

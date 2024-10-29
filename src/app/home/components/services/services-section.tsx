@@ -2,7 +2,7 @@ import React from 'react'
 import HomeNavLink from "@/app/home/data/navigation/home-nav-link";
 import ContentContainer from "@/components/ui/content-container";
 import SectionBadge from "@/components/ui/section-badge";
-import {PageHeading, PageDescription} from "@/components/ui/header";
+import {PageDescription, PageHeading} from "@/components/ui/header";
 import {Body} from "@/components/ui/body";
 import {clsx} from "clsx";
 import {outfit} from "@/app/fonts";

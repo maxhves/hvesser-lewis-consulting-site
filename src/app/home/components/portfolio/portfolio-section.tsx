@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentContainer from "@/components/ui/content-container";
-import {PageHeading, PageDescription} from "@/components/ui/header";
+import {PageDescription, PageHeading} from "@/components/ui/header";
 import SectionBadge from "@/components/ui/section-badge";
 import {ExternalLink, Link} from "@/components/ui/link";
 import {clsx} from "clsx";

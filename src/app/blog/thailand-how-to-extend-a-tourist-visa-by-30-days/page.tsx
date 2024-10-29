@@ -1,6 +1,7 @@
 import ContentContainer from "@/components/ui/content-container";
 import IntroductionSection, {
-  IntroductionBody, IntroductionDate,
+  IntroductionBody,
+  IntroductionDate,
   IntroductionHeading,
 } from "@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/introduction-section";
 import WhatYouNeedSection, {
