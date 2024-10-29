@@ -21,7 +21,7 @@ const siteLinks = [
   },
   {
     label: "Portfolio",
-    href: "/#portfolio"
+    href: "/portfolio"
   },
   {
     label: "Blog",

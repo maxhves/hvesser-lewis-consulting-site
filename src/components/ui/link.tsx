@@ -29,3 +29,19 @@ export function ExternalLink({className, href, children}: {
 }
 
 //endregion
+
+//region Internal
+
+export function InternalTextLink({className, href, children}: {
+  className?: string,
+  href: string,
+  children: React.ReactNode
+}) {
+  return (
+    <Link className={clsx(className, "font-normal text-base text-emerald-600 hover:text-emerald-800")} href={href}>
+      {children}
+    </Link>
+  )
+}
+
+//endregion

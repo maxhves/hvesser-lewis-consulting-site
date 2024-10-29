@@ -1,5 +1,4 @@
 import ContentContainer from "@/components/ui/content-container";
-import BlogHeader from "@/app/blog/components/blog-header";
 import ArticleList from "@/app/blog/components/article-list";
 import ArticleCard, {
   ArticleCardBody,
@@ -7,20 +6,20 @@ import ArticleCard, {
   ArticleCardHeader, ArticleCardText,
   ArticleCardTitle, ArticleImage
 } from "@/app/blog/components/article-card";
-import {PageDescription, PageHeading} from "@/components/ui/header";
+import {PageDescription} from "@/components/ui/header";
+import ImageBanner from "@/components/ui/image-banner";
 
 import bangkokStreetImage from "../../../public/images/blog/bangkok-street.webp"
+import sculptureSkyImage from "../../../public/images/blog/sculpture-sky.webp"
 
 //region Entry
 
 export default function Blog() {
   return (
     <main className="flex-grow">
-      <BlogHeader>
-        <PageHeading className="text-white">
-          Beyond Code: Hvesser-Lewis Insights
-        </PageHeading>
-      </BlogHeader>
+      <ImageBanner image={sculptureSkyImage}>
+        Beyond Code: Hvesser-Lewis Insights
+      </ImageBanner>
       <ContentContainer>
         <PageDescription className="mt-8">
           Join me in exploring a range of self-written articles covering diverse topics, from technology to travel. I
