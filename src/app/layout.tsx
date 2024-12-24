@@ -22,9 +22,12 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body id="home" className={clsx(inter.className, "bg-neutral-50 h-dvh flex flex-col antialiased")}>
-        <HomeNavigationBar />
-        {children}
-        <HomeFooter />
+        {/*<HomeNavigationBar />*/}
+        {/*{children}*/}
+        {/*<HomeFooter />*/}
+        <div className="size-full flex items-center justify-center text-sm font-semibold text-stone-500">
+          Under construction
+        </div>
         <Analytics />
       </body>
     </html>
