@@ -8,10 +8,13 @@ import {PageDescription, PageHeading} from "@/components/ui/header";
 import Link from "next/link";
 import {ContactService} from "@/app/data/services/contact_service/ContactService";
 import {EmailJSResponseStatus} from "@emailjs/browser";
+import {notFound} from "next/navigation";
 
 //region Entry
 
 export default function Contact() {
+  return notFound()
+
   const [name, setName] = useState<string>("")
   const [emailAddress, setEmailAddress] = useState<string>("")
   const [message, setMessage] = useState<string>("")

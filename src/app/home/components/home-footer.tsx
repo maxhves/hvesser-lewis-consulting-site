@@ -8,10 +8,6 @@ import {Link} from "@/components/ui/link";
 
 const siteLinks = [
   {
-    label: "Contact",
-    href: "/contact"
-  },
-  {
     label: "About",
     href: "/#about"
   },

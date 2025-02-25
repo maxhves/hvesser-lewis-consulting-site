@@ -63,10 +63,6 @@ export default function HomeNavigationBar() {
             ))}
           </NavigationBarMenu>
 
-        <NavigationBarActionLink href="/contact">
-          Let’s Talk
-        </NavigationBarActionLink>
-
         <NavigationBarDrawerTriggerButton open={drawerOpen} onClick={toggleDrawer} />
       </NavigationBarContent>
 
