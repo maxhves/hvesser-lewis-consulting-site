@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function MenuIcon({className, style}: { className?: string, style?: React.CSSProperties }) {
+export default function MenuIcon({ className, style }: { className?: string; style?: React.CSSProperties }) {
   return (
     <svg
       className={className}

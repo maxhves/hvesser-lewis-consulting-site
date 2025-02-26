@@ -1,9 +1,9 @@
 import React from 'react'
-import ContentContainer from "@/components/ui/content-container";
-import {Button} from "@/components/ui/button";
-import {clsx} from "clsx";
-import {outfit} from "@/app/fonts";
-import ArrowLeftLongIcon from "@/components/icon/arrow-left-long-icon";
+import ContentContainer from '@/components/ui/content-container'
+import { Button } from '@/components/ui/button'
+import { clsx } from 'clsx'
+import { outfit } from '@/app/fonts'
+import ArrowLeftLongIcon from '@/components/icon/arrow-left-long-icon'
 
 //region Main Component
 
@@ -26,35 +26,23 @@ export default function NotFound() {
 
 //region Text Components
 
-function StatusLabel({children}: { children: React.ReactNode }) {
-  return (
-    <span className="text-base font-semibold text-emerald-600 tracking-tight">
-      {children}
-    </span>
-  )
+function StatusLabel({ children }: { children: React.ReactNode }) {
+  return <span className="text-base font-semibold tracking-tight text-emerald-600">{children}</span>
 }
 
-function TitleLabel({children}: { children: React.ReactNode }) {
-  return (
-    <h1 className={clsx(outfit.className, "mt-1 text-3xl font-semibold text-neutral-900")}>
-      {children}
-    </h1>
-  )
+function TitleLabel({ children }: { children: React.ReactNode }) {
+  return <h1 className={clsx(outfit.className, 'mt-1 text-3xl font-semibold text-neutral-900')}>{children}</h1>
 }
 
-function DescriptionLabel({children}: { children: React.ReactNode }) {
-  return (
-    <p className="mt-4 text-base leading-7 text-neutral-600">
-      {children}
-    </p>
-  )
+function DescriptionLabel({ children }: { children: React.ReactNode }) {
+  return <p className="mt-4 text-base leading-7 text-neutral-600">{children}</p>
 }
 
 //endregion
 
 //region Button Components
 
-function GoBackHomeButton({children}: { children: React.ReactNode }) {
+function GoBackHomeButton({ children }: { children: React.ReactNode }) {
   return (
     <Button className="mt-8" accent={true} href="/">
       <ArrowLeftLongIcon />
