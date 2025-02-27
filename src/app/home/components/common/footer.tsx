@@ -7,6 +7,7 @@ const socialLinks = [
   {
     label: 'Github',
     href: 'https://github.com/maxhves',
+    icon:
   },
   {
     label: 'LinkedIn',
