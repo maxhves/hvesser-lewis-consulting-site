@@ -1,13 +1,12 @@
-import { ContentContainerNew } from '@/components/ui/content-container'
+import Introduction from '@/app/home/components/introduction/introduction'
 
 export default function Home() {
   return (
     <main className="flex-grow">
-      {/*<IntroductionSection />*/}
+      <Introduction />
       {/*<AboutSection />*/}
       {/*<ServicesSection />*/}
       {/*<PortfolioSection />*/}
-      <ContentContainerNew outerClassName="h-full">Content _will_ go here.</ContentContainerNew>
     </main>
   )
 }
