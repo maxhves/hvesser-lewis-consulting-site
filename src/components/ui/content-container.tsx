@@ -18,6 +18,7 @@ export default function ContentContainer({
 }
 
 //TODO: Refactor old container with new
+
 export function ContentContainerNew({
   outerClassName,
   className,
@@ -34,3 +35,5 @@ export function ContentContainerNew({
     </div>
   )
 }
+
+//TODO: Refactor old container with new

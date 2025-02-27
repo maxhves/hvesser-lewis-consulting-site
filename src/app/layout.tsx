@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body id="home" className={clsx(inter.className, 'flex h-dvh flex-col bg-stone-100 antialiased')}>
         <HomeNavigationBar />
         {children}
-        {/*<HomeFooter />*/}
+        <Footer />
         <Analytics />
       </body>
     </html>
