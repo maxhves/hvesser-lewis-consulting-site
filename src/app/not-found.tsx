@@ -2,7 +2,7 @@ import React from 'react'
 import ContentContainer from '@/components/ui/content-container'
 import { Button } from '@/components/ui/button'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 import ArrowLeftLongIcon from '@/components/icon/arrow-left-long-icon'
 
 //region Main Component
@@ -31,7 +31,7 @@ function StatusLabel({ children }: { children: React.ReactNode }) {
 }
 
 function TitleLabel({ children }: { children: React.ReactNode }) {
-  return <h1 className={clsx(outfit.className, 'mt-1 text-3xl font-semibold text-neutral-900')}>{children}</h1>
+  return <h1 className={clsx(dmSans.className, 'mt-1 text-3xl font-semibold text-neutral-900')}>{children}</h1>
 }
 
 function DescriptionLabel({ children }: { children: React.ReactNode }) {

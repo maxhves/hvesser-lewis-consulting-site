@@ -1,11 +1,10 @@
 import React from 'react'
-import HomeNavLink from '@/app/home/data/navigation/home-nav-link'
 import ContentContainer from '@/components/ui/content-container'
 import SectionBadge from '@/components/ui/section-badge'
 import { PageDescription, PageHeading } from '@/components/ui/header'
 import { Body } from '@/components/ui/body'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 import { Link } from '@/components/ui/link'
 import Image, { StaticImageData } from 'next/image'
 
@@ -42,7 +41,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id={HomeNavLink.Services.id} className="scroll-mt-14 bg-neutral-200/50">
+    <section id="services" className="scroll-mt-14 bg-neutral-200/50">
       <ContentContainer className="py-16">
         <SectionBadge>Services</SectionBadge>
         <PageHeading className="mt-1">My Expertise</PageHeading>
@@ -107,7 +106,7 @@ function ServiceCardBody({ children }: { children: React.ReactNode }) {
 }
 
 function ServiceCardHeading({ children }: { children: React.ReactNode }) {
-  return <h1 className={clsx(outfit.className, 'text-base font-medium text-emerald-600')}>{children}</h1>
+  return <h1 className={clsx(dmSans.className, 'text-base font-medium text-emerald-600')}>{children}</h1>
 }
 
 function ServiceCardDescription({ children }: { children: React.ReactNode }) {

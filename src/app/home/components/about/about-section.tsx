@@ -1,8 +1,7 @@
 import React from 'react'
 import ContentContainer from '@/components/ui/content-container'
-import HomeNavLink from '@/app/home/data/navigation/home-nav-link'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 import Image from 'next/image'
 import profileImage from '../../../../../public/images/about/mhl-portrait.webp'
 
@@ -10,7 +9,7 @@ import profileImage from '../../../../../public/images/about/mhl-portrait.webp'
 
 export default function AboutSection() {
   return (
-    <section id={HomeNavLink.About.id} className="scroll-mt-14 bg-neutral-50">
+    <section id="about" className="scroll-mt-14 bg-neutral-50">
       <ContentContainer className="py-16">
         <AboutCard>
           <AboutBody>
@@ -58,7 +57,7 @@ function AboutImageBox({ children }: { children: React.ReactNode }) {
 //region Text
 
 function AboutHeading({ children }: { children: React.ReactNode }) {
-  return <h1 className={clsx(outfit.className, 'text-2xl font-medium text-neutral-950')}>{children}</h1>
+  return <h1 className={clsx(dmSans.className, 'text-2xl font-medium text-neutral-950')}>{children}</h1>
 }
 
 function AboutDescription({ children }: { children: React.ReactNode }) {

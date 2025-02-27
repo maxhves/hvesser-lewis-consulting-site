@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from '@/components/ui/link'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 import { Button as HeadlessButton, type ButtonProps as HeadlessButtonProps } from '@headlessui/react'
 
 //region Model
@@ -46,7 +46,7 @@ export const Button = React.forwardRef(function Button(
   ref: React.ForwardedRef<HTMLElement>
 ) {
   let classes = clsx(
-    outfit.className,
+    dmSans.className,
     className,
     styles.base,
     plain ? styles.plain : styles.solid,

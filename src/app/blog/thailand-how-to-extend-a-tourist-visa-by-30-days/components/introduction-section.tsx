@@ -1,6 +1,6 @@
 import React from 'react'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 import ArticleSection, {
   ArticleSectionBody,
 } from '@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/common/article-section'
@@ -16,7 +16,7 @@ export default function IntroductionSection({ children }: { children: React.Reac
 //region Texts
 
 export function IntroductionHeading({ children }: { children: React.ReactNode }) {
-  return <h1 className={clsx(outfit.className, 'text-3xl font-medium text-neutral-950 sm:text-5xl')}>{children}</h1>
+  return <h1 className={clsx(dmSans.className, 'text-3xl font-medium text-neutral-950 sm:text-5xl')}>{children}</h1>
 }
 
 export function IntroductionDate({ children }: { children: React.ReactNode }) {

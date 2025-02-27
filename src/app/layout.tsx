@@ -1,16 +1,16 @@
-import React from 'react'
+import { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
-import { inter } from './fonts'
+import { manrope } from './fonts/fonts'
 import './globals.css'
 import { clsx } from 'clsx'
 import HomeNavigationBar from '@/app/home/components/navigation/home-navigation-bar'
 import Footer from '@/app/home/components/common/footer'
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body id="home" className={clsx(inter.className, 'flex h-dvh flex-col bg-stone-100 antialiased')}>
+      <body id="home" className={clsx(manrope.className, 'flex h-dvh flex-col bg-stone-100 antialiased')}>
         <HomeNavigationBar />
         {children}
         <Footer />

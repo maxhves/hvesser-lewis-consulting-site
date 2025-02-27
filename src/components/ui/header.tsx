@@ -1,12 +1,12 @@
 import React from 'react'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 
 //region Page
 
 export function PageHeading({ className, children }: { className?: string; children: React.ReactNode }) {
   return (
-    <h2 className={clsx(className, outfit.className, 'text-2xl font-semibold text-neutral-950 sm:text-3xl')}>
+    <h2 className={clsx(className, dmSans.className, 'text-2xl font-semibold text-neutral-950 sm:text-3xl')}>
       {children}
     </h2>
   )

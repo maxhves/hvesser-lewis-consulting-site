@@ -1,7 +1,7 @@
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 import ArrowRightLongIcon from '@/components/icon/arrow-right-long-icon'
 import { Link } from '@/components/ui/link'
 
@@ -41,7 +41,7 @@ export function ProjectCardImage({ image }: { image: StaticImageData }) {
 //region Text
 
 export function ProjectCardTitle({ children }: { children: React.ReactNode }) {
-  return <h2 className={clsx(outfit.className, 'text-lg font-medium text-neutral-950')}>{children}</h2>
+  return <h2 className={clsx(dmSans.className, 'text-lg font-medium text-neutral-950')}>{children}</h2>
 }
 
 export function ProjectCardBody({ children }: { children: React.ReactNode }) {

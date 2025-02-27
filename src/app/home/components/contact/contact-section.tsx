@@ -2,7 +2,7 @@ import React from 'react'
 import ContentContainer from '@/components/ui/content-container'
 import { Button } from '@/components/ui/button'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 
 //region Entry
 
@@ -36,7 +36,7 @@ function Body({ children }: { children: React.ReactNode }) {
 //region Text
 
 function PromoText({ children }: { children: React.ReactNode }) {
-  return <h1 className={clsx(outfit.className, 'flex-1 text-2xl font-medium text-neutral-50')}>{children}</h1>
+  return <h1 className={clsx(dmSans.className, 'flex-1 text-2xl font-medium text-neutral-50')}>{children}</h1>
 }
 
 //endregion
@@ -44,11 +44,7 @@ function PromoText({ children }: { children: React.ReactNode }) {
 //region Contact Button
 
 function ContactButton({ children }: { children: React.ReactNode }) {
-  return (
-    <Button accent={true} href="/contact">
-      {children}
-    </Button>
-  )
+  return <Button href="/contact">{children}</Button>
 }
 
 //endregion

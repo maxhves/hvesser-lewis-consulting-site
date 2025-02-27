@@ -4,9 +4,8 @@ import { PageDescription, PageHeading } from '@/components/ui/header'
 import SectionBadge from '@/components/ui/section-badge'
 import { ExternalLink, Link } from '@/components/ui/link'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 import { Button } from '@/components/ui/button'
-import HomeNavLink from '@/app/home/data/navigation/home-nav-link'
 import Image, { StaticImageData } from 'next/image'
 import ArrowRightLongIcon from '@/components/icon/arrow-right-long-icon'
 
@@ -46,7 +45,7 @@ const recentProjects = [
 
 export default function PortfolioSection() {
   return (
-    <section id={HomeNavLink.Portfolio.id} className="scroll-mt-14 bg-neutral-50">
+    <section id="projects" className="scroll-mt-14 bg-neutral-50">
       <ContentContainer className="py-16">
         <SectionBadge>Portfolio</SectionBadge>
         <PageHeading className="mt-1">Projects I’ve Worked On Recently</PageHeading>
@@ -119,7 +118,7 @@ function ProjectCardImage({ image }: { image: StaticImageData }) {
 }
 
 function ProjectCardHeading({ children }: { children: React.ReactNode }) {
-  return <h1 className={clsx(outfit.className, 'text-lg font-medium text-neutral-950')}>{children}</h1>
+  return <h1 className={clsx(dmSans.className, 'text-lg font-medium text-neutral-950')}>{children}</h1>
 }
 
 function ProjectCardDescription({ children }: { children: React.ReactNode }) {

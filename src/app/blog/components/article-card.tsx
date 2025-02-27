@@ -1,6 +1,6 @@
 import React from 'react'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 import { Link } from '@/components/ui/link'
 import Image, { StaticImageData } from 'next/image'
 
@@ -28,7 +28,7 @@ export function ArticleCardHeader({ children }: { children: React.ReactNode }) {
 
 export function ArticleCardTitle({ children, href }: { children: React.ReactNode; href: string }) {
   return (
-    <h3 className={clsx(outfit.className, 'group text-lg font-semibold leading-6 text-neutral-950')}>
+    <h3 className={clsx(dmSans.className, 'group text-lg font-semibold leading-6 text-neutral-950')}>
       <Link className="group-hover:text-emerald-600" href={href}>
         {children}
       </Link>

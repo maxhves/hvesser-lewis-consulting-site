@@ -1,6 +1,6 @@
 import React from 'react'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 
 //region Section
 
@@ -13,7 +13,7 @@ export default function ArticleSection({ children }: { children: React.ReactNode
 //region Title
 
 export function ArticleSectionHeading({ children }: { children: React.ReactNode }) {
-  return <h2 className={clsx(outfit.className, 'mt-10 text-base font-semibold text-neutral-950')}>{children}</h2>
+  return <h2 className={clsx(dmSans.className, 'mt-10 text-base font-semibold text-neutral-950')}>{children}</h2>
 }
 
 //endregion

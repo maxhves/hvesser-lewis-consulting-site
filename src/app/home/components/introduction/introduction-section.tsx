@@ -1,7 +1,7 @@
 import React from 'react'
 import ContentContainer from '@/components/ui/content-container'
 import { clsx } from 'clsx'
-import { outfit } from '@/app/fonts'
+import { dmSans } from '@/app/fonts/fonts'
 import Image from 'next/image'
 import heroImage from '../../../../../public/images/introduction/introduction-hero-image.webp'
 
@@ -34,7 +34,7 @@ export default function IntroductionSection() {
 //region Text
 
 function Heading({ children }: { children: React.ReactNode }) {
-  return <h1 className={clsx(outfit.className, 'text-3xl font-medium text-neutral-50 sm:text-5xl')}>{children}</h1>
+  return <h1 className={clsx(dmSans.className, 'text-3xl font-medium text-neutral-50 sm:text-5xl')}>{children}</h1>
 }
 
 function Description({ children }: { children: React.ReactNode }) {
