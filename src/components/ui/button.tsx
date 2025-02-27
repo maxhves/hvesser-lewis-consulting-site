@@ -9,23 +9,22 @@ import { Button as HeadlessButton, type ButtonProps as HeadlessButtonProps } fro
 const styles = {
   base: [
     // Base
-    'relative isolate inline-flex items-center justify-center gap-x-2 rounded-sm text-sm',
-
-    // Sizing
-    'sm:text-sm/6',
+    'relative isolate inline-flex items-center justify-center gap-x-2 rounded-full text-sm',
 
     // Focus
     'focus:outline-none data-[focus]:outline data-[focus]:outline-2 data-[focus]:outline-offset-2 data-[focus]:outline-blue-500',
 
     // Disabled
     'data-[disabled]:opacity-50',
+
+    // Border
+    'border border-stone-200',
   ],
-  solid: ['text-neutral-50 bg-emerald-600 hover:bg-emerald-500 data-[disabled]:bg-emerald-700 font-semibold'],
-  plain: ['text-neutral-700 bg-transparent hover:bg-neutral-950/5 font-normal'],
-  accent: ['bg-neutral-50 hover:bg-neutral-200 text-emerald-600 font-semibold'],
+  solid: ['text-stone-800 bg-stone-100 hover:bg-stone-100/90 font-medium'],
+  plain: ['text-stone-800 bg-white hover:bg-white/90 font-medium'],
   sizes: {
     large: ['px-3.5 py-2.5'],
-    medium: ['px-3 py-2'],
+    medium: ['px-4 py-1.5'],
     small: ['px-2.5 py-1.5'],
   },
 }
@@ -35,23 +34,22 @@ const styles = {
 //region Base
 
 type ButtonProps = (
-  | { size?: keyof typeof styles.sizes; accent?: never; plain?: true }
-  | { size?: keyof typeof styles.sizes; accent?: true; plain?: never }
-  | { size?: keyof typeof styles.sizes; accent?: never; plain?: never }
+  | { size?: keyof typeof styles.sizes; plain?: true }
+  | { size?: keyof typeof styles.sizes; plain?: never }
 ) & { className?: string; children: React.ReactNode } & (
     | HeadlessButtonProps
     | React.ComponentPropsWithoutRef<typeof Link>
   )
 
 export const Button = React.forwardRef(function Button(
-  { size, accent, plain, className, children, ...props }: ButtonProps,
+  { size, plain, className, children, ...props }: ButtonProps,
   ref: React.ForwardedRef<HTMLElement>
 ) {
   let classes = clsx(
     outfit.className,
     className,
     styles.base,
-    accent ? styles.accent : plain ? styles.plain : styles.solid,
+    plain ? styles.plain : styles.solid,
     styles.sizes[size ?? 'medium']
   )
 

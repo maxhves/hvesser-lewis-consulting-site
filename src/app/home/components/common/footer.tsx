@@ -29,7 +29,7 @@ const siteLinks = [
 
 //region Entry
 
-export default function HomeFooter() {
+export default function Footer() {
   return (
     <footer className="bg-neutral-50">
       <ContentContainer className="py-16">
