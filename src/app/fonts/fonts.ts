@@ -1,4 +1,4 @@
-import { Manrope, DM_Sans, JetBrains_Mono } from 'next/font/google'
+import { DM_Sans, JetBrains_Mono, Manrope } from 'next/font/google'
 
 //region Manrope
 
