@@ -20,12 +20,12 @@ export default function CurrentLocationCard() {
   const staticMapUrl: string = `https://api.mapbox.com/styles/v1/mapbox/${STYLE}/static/${LATITUDE},${LONGITUDE},${ZOOM},${BEARING}/${WIDTH}x${HEIGHT}@2x?access_token=${MAPBOX_API_KEY}`
 
   return (
-    <div className="-mx-px grid border border-stone-200">
+    <div className="grid flex-1 border border-stone-200">
       <div className="z-10 flex items-center justify-center" style={{ gridRow: 1, gridColumn: 1 }}>
         <MapMarker />
       </div>
       <div
-        className="relative -m-px h-64 overflow-clip rounded-2xl border border-stone-200"
+        className="relative h-64 overflow-clip rounded-2xl border border-stone-200"
         style={{ gridRow: 1, gridColumn: 1 }}
       >
         <Image
