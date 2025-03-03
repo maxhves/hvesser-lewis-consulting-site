@@ -25,30 +25,32 @@ export default function CurrentLocationCard() {
   const staticMapUrlDark: string = `https://api.mapbox.com/styles/v1/mapbox/${STYLE_DARK}/static/${LATITUDE},${LONGITUDE},${ZOOM},${BEARING}/${WIDTH}x${HEIGHT}@2x?access_token=${MAPBOX_API_KEY}`
 
   return (
-    <div className="grid flex-1 border border-stone-200 dark:border-stone-800">
-      <div className="z-10 flex items-center justify-center" style={{ gridRow: 1, gridColumn: 1 }}>
-        <MapMarker />
-      </div>
-      <div
-        className="relative h-64 overflow-clip rounded-2xl border border-stone-200 dark:border-stone-800"
-        style={{ gridRow: 1, gridColumn: 1 }}
-      >
-        <Image
-          className="block object-cover dark:hidden"
-          src={staticMapUrl}
-          alt="Map of Oslo, Norway"
-          fill={true}
-          placeholder="blur"
-          blurDataURL={staticLocationDataUrl}
-        />
-        <Image
-          className="hidden object-cover dark:block"
-          src={staticMapUrlDark}
-          alt="Map of Oslo, Norway"
-          fill={true}
-          placeholder="blur"
-          blurDataURL={staticLocationDataUrlDark}
-        />
+    <div className="w-full border-b border-e-0 border-stone-200 dark:border-stone-800 md:border-b-0 md:border-e">
+      <div className="-m-px grid">
+        <div className="z-10 flex items-center justify-center" style={{ gridRow: 1, gridColumn: 1 }}>
+          <MapMarker />
+        </div>
+        <div
+          className="relative h-64 overflow-clip rounded-2xl border border-stone-200 dark:border-stone-800"
+          style={{ gridRow: 1, gridColumn: 1 }}
+        >
+          <Image
+            className="block object-cover dark:hidden"
+            src={staticMapUrl}
+            alt="Map of Oslo, Norway"
+            fill={true}
+            placeholder="blur"
+            blurDataURL={staticLocationDataUrl}
+          />
+          <Image
+            className="hidden object-cover dark:block"
+            src={staticMapUrlDark}
+            alt="Map of Oslo, Norway"
+            fill={true}
+            placeholder="blur"
+            blurDataURL={staticLocationDataUrlDark}
+          />
+        </div>
       </div>
     </div>
   )

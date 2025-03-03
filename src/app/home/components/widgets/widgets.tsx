@@ -5,7 +5,7 @@ import { ContentContainerNew } from '@/components/ui/content-container'
 export default function Widgets() {
   return (
     <ContentContainerNew>
-      <div className="flex flex-row gap-5">
+      <div className="flex flex-col gap-5 border-y border-stone-200 dark:border-stone-800 md:flex-row">
         <CurrentLocationCard />
         <ThemeToggleCard />
       </div>
