@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" suppressHydrationWarning={true}>
       <body
         id="home"
-        className={clsx(manrope.className, 'flex h-dvh flex-col bg-stone-100 antialiased dark:bg-stone-900')}
+        className={clsx(manrope.className, 'flex h-dvh flex-col bg-stone-100 antialiased dark:bg-stone-950')}
       >
         <ThemeProvider attribute="class" enableSystem={false}>
           <HomeNavigationBar />

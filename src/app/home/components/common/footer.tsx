@@ -32,9 +32,9 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-stone-200">
+    <footer className="border-t border-stone-200 dark:border-stone-800">
       <ContentContainerNew className="py-8">
-        <div className="flex flex-col items-center justify-normal gap-5 border-y border-stone-200 md:flex-row md:justify-between">
+        <div className="flex flex-col items-center justify-normal gap-5 border-y border-stone-200 dark:border-stone-800 md:flex-row md:justify-between">
           <Name />
           <SocialLinks />
         </div>
@@ -47,8 +47,8 @@ export default function Footer() {
 
 function Name() {
   return (
-    <div className="mx-5 flex w-full justify-center border-b border-stone-200 md:w-fit md:border-none">
-      <div className="flex h-8 items-center border-x border-stone-200 text-sm text-stone-500">
+    <div className="mx-5 flex w-full justify-center border-b border-stone-200 dark:border-stone-800 md:w-fit md:border-none">
+      <div className="flex h-8 items-center border-x border-stone-200 text-sm text-stone-500 dark:border-stone-800">
         Maximilian Hvesser-Lewis
       </div>
     </div>
@@ -61,11 +61,11 @@ function Name() {
 
 function SocialLinks() {
   return (
-    <div className="mx-5 flex w-full justify-center border-t border-stone-200 md:w-fit md:border-none">
-      <div className="flex w-fit items-center gap-1 border-x border-stone-200">
+    <div className="mx-5 flex w-full justify-center border-t border-stone-200 dark:border-stone-800 md:w-fit md:border-none">
+      <div className="flex w-fit items-center gap-1 border-x border-stone-200 dark:border-stone-800">
         {socialLinks.map((link) => (
           <Link
-            className="flex h-8 items-center gap-1 px-3 text-sm text-stone-500 hover:text-stone-700"
+            className="flex h-8 items-center gap-1 px-3 text-sm text-stone-500 hover:text-stone-700 dark:hover:text-stone-300"
             key={link.label}
             href={link.href}
             rel="noreferrer"

@@ -3,7 +3,7 @@ import { ContentContainerNew } from '@/components/ui/content-container'
 
 export default function NavigationBar({ children }: { children: ReactNode }) {
   return (
-    <nav className="w-full border-b border-stone-200">
+    <nav className="w-full border-b border-stone-200 dark:border-stone-800">
       <ContentContainerNew className="py-8">
         <div className="flex h-full flex-row items-center justify-between">{children}</div>
       </ContentContainerNew>

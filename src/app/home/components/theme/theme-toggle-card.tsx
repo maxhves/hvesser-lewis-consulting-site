@@ -13,7 +13,7 @@ export function ThemeToggleCard() {
   }, [])
 
   return (
-    <div className="flex size-64 items-center justify-center rounded-2xl bg-white">
+    <div className="flex size-64 items-center justify-center rounded-2xl bg-white dark:bg-stone-950">
       <Switch
         checked={mounted ? theme === 'light' : false}
         onChange={(checked: boolean) => {

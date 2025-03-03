@@ -17,7 +17,12 @@ export default function Introduction() {
 
 function NameTitle() {
   return (
-    <h1 className={clsx(dmSans.className, 'whitespace-pre-wrap text-5xl font-medium text-stone-700 md:text-8xl')}>
+    <h1
+      className={clsx(
+        dmSans.className,
+        'whitespace-pre-wrap text-5xl font-medium text-stone-700 dark:text-stone-200 md:text-8xl'
+      )}
+    >
       Maximilian{'\n'}Hvesser-Lewis
     </h1>
   )

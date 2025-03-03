@@ -13,7 +13,7 @@ export function Expertise() {
       <ContentContainerNew className="pt-16">
         <SectionHeading>You&apos;ll catch me doing a combo of these things</SectionHeading>
         <div className="py-10 md:py-16">
-          <div className="flex flex-col gap-5 border-y border-stone-200 md:flex-row">
+          <div className="flex flex-col gap-5 border-y border-stone-200 dark:border-stone-800 md:flex-row">
             <CodeEditorCard sampleLabel="MobileDevelopment.kt">
               <MobileDevelopmentSample />
             </CodeEditorCard>
